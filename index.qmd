@@ -1,6 +1,6 @@
 ---
-title: "EPsy 8252"
-subtitle: "Spring 2023"
+title: "EPsy 8251"
+subtitle: "Fall 2023"
 ---
 
 ```{r}
@@ -10,10 +10,15 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 
 
-# Welcome
+## Welcome to EPsy 8251: Methods in Data Analysis for Educational Research I
 
+EPsy 8251: Methods in Data Analysis for Educational Research I is the first course in an entry-level, doctoral sequence for students in education. The two semester sequence provides in-depth coverage of widely used statistical methods and models and prepares students for advanced statistical coursework. EPsy 8251 provides rigorous coverage of estimation and hypothesis testing with a particular focus on the General Linear Model.
+
+:::fyi
+### A Note on Inclusion and Respect
 
 In this class, we will work together to develop a learning community that is inclusive and respectful, and where every student is supported in the learning process. As a class full of diverse individuals (reflected by differences in race, culture, age, religion, gender identity, sexual orientation, socioeconomic background, abilities, professional goals, and other social identities and life experiences) I expect that different students may need different things to support and promote their learning. The TAs and I will do everything we can to help with this, but as we only know what we know, we need you to communicate with us if things are not working for you or you need something we are not providing. I hope you all feel comfortable in helping to promote an inclusive classroom through respecting one another's individual differences, speaking up, and challenging oppressive/problematic ideas. Finally, I look forward to learning from each of you and the experiences you bring to the class. 
+:::
 
 
 <!-- - **Syllabus, assignments, data, and script files:** [github repository](https://github.com/zief0002/epsy-8251) -->
@@ -27,17 +32,16 @@ In this class, we will work together to develop a learning community that is inc
 
 ## Classroom
 
-- Tuesday/Thursday (11:15am&ndash;12:30pm): [Appleby Hall 302](https://campusmaps.umn.edu/appleby-hall)
-- Monday/Wednesday (2:30pm&ndash;3:45pm): [Peik Hall 225](https://campusmaps.umn.edu/peik-hall)
+- Monday/Wednesday (2:30pm&ndash;3:45pm): [Scott Hall 4](https://campusmaps.umn.edu/scott-hall)
 
 
 <br />
 
 
-## Syllabus
+<!-- ## Syllabus -->
 
-- The course syllabus is available [here](files/syllabus-8252-s23.pdf).
-- [Message from Snoop Dogg](https://t.co/5X88O0DBUZ?amp=1) about the syllabus
+<!-- - The course syllabus is available [here](files/syllabus-8252-s23.pdf). -->
+<!-- - [Message from Snoop Dogg](https://t.co/5X88O0DBUZ?amp=1) about the syllabus -->
 
 
 <br />
@@ -45,29 +49,25 @@ In this class, we will work together to develop a learning community that is inc
 
 ## Textbooks
 
-The course textbooks are available via the University of Minnesota library.
+The course textbook is available via the University of Minnesota library.
 
-- **Required:** Fox, J. (2013). [A mathematical primer for social statistics](https://primo.lib.umn.edu/permalink/f/1q7ssba/UMN_ALMA21325943720001701). Sage. 
-- **Optional:** Anderson, D. R. (2008). [Model based inference in the life sciences: A primer on evidence](https://primo.lib.umn.edu/permalink/f/1q7ssba/UMN_ALMA51566641220001701). Springer.
+- **Required:** [Applied regression: An introduction](https://login.ezproxy.lib.umn.edu/login?url=http://methods.sagepub.com/book/applied-regression-an-introduction-second-edition) [required]
 
+There are two other free, online books that the lectures for the class are drawn from:
+
+- [Computational Toolkit for Educational Scientists](https://zief0002.github.io/toolkit-quarto/)
+- [Statistical Modeling and Computation for Educational Scientists](https://zief0002.github.io/modeling/)
 
 <br />
 
 
-## Other Resources
+## Course Requirements
 
-- [Statistical Modeling and Computation for Educational Scientists](https://epsy-8251.netlify.app/)
-  + Learn about simple and multiple regression
-  + Learn about Ordinary Least squares (OLS)
-  + Learn about correlation/standardized regression
-  + Learn about regrression assumptions
-  + Learn about dummy coding for dichotomous/polychotomous predictors
-  + Learn about interaction effects
-- [Computational Toolkit for Educational Scientists](https://zief0002.github.io/toolkit-quarto/)
-  + Learn basics of R
-  + Learn `{dplyr}` for wrangling data
-  + Learn `{ggplot2}` for visualizing data
-  
+Students will complete nine homework assignments. The homework assignments and due dates will be posted on the [Assignments page of the course website](assignments.html). These assignments include problems that will help you learn the course material through reflection and practice. Submit each assignment as a PDF file via email to the TA.
+
+To foster cooperation and collaboration, you are permitted to form groups of no larger than three to work on the homework. Submit only one assignment per group, and list the names of each group member on the assignment. Each assignment will be scored and this score will be given to all individuals in the group. From past experience, student collaborations work most fluidly when everyone in the group has chosen the same grading option for the course (e.g., A/F, S/N, etc.).
+
+If you work alone on the assignments, you need to truly work alone. To protect against running afoul of the scholastic dishonesty policy, students working alone are not permitted to interact with any other student in regards to the assignment, including discussion, obtaining help, etc.
 
 <br />
 
