@@ -1,0 +1,44 @@
+---
+title: "riverview.csv"
+output: 
+  rmdformats::html_docco:
+    css: '../assets/codebooks.css'
+    df_print: paged
+    code_folding: show
+bibliography: '../assets/epsy8251.bib'
+csl: '../assets/apa-single-spaced.csl'
+---
+
+
+```{r knitr_init, include=FALSE}
+source("../assets/codebook-setup.R")
+```
+
+
+The data in [riverview.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/riverview.csv) come from @Lewis-Beck:2016 and contain five attributes collected from a random sample of $n=32$ employees working for the city of Riverview, a hypothetical midwestern city. The attributes include:
+
+- `education`: Years of formal education
+- `income`: Annual income (in thousands of U.S. dollars)
+- `seniority`: Years of seniority
+- `gender`: Employee's gender
+- `party`: Political party affiliation
+
+
+<br />
+
+
+### Preview
+
+```{r echo=TRUE, class.source = "fold-hide"}
+# Import Data
+city = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/riverview.csv")
+
+# View data
+city
+```
+
+<br />
+
+### References
+
+

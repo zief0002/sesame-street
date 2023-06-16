@@ -12,7 +12,6 @@ htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 
 ## Academic Freedom and Responsibility
 
-
 Academic freedom is a cornerstone of the University. Within the scope and content of the course as defined by the instructor, it includes the freedom to discuss relevant matters in the classroom. Along with this freedom comes responsibility. Students are encouraged to develop the capacity for critical judgment and to engage in a sustained and independent search for truth. Students are free to take reasoned exception to the views offered in any course of study and to reserve judgment about matters of opinion, but they are responsible for learning the content of any course of study for which they are enrolled.^[Language adapted from the American Association of University Professors “Joint Statement on Rights and Freedoms of Students”.] Reports of concerns about academic freedom are taken seriously, and there are individuals and offices available for help. Contact the instructor (Andrew Zieffler; [zief0002@umn.edu](mailto:zief0002@umn.edu)), the Department Chair (Kristen McMaster; [mcmas004@umn.edu](mailto:mcmas004@umn.edu)), your adviser, the associate dean of the college (Tabitha Grier-Reed; [grier001@umn.edu](mailto:grier001@umn.edu)), or the Vice Provost for Faculty and Academic Affairs in the Office of the Provost (Rebecca Ropers; [ropers@umn.edu](mailto:ropers@umn.edu)).
 
 <br />
@@ -76,9 +75,12 @@ One conventional credit is hereby defined as equivalent to three hours of learni
 <br />
 
 
-## Sexual Assault and Higher Education: Training Modules and Information
+## Sexual Harassment, Sexual Assault, Stalking and Relationship Violence
 
-The Department of Educational Psychology supports the efforts of the University of Minnesota towards prevention of sexual assault. We encourage all students to participate in the free online training that has been established for undergraduate students and graduate students. The training highlights pertinent issues regarding sexual assault, including, but not limited to: defining healthy relationships, consent, bystander intervention, and gender roles. The guide for the training in your My Training page is available at [https://it.umn.edu/training-guide-preventing-responding](https://it.umn.edu/training-guide-preventing-responding). Additionally, to learn more about how you can help reduce sexual assault at the University of Minnesota, please visit the [Aurora Center](https://aurora.umn.edu).
+The University prohibits sexual misconduct, and encourages anyone experiencing sexual misconduct to access resources for personal support and reporting. If you want to speak confidentially with someone about an experience of sexual misconduct, please contact your campus resources including the [Aurora Center](https://aurora.umn.edu), [Boynton Mental Health](https://boynton.umn.edu/services/mental-health) or [Student Counseling Services](https://counseling.umn.edu/) <https://eoaa.umn.edu/report-misconduct>. If you want to report sexual misconduct, or have questions about the University's policies and procedures related to sexual misconduct, please contact your campus Title IX office or relevant policy contacts.
+
+Instructors are required to share information they learn about possible sexual misconduct with the campus Title IX office that addresses these concerns. This allows a Title IX staff member to reach out to those who have experienced sexual misconduct to provide information about personal support resources and options for investigation. You may talk to instructors about concerns related to sexual misconduct, and they will provide support and keep the information you share private to the extent possible given their University role.
+<https://regents.umn.edu/sites/regents.umn.edu/files/2019-09/policy_sexual_harassment_sexual_assault_stalking_and_relationship_violence.pdf>
 
 <br />
 
