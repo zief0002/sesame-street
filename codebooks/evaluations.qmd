@@ -1,21 +1,24 @@
 ---
 title: "evaluations.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
+theme: "lumen"
+highlight-style: "atom-one"
 bibliography: '../assets/epsy8251.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/evaluations.csv) come from @Hamermesh:2005 and were made available by @Gelman:2007. This data were collected from student evaluations of instructors' beauty and teaching quality for several courses at the University of Texas. The teaching evaluations were conducted at the end of the semester, and the beauty judgments were made later, by six students who had not attended the classes and were not aware of the course evaluations. The variables are:
+The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv) come from @Hamermesh:2005 and were made available by @Gelman:2007. This data were collected from student evaluations of instructors' beauty and teaching quality for several courses at the University of Texas. The teaching evaluations were conducted at the end of the semester, and the beauty judgments were made later, by six students who had not attended the classes and were not aware of the course evaluations. The variables are:
 
 - `prof_id`: Professor ID number
 - `avg_eval`: Average course rating
@@ -34,9 +37,9 @@ The data in [evaluations.csv](https://raw.githubusercontent.com/zief0002/miniatu
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-evaluations = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/evaluations.csv")
+evaluations = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv")
 
 # View data
 evaluations

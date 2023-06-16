@@ -1,21 +1,24 @@
 ---
 title: "colleges-bordering-mn.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
-bibliography: '../assets/epsy8251.bib'
+theme: "lumen"
+highlight-style: "atom-one"
+bibliography: '../assets/epsy8252.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-The data in [colleges-bordering-mn.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/colleges-bordering-mn.csv) contains institutional data for 104 colleges and universities in the five state area (MN, IA, WI, ND, and SD). These data were collected by the Department of Education for the [2013 College Score Card](https://collegescorecard.ed.gov/). The variables are:
+The data in [colleges-bordering-mn.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/colleges-bordering-mn.csv) contains institutional data for 104 colleges and universities in the five state area (MN, IA, WI, ND, and SD). These data were collected by the Department of Education for the [2013 College Score Card](https://collegescorecard.ed.gov/). The variables are:
 
 - `name`: Name of college/university
 - `tuition_in_state`: In-state tuition and fees
@@ -34,9 +37,9 @@ The data in [colleges-bordering-mn.csv](https://raw.githubusercontent.com/zief00
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-colleges = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/colleges-bordering-mn.csv")
+colleges = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/colleges-bordering-mn.csv")
 
 # View data
 colleges

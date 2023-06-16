@@ -1,21 +1,24 @@
 ---
 title: "state-education.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
+theme: "lumen"
+highlight-style: "atom-one"
 bibliography: '../assets/epsy8251.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-This data, stored in [state-education.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/state-education.csv) includes state-level aggregate data on six attributes. The attributes, collected for all 50 states and the District of Columbia, are:
+This data, stored in [state-education.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv) includes state-level aggregate data on six attributes. The attributes, collected for all 50 states and the District of Columbia, are:
 
 - `state`: State name
 - `postal`: State postal code
@@ -36,9 +39,9 @@ Note: All of the SAT data is based on students in the class of 2020 who took the
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-state_educ = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/state-education.csv")
+state_educ = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv")
 
 # View data
 state_educ

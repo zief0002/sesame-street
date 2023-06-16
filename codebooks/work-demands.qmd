@@ -1,21 +1,24 @@
 ---
 title: "work-demands.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
+theme: "lumen"
+highlight-style: "atom-one"
 bibliography: '../assets/epsy8251.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-Research has documented the importance of a healthy work-life balance. The data in [work-demands.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/work-demands.csv) were simulated to mimic the effects of boundary-spanning work (receiving work-related contact outside of normal work hours) found in the literature on psychological outcomes. The variables in the data are:
+Research has documented the importance of a healthy work-life balance. The data in [work-demands.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/work-demands.csv) were simulated to mimic the effects of boundary-spanning work (receiving work-related contact outside of normal work hours) found in the literature on psychological outcomes. The variables in the data are:
 
 - `guilt`: Standardized measure of guilt (as a transitory affective state) related to home-life balance. This was measured using survey questions such as,  "In the past seven days, on how many  days  have  you  felt  guilty?" Higher values indicate more perceived guilt.
 - `bound_span_work`: Standardized measure of boundary-spanning work demands. Measured using survey items such as, "how  often  do  coworkers,  supervisors, managers, customers, or clients contact you about work-related  matters  outside  normal  work  hours?". Higher values indicate higher degrees of boundary-spanning work demands.
@@ -30,9 +33,9 @@ Research has documented the importance of a healthy work-life balance. The data 
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-work = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/work-demands.csv")
+work = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/work-demands.csv")
 
 # View data
 work

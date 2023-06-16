@@ -55,7 +55,7 @@ The data in [broadband.csv](https://raw.githubusercontent.com/zief0002/rustic-pe
 
 ```{r}
 # Import data
-broadband = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/broadband.csv")
+broadband = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv")
 
 # View data
 broadband

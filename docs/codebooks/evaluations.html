@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPsy 8251 - mn-schools.csv</title>
+<title>EPsy 8251 - evaluations.csv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -54,7 +54,26 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -95,8 +114,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 </head>
@@ -166,6 +183,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#preview" id="toc-preview" class="nav-link active" data-scroll-target="#preview">Preview</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -174,7 +192,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">mn-schools.csv</h1>
+<h1 class="title">evaluations.csv</h1>
 </div>
 
 
@@ -189,46 +207,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv">mnSchools.csv</a> were collected from <a href="http://www.collegeresults.org">http://www.collegeresults.org</a> and contain 2011 institutional data for <span class="math inline">\(n=33\)</span> Minnesota colleges and universities. The attributes include:</p>
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv">evaluations.csv</a> come from <span class="citation" data-cites="Hamermesh:2005">Hamermesh &amp; Parker (<a href="#ref-Hamermesh:2005" role="doc-biblioref">2005</a>)</span> and were made available by <span class="citation" data-cites="Gelman:2007">Gelman &amp; Hill (<a href="#ref-Gelman:2007" role="doc-biblioref">2007</a>)</span>. This data were collected from student evaluations of instructors’ beauty and teaching quality for several courses at the University of Texas. The teaching evaluations were conducted at the end of the semester, and the beauty judgments were made later, by six students who had not attended the classes and were not aware of the course evaluations. The variables are:</p>
 <ul>
-<li><code>name</code>: College/university name</li>
-<li><code>grad</code>: Six-year graduation rate (as a percentage)</li>
-<li><code>sector</code>: Educational sector (Public; Private)</li>
-<li><code>sat</code>: Estimated median composite SAT score (in hundreds)</li>
-<li><code>tuition</code>: Amount of tuition and required fees covering a full academic year for a typical student (in thousands of U.S. dollars)</li>
+<li><code>prof_id</code>: Professor ID number</li>
+<li><code>avg_eval</code>: Average course rating</li>
+<li><code>num_courses</code>: Number of courses for which the professor has evaluations</li>
+<li><code>num_students</code>: Number of students enrolled in the professor’s courses</li>
+<li><code>perc_evaluating</code>: Average percentage of enrolled students who completed an evaluation</li>
+<li><code>beauty</code>: Measure of the professor’s beauty composed of the average score on six standardized beauty ratings</li>
+<li><code>tenured</code>: Is the professor tenured? (0 = non-tenured; 1 = tenured)</li>
+<li><code>native_english</code>: Is the professor a native English speaker? (0 = non-native English speaker; 1 = native English speaker)</li>
+<li><code>age</code>: Professor’s age (in years)</li>
+<li><code>female</code>: Is the professor female? (0 = not female; 1 = female)</li>
 </ul>
 <p><br></p>
 <section id="preview" class="level3">
 <h3 class="anchored" data-anchor-id="preview">Preview</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>evaluations <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>evaluations</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 33 × 5
-   name                               grad sector    sat tuition
-   &lt;chr&gt;                             &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;
- 1 Augsburg College                   65.2 Private  1030    39.3
- 2 Bethany Lutheran College           52.6 Private  1065    30.5
- 3 Bethel University, Saint Paul, MN  73.3 Private  1145    39.4
- 4 Carleton College                   92.6 Private  1400    54.3
- 5 College of Saint Benedict          81.1 Private  1185    43.2
- 6 Concordia College at Moorhead      69.4 Private  1145    36.6
- 7 Concordia University-Saint Paul    47.9 Private   990    37.8
- 8 Crossroads College                 26.9 Private   970    25.3
- 9 Crown College                      51.3 Private  1030    33.2
-10 Gustavus Adolphus College          81.7 Private  1225    43.8
-# ℹ 23 more rows</code></pre>
+<pre><code># A tibble: 94 × 10
+   prof_id avg_eval num_courses num_students perc_evaluating  beauty tenured
+     &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;        &lt;dbl&gt;           &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt;
+ 1       1     4              4          416            62.0  0.202        0
+ 2       2     3.53           3          104            87.0 -0.826        1
+ 3       3     3.45           2          250            78.5 -0.660        1
+ 4       4     4.01           8          223            84.3 -0.766        1
+ 5       5     4.35           6          331            81.8  1.42         0
+ 6       6     4.44           7         1849            59.8  0.500        1
+ 7       7     3.84           5          191            81.8 -0.214        0
+ 8       8     4.03           7          174            84.6 -0.347        1
+ 9       9     4.26           7          303            73.0  0.0613       0
+10      10     4.56          10          191            82.1  0.453        0
+# ℹ 84 more rows
+# ℹ 3 more variables: native_english &lt;dbl&gt;, age &lt;dbl&gt;, female &lt;dbl&gt;</code></pre>
 </div>
 </div>
 <p><br></p>
+</section>
+<section id="references" class="level3">
+
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Gelman:2007" class="csl-entry" role="listitem">
+Gelman, A., &amp; Hill, J. (2007). <em>Data analysis using regression and multilevel/hierarchical models</em>. New York: Cambridge University Press.
+</div>
+<div id="ref-Hamermesh:2005" class="csl-entry" role="listitem">
+Hamermesh, D. S., &amp; Parker, A. M. (2005). Beauty in the classroom: Instructors’ pulchritude and putative pedagogical productivity. <em>Economics of Education Review</em>, <em>24</em>, 369–376.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

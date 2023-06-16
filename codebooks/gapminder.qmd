@@ -1,21 +1,24 @@
 ---
 title: "gapminder.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
-bibliography: '../assets/epsy8251.bib'
+theme: "lumen"
+highlight-style: "atom-one"
+bibliography: '../assets/epsy8252.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-The data in [gapminder.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/gapminder.csv) contains data on 6 attributes for 193 countries. These data, based on 2017 measures collected by World Bank, were compiled by [gapminder.org](https://www.gapminder.org/) and made available free under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/). The variables are:
+The data in [gapminder.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/gapminder.csv) contains data on 6 attributes for 193 countries. These data, based on 2017 measures collected by World Bank, were compiled by [gapminder.org](https://www.gapminder.org/) and made available free under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/). The variables are:
 
 - `country`: The name of the country
 - `region`: The world region (Africa, Americas, Asia, or Europe)
@@ -30,9 +33,9 @@ The data in [gapminder.csv](https://raw.githubusercontent.com/zief0002/miniature
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-gapminder = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/gapminder.csv")
+gapminder = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/gapminder.csv")
 
 # View data
 gapminder

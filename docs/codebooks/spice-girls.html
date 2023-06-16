@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPsy 8251 - mn-schools.csv</title>
+<title>EPsy 8251 - spice-girls.csv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,8 +95,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 </head>
@@ -174,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">mn-schools.csv</h1>
+<h1 class="title">spice-girls.csv</h1>
 </div>
 
 
@@ -189,38 +187,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv">mnSchools.csv</a> were collected from <a href="http://www.collegeresults.org">http://www.collegeresults.org</a> and contain 2011 institutional data for <span class="math inline">\(n=33\)</span> Minnesota colleges and universities. The attributes include:</p>
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/spice_girls.csv">spice-girls.csv</a> contain five attributes about the Spice Girls. The attributes include:</p>
 <ul>
-<li><code>name</code>: College/university name</li>
-<li><code>grad</code>: Six-year graduation rate (as a percentage)</li>
-<li><code>sector</code>: Educational sector (Public; Private)</li>
-<li><code>sat</code>: Estimated median composite SAT score (in hundreds)</li>
-<li><code>tuition</code>: Amount of tuition and required fees covering a full academic year for a typical student (in thousands of U.S. dollars)</li>
+<li><code>spice_name</code>: Nickname of the Spice Girl</li>
+<li><code>age</code>: Age the Spice Girl joined the band</li>
+<li><code>original_member</code>: Spice Girl was an original member (TRUE; FALSE)</li>
+<li><code>solo_nominations</code>: Number of award nominations as a solo artist</li>
+<li><code>real_name</code>: Real name of the Spice Girl</li>
 </ul>
 <p><br></p>
 <section id="preview" class="level3">
 <h3 class="anchored" data-anchor-id="preview">Preview</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>spice <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/spice_girls.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View Data</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>spice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 33 × 5
-   name                               grad sector    sat tuition
-   &lt;chr&gt;                             &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;
- 1 Augsburg College                   65.2 Private  1030    39.3
- 2 Bethany Lutheran College           52.6 Private  1065    30.5
- 3 Bethel University, Saint Paul, MN  73.3 Private  1145    39.4
- 4 Carleton College                   92.6 Private  1400    54.3
- 5 College of Saint Benedict          81.1 Private  1185    43.2
- 6 Concordia College at Moorhead      69.4 Private  1145    36.6
- 7 Concordia University-Saint Paul    47.9 Private   990    37.8
- 8 Crossroads College                 26.9 Private   970    25.3
- 9 Crown College                      51.3 Private  1030    33.2
-10 Gustavus Adolphus College          81.7 Private  1225    43.8
-# ℹ 23 more rows</code></pre>
+<pre><code># A tibble: 5 × 5
+  spice_name   age original_member solo_nominations real_name
+  &lt;chr&gt;      &lt;dbl&gt; &lt;lgl&gt;                      &lt;dbl&gt; &lt;chr&gt;    
+1 Scary         19 TRUE                           4 Mel B    
+2 Sporty        20 TRUE                          26 Mel C    
+3 Baby          18 FALSE                         14 Emma     
+4 Ginger        22 TRUE                          13 Geri     
+5 Posh          20 FALSE                         12 Victoria </code></pre>
 </div>
 </div>
 <p><br></p>

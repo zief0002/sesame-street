@@ -188,7 +188,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. The data in <a href="https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/data/fertility.csv">fertility.csv</a> were collected from several sources (e.g., World Bank) and are thought to correlate with fertility rates, a measure directly linked to population. The variables are:</p>
+<p>Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv">fertility.csv</a> were collected from several sources (e.g., World Bank) and are thought to correlate with fertility rates, a measure directly linked to population. The variables are:</p>
 <ul>
 <li><code>country</code>: Country name</li>
 <li><code>region</code>: Region of the world</li>
@@ -205,16 +205,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul></li>
 <li><code>high_gni</code>: Dummy variable indicating if the country is has an upper-middle or high income economy (low- or low/middle-income = 0; upper/middle or upper income = 1)</li>
 </ul>
+<p><br></p>
 <section id="preview" class="level3">
 <h3 class="anchored" data-anchor-id="preview">Preview</h3>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fertility <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/data/fertility.csv"</span>)</span>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>fertility <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>fertility</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 124 × 7
+<pre><code># A tibble: 124 × 8
    country      region fertility_rate educ_female infant_mortality contraceptive
    &lt;chr&gt;        &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;            &lt;dbl&gt;         &lt;dbl&gt;
  1 Albania      Europ…           1.49         9.1             15              46
@@ -228,9 +229,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  9 Belize       Latin…           3.08         9.2             15.7            51
 10 Benin        Sub-S…           5.13         2               58.5            16
 # ℹ 114 more rows
-# ℹ 1 more variable: gni_class &lt;chr&gt;</code></pre>
+# ℹ 2 more variables: gni_class &lt;chr&gt;, high_gni &lt;dbl&gt;</code></pre>
 </div>
 </div>
+<p><br></p>
 </section>
 <section id="references" class="level3">
 <h3 class="anchored" data-anchor-id="references">References</h3>

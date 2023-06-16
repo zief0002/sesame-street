@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPsy 8251 - mn-schools.csv</title>
+<title>EPsy 8251 - colleges-bordering-mn.csv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,8 +95,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 </head>
@@ -174,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">mn-schools.csv</h1>
+<h1 class="title">colleges-bordering-mn.csv</h1>
 </div>
 
 
@@ -189,38 +187,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv">mnSchools.csv</a> were collected from <a href="http://www.collegeresults.org">http://www.collegeresults.org</a> and contain 2011 institutional data for <span class="math inline">\(n=33\)</span> Minnesota colleges and universities. The attributes include:</p>
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/colleges-bordering-mn.csv">colleges-bordering-mn.csv</a> contains institutional data for 104 colleges and universities in the five state area (MN, IA, WI, ND, and SD). These data were collected by the Department of Education for the <a href="https://collegescorecard.ed.gov/">2013 College Score Card</a>. The variables are:</p>
 <ul>
-<li><code>name</code>: College/university name</li>
-<li><code>grad</code>: Six-year graduation rate (as a percentage)</li>
-<li><code>sector</code>: Educational sector (Public; Private)</li>
-<li><code>sat</code>: Estimated median composite SAT score (in hundreds)</li>
-<li><code>tuition</code>: Amount of tuition and required fees covering a full academic year for a typical student (in thousands of U.S. dollars)</li>
+<li><code>name</code>: Name of college/university</li>
+<li><code>tuition_in_state</code>: In-state tuition and fees</li>
+<li><code>tuition_out_state</code>: Out-of-state tuition and fees</li>
+<li><code>state</code>: State postal abbreviation (IA = Iowa, MN = Minnesota, ND = North Dakota, SD = South Dakota, WI = Wisconsin)</li>
+<li><code>public</code>: Dummy-coded variable indicating educational sector (1 = public school, 0 = private school)</li>
+<li><code>main</code>: Dummy-coded variable indicating whether the campus is the school’s main campus? (1 = yes, 0 = no)</li>
+<li><code>admission</code>: Admission rate</li>
+<li><code>act75</code>: 75th percentile of the ACT cumulative scores</li>
+<li><code>avg_fac_salary</code>: Average faculty salary (per month)</li>
+<li><code>completion</code>: Four-year completion rate for first-time, full-time students</li>
+<li><code>pct_pell</code>: Percentage of undergraduates who receive a Pell grant</li>
 </ul>
 <p><br></p>
 <section id="preview" class="level3">
 <h3 class="anchored" data-anchor-id="preview">Preview</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>colleges <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/colleges-bordering-mn.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>colleges</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 33 × 5
-   name                               grad sector    sat tuition
-   &lt;chr&gt;                             &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;
- 1 Augsburg College                   65.2 Private  1030    39.3
- 2 Bethany Lutheran College           52.6 Private  1065    30.5
- 3 Bethel University, Saint Paul, MN  73.3 Private  1145    39.4
- 4 Carleton College                   92.6 Private  1400    54.3
- 5 College of Saint Benedict          81.1 Private  1185    43.2
- 6 Concordia College at Moorhead      69.4 Private  1145    36.6
- 7 Concordia University-Saint Paul    47.9 Private   990    37.8
- 8 Crossroads College                 26.9 Private   970    25.3
- 9 Crown College                      51.3 Private  1030    33.2
-10 Gustavus Adolphus College          81.7 Private  1225    43.8
-# ℹ 23 more rows</code></pre>
+<pre><code># A tibble: 104 × 11
+   name    tuition_in_state tuition_out_state state public  main admission act75
+   &lt;chr&gt;              &lt;dbl&gt;             &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;     &lt;dbl&gt; &lt;dbl&gt;
+ 1 Buena …            29448             29448 IA         0     1     0.696    25
+ 2 Centra…            30700             30700 IA         0     1     0.658    26
+ 3 Clarke…            28000             28000 IA         0     1     0.775    25
+ 4 Coe Co…            35730             35730 IA         0     1     0.617    28
+ 5 Cornel…            36430             36430 IA         0     1     0.641    29
+ 6 Dordt …            26540             26540 IA         0     1     0.754    28
+ 7 Drake …            30889             30889 IA         0     1     0.660    30
+ 8 Univer…            25520             25520 IA         0     1     0.774    22
+ 9 Gracel…            23530             23530 IA         0     1     0.502    24
+10 Grand …            22628             22628 IA         0     1     0.954    23
+# ℹ 94 more rows
+# ℹ 3 more variables: avg_fac_salary &lt;dbl&gt;, completion &lt;dbl&gt;, pct_pell &lt;dbl&gt;</code></pre>
 </div>
 </div>
 <p><br></p>

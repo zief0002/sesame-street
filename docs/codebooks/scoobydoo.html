@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EPsy 8251 - mn-schools.csv</title>
+<title>EPsy 8251 - scoobydoo.csv</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,8 +95,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 </head>
@@ -174,7 +172,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">mn-schools.csv</h1>
+<h1 class="title">scoobydoo.csv</h1>
 </div>
 
 
@@ -189,41 +187,56 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv">mnSchools.csv</a> were collected from <a href="http://www.collegeresults.org">http://www.collegeresults.org</a> and contain 2011 institutional data for <span class="math inline">\(n=33\)</span> Minnesota colleges and universities. The attributes include:</p>
+<p>Scooby-Doo is a popular television and movie franchise in the United States which has been airing for over 50 years! <a href="https://scoobydoo.fandom.com/wiki/Scoobypedia">Scoobypedia</a> (an encyclopedia of the franchise) describes the show as follows:</p>
+<blockquote class="blockquote">
+<p>The show follows the iconic mystery solving detectives, know as Mystery Inc., as they set out to solve crime and unmask criminals, bent on revenge or committing criminal acts for their own personal gain.</p>
+</blockquote>
+<p>Mystery Inc.&nbsp;are an amateur crime-solving group of friends composed of Fred Jones (the team’s leader), Daphne Blake (fashionista and musician), Velma Dinkley (bespectacled resident genius), Shaggy Rogers (owner and best friend to Scooby-Doo), and Scooby-Doo (the talking dog mascot).</p>
+<p>The data in <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv">scoobydoo.csv</a> are a subset of data collected by <a href="https://www.kaggle.com/williamschooleman">plummye</a> who “[t]ook ~1 year to watch every Scooby-Doo iteration and track every variable.” There are 372 cases in the data.</p>
+<p>The variables are:</p>
 <ul>
-<li><code>name</code>: College/university name</li>
-<li><code>grad</code>: Six-year graduation rate (as a percentage)</li>
-<li><code>sector</code>: Educational sector (Public; Private)</li>
-<li><code>sat</code>: Estimated median composite SAT score (in hundreds)</li>
-<li><code>tuition</code>: Amount of tuition and required fees covering a full academic year for a typical student (in thousands of U.S. dollars)</li>
+<li><code>title</code>: Title of the episode or movie</li>
+<li><code>series_name</code>: Name of the series in which the episode takes place. For movies this is the grouping classification from Scoobypedia.</li>
+<li><code>date_aired</code>: Dated aired in United States.</li>
+<li><code>engagement</code>: Engagement measure based on the log-number of reviews on IMDb. Higher values indicate more engagement.</li>
+<li><code>caught_by</code>: Which Mystery Inc.&nbsp;members caught the villain
+<ul>
+<li><code>Fred/Daphne/Velma</code>: Villain caught by Fred Jones, Daphne Blake, Velma Dinkley, or some combination of these three Mystery Inc.&nbsp;members;</li>
+<li><code>Shaggy/Scooby</code>: Villain caught by either Shaggy Rogers, Scooby-Doo, or both;</li>
+<li><code>Combo</code>: Villain caught by a combination of the five Mystery Inc.&nbsp;members;</li>
+<li><code>Other</code>: Villain caught by non-Mystery Inc.&nbsp;member.</li>
+</ul></li>
+<li><code>imdb_rating</code>: Weighted average of all individual IMDb ratings (from 1 to 10)</li>
+<li><code>format</code>: Type of media (TV or Movie)</li>
+<li><code>catchphrase</code>: Number of times any catchphrase (e.g., zoinks, rooby rooby roo) was uttered in the episode or movie</li>
 </ul>
 <p><br></p>
 <section id="preview" class="level3">
 <h3 class="anchored" data-anchor-id="preview">Preview</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import Data</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>scoobydoo <span class="ot">=</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># View data</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>mn</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>scoobydoo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 33 × 5
-   name                               grad sector    sat tuition
-   &lt;chr&gt;                             &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt;
- 1 Augsburg College                   65.2 Private  1030    39.3
- 2 Bethany Lutheran College           52.6 Private  1065    30.5
- 3 Bethel University, Saint Paul, MN  73.3 Private  1145    39.4
- 4 Carleton College                   92.6 Private  1400    54.3
- 5 College of Saint Benedict          81.1 Private  1185    43.2
- 6 Concordia College at Moorhead      69.4 Private  1145    36.6
- 7 Concordia University-Saint Paul    47.9 Private   990    37.8
- 8 Crossroads College                 26.9 Private   970    25.3
- 9 Crown College                      51.3 Private  1030    33.2
-10 Gustavus Adolphus College          81.7 Private  1225    43.8
-# ℹ 23 more rows</code></pre>
+<pre><code># A tibble: 372 × 8
+   title          series_name date_aired engagement caught_by imdb_rating format
+   &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt; 
+ 1 What a Night … Scooby Doo… 9/13/69          6.32 Shaggy/S…         8.1 TV    
+ 2 A Clue for Sc… Scooby Doo… 9/20/69          6.17 Shaggy/S…         8.1 TV    
+ 3 Hassle in the… Scooby Doo… 9/27/69          6.12 Shaggy/S…         8   TV    
+ 4 Mine Your Own… Scooby Doo… 10/4/69          6.05 Fred/Dap…         7.8 TV    
+ 5 Decoy for a D… Scooby Doo… 10/11/69         5.97 Shaggy/S…         7.5 TV    
+ 6 What the Hex … Scooby Doo… 10/18/69         5.95 Fred/Dap…         8.4 TV    
+ 7 Never Ape an … Scooby Doo… 10/25/69         5.88 Fred/Dap…         7.6 TV    
+ 8 The Backstage… Scooby Doo… 11/8/69          5.92 Shaggy/S…         8.1 TV    
+ 9 Bedlam in the… Scooby Doo… 11/15/69         5.85 Shaggy/S…         8   TV    
+10 A Gaggle of G… Scooby Doo… 11/22/69         5.94 Shaggy/S…         8.5 TV    
+# ℹ 362 more rows
+# ℹ 1 more variable: catchphrase &lt;dbl&gt;</code></pre>
 </div>
 </div>
-<p><br></p>
 
 
 </section>

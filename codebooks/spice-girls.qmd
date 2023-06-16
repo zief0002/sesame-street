@@ -1,21 +1,24 @@
 ---
 title: "spice-girls.csv"
 output: 
-  rmdformats::html_docco:
+  html:
     css: '../assets/codebooks.css'
     df_print: paged
     code_folding: show
+theme: "lumen"
+highlight-style: "atom-one"
 bibliography: '../assets/epsy8251.bib'
 csl: '../assets/apa-single-spaced.csl'
 ---
 
 
-```{r knitr_init, include=FALSE}
+```{r}
+#| include: false
 source("../assets/codebook-setup.R")
 ```
 
 
-The data in [spice-girls.csv](https://raw.githubusercontent.com/zief0002/epsy-8251/main/data/spice_girls.csv) contain five attributes about the Spice Girls. The attributes include:
+The data in [spice-girls.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/spice_girls.csv) contain five attributes about the Spice Girls. The attributes include:
 
 - `spice_name`: Nickname of the Spice Girl
 - `age`: Age the Spice Girl joined the band
@@ -28,9 +31,9 @@ The data in [spice-girls.csv](https://raw.githubusercontent.com/zief0002/epsy-82
 
 ### Preview
 
-```{r echo=TRUE, class.source = "fold-hide"}
+```{r}
 # Import Data
-spice = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/epsy-8251/main/data/spice_girls.csv")
+spice = readr::read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/spice_girls.csv")
 
 # View Data
 spice
