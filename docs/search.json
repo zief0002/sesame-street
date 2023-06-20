@@ -417,7 +417,7 @@
     "href": "data.html",
     "title": "Data",
     "section": "",
-    "text": "Name\n\n\nData\n\n\nCodebook\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarbon.csv\n\n\n  \n\n\n  \n\n\n\n\nfertility.csv\n\n\n  \n\n\n  \n\n\n\n\ngraduation.csv\n\n\n  \n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmammals.csv\n\n\n\n\n\n\n\n\n\n\nminneapolis.csv\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmn-schools.csv\n\n\n  \n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnhl.csv\n\n\n  \n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nriverview.csv\n\n\n  \n\n\n  \n\n\n\n\nsame-sex-marriage.csv\n\n\n  \n\n\n  \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nvocabulary.csv\n\n\n  \n\n\n  \n\n\n\n\nwine.csv\n\n\n  \n\n\n  \n\n\n\n\nwoods.csv"
+    "text": "Below are the links to the data sets and data codebooks used in the notes, scripts, and assignments."
   },
   {
     "objectID": "index.html",
@@ -1461,5 +1461,12 @@
     "title": "Assignment 09",
     "section": "Model C",
     "text": "Model C\n\nWrite the fitted regression equation for Model C.\nBased on the inferential results from fitting this model, is there an interaction effect between number of catchphrases uttered and IMDb rating? Explain.\nCreate and include a plot of the fitted model showing the pertinent results from Model C. Be sure to appropriately differentiate between lines that you include in the plot (e.g., do not differentiate by color unless you plan to print in color). If you partial out any variables, be sure to note this in the caption.\nUse the plot you created in Question 11 to help interpret the interaction effect between number of catchphrases uttered and IMDb rating."
+  },
+  {
+    "objectID": "data.html#how-to-download-a-csv-file-to-your-computer",
+    "href": "data.html#how-to-download-a-csv-file-to-your-computer",
+    "title": "Data",
+    "section": "How to Download a CSV File to Your Computer",
+    "text": "How to Download a CSV File to Your Computer\nTo download a data (CSV) file, click on the data set. Then click the RAW button. Now you should be able to right-click the dataset and save it. If you are using Safari on a Mac, make sure that the downloaded data does not have an extra .txt appended to it when it downloads. If it does, just delete the extra .txt suffix."
   }
 ]
