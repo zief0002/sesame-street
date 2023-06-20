@@ -89,6 +89,13 @@ If you work alone on the assignments, you need to truly work alone. To protect a
 <br />
 
 
+## ChatGPT and Other AI
+
+Artificial intelligence (AI) language models, such as ChatGPT, may be used to help you write R syntax with appropriate citation, but not for answering any of the questions on the assignment. If you are in doubt as to whether you are using AI language models appropriately in this course, I encourage you to discuss your situation with me or the TA. Examples of citing AI language models are available at: <https://libguides.umn.edu/chatgpt>. You are responsible for ensuring any syntax composed by AI is correct.
+
+<br />
+
+
 :::absence
 ### Policy for Missing Class and Making up Missed/Late Work
 
