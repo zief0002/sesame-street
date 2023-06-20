@@ -1,17 +1,18 @@
 ---
 title: "Using RStudio Worksheet"
-author: "Breakout Group"
-date: "`r Sys.Date()`"
-output:
-  prettydoc::html_pretty:
-    theme: lumen
-    highlight: github
+author: "Small Group"
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
 ---
 
 
 ## Directions
 
 Complete the problems on this worksheet with 2--3 other students. You may want to refer to the *Getting Started with R* and *Data Structures in R* chapters in the [Computational Toolkit for Educational Scientists](https://zief0002.github.io/toolkit-quarto).
+
+<br />
 
 
 ## Problem Set I
@@ -39,9 +40,10 @@ Use R to compute the answer to the following problems. You can (for now) work in
 
 10. Install the **educate** package from GitHub. 
 
+<br />
 
 
-# Problem Set II
+## Problem Set II
 
 Use R to compute the answer to the following problems. For these problems, please work in a script file. This problem set will focus on skills and ideas you learn in [Data Structures in R](https://zief0002.github.io/toolkit-quarto/04-data-structures-in-r.html).
 
@@ -52,14 +54,16 @@ Use R to compute the answer to the following problems. For these problems, pleas
 
 13. Create a data frame that includes two columns. The first column will be the first names of everyone in your group (or combined groups). Call this column `first_name`. The second column will be the number of credits each person in your breakout room is taking this semester. Call this column `credits`. Assign this data frame a name so that you can compute on it later. (Feel free to make it a three column data frame by adding the `pets` column.)
 
+<br />
 
-# Problem Set III
+
+## Problem Set III
 
 Use R to compute the answer to the following problems. For these problems, please continue to work in the script file. This problem set will focus on skills and ideas you learn in [Data Structures in R](https://zief0002.github.io/toolkit-quarto/04-data-structures-in-r.html).
 
-14. Import the [comic-characters.csv](https://raw.githubusercontent.com/zief0002/miniature-garbanzo/main/data/comic-characters.csv) data into R. Assign this to an object called `comics`. If you use the `Import` button to do this, make sure you copy the syntax into your script file.
+14. Import the [comic-characters.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/comic-characters.csv) data into R. Assign this to an object called `comics`. If you use the `Import` button to do this, make sure you copy the syntax into your script file.
 
-15. Examine the [codebook for the comic-characters.csv data](https://zief0002.github.io/miniature-garbanzo/codebooks/comic-characters.html). 
+15. Examine the [codebook for the comic-characters.csv data](https://zief0002.github.io/rustic-penguin/codebooks/comic-characters.html). 
 
 16. Run the syntax `View(comics)`. This should display the imported data in a tab in RStudio. Use the search bar in the tab to search for "Hobgoblin". How many Hobgoblin characters are there?
 

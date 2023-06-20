@@ -1468,5 +1468,250 @@
     "title": "Data",
     "section": "How to Download a CSV File to Your Computer",
     "text": "How to Download a CSV File to Your Computer\nTo download a data (CSV) file, click on the data set. Then click the RAW button. Now you should be able to right-click the dataset and save it. If you are using Safari on a Mac, make sure that the downloaded data does not have an extra .txt appended to it when it downloads. If it does, just delete the extra .txt suffix."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-using-R.html",
+    "href": "worksheets/worksheet-01-using-R.html",
+    "title": "Using RStudio Worksheet",
+    "section": "",
+    "text": "Complete the problems on this worksheet with 2–3 other students. You may want to refer to the Getting Started with R and Data Structures in R chapters in the Computational Toolkit for Educational Scientists."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-using-R.html#directions",
+    "href": "worksheets/worksheet-01-using-R.html#directions",
+    "title": "Using RStudio Worksheet",
+    "section": "",
+    "text": "Complete the problems on this worksheet with 2–3 other students. You may want to refer to the Getting Started with R and Data Structures in R chapters in the Computational Toolkit for Educational Scientists."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-using-R.html#problem-set-i",
+    "href": "worksheets/worksheet-01-using-R.html#problem-set-i",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set I",
+    "text": "Problem Set I\nUse R to compute the answer to the following problems. You can (for now) work in the console or use a script file. This problem set will focus on skills and ideas you learn in the section Getting Started with R.\n\nCompute: \\(2 + 3 \\times 5\\). Does R follow order of operations or not?\nCompute: \\((3 \\times5^2 \\div 15)-(5-2^2)\\)\nCompute: \\(\\sqrt{~\\left\\vert3-4\\right\\vert~}\\)\nCreate a sequence of the numbers 1 and 5. Store this in an object called one_five.\nCreate a sequence of all integers between 10 and 1. This sequence should begin at 10 and end at 1. (e.g., \\(10,9,8,7,\\ldots,1\\)). Store this in an object called my_num.\nUse the length() function to count the number of elements in the one_five object. Also use it to count the number of elements in my_num.\nCompute \\(\\mathtt{one\\_five}+\\mathtt{my\\_num}\\). Explain how R is using the two objects to obtain the result it did.\nInstall the following three packages from CRAN: dplyr, ggplot2 and remotes.\nLoad the remotes package.\nInstall the educate package from GitHub."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-using-R.html#problem-set-ii",
+    "href": "worksheets/worksheet-01-using-R.html#problem-set-ii",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set II",
+    "text": "Problem Set II\nUse R to compute the answer to the following problems. For these problems, please work in a script file. This problem set will focus on skills and ideas you learn in Data Structures in R.\n\nCreate a new script file. Save it on your computer. When you do this give it a name other than Untitled.\nUse the c() function to create a vector that includes the number of pets each person in your group has. Name this vector pets. (If you have 2 or fewer people in your group, combine your results with another group so that you have at least 3 values.)\nCreate a data frame that includes two columns. The first column will be the first names of everyone in your group (or combined groups). Call this column first_name. The second column will be the number of credits each person in your breakout room is taking this semester. Call this column credits. Assign this data frame a name so that you can compute on it later. (Feel free to make it a three column data frame by adding the pets column.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-using-R.html#problem-set-iii",
+    "href": "worksheets/worksheet-01-using-R.html#problem-set-iii",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set III",
+    "text": "Problem Set III\nUse R to compute the answer to the following problems. For these problems, please continue to work in the script file. This problem set will focus on skills and ideas you learn in Data Structures in R.\n\nImport the comic-characters.csv data into R. Assign this to an object called comics. If you use the Import button to do this, make sure you copy the syntax into your script file.\nExamine the codebook for the comic-characters.csv data.\nRun the syntax View(comics). This should display the imported data in a tab in RStudio. Use the search bar in the tab to search for “Hobgoblin”. How many Hobgoblin characters are there?\nUse the search bar in the tab to search for “Skrull”. How many Skrull characters are female? (Hint: Click the arrows in the sex heading to sort by sex.) How many Skrull characters have brown eyes? What years were Skrull characters part of the Marvel storyline?\nRun the syntax mean(appearances). You should get an error. Try to figure out why you are getting this error. (Hint: Look at the objects in your environment.) Can you figure out the syntax to find the average number of appearances for a comic character? (Hint: Because there are missing values in this column, you will need to add the argument na.rm=TRUE in the mean() function.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html",
+    "href": "worksheets/worksheet-02-learning-dplyr.html",
+    "title": "Learning dplyr Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nData Wrangling with dplyr\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#directions",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#directions",
+    "title": "Learning dplyr Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nData Wrangling with dplyr\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-1-import-data",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-1-import-data",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 1: Import Data",
+    "text": "Task 1: Import Data\nImport the comic-characters.csv data into an object named comics. Also, examine the data codebook so you are familiar with the different variables."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-2-arranging",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-2-arranging",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 2: Arranging",
+    "text": "Task 2: Arranging\nUse the arrange() function to determine whether Marvel and DC introduced LGBTQ characters around the same time, or whether one company was more progressive?"
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-3-more-arranging",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-3-more-arranging",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 3: More Arranging",
+    "text": "Task 3: More Arranging\nUse the arrange() function to determine the first appearance of an LGBTQ female character in DC comics."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-4-filtering-rows",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-4-filtering-rows",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 4: Filtering Rows",
+    "text": "Task 4: Filtering Rows\nUse the filter() function and nrow() to determine the percentage of female comic characters."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-5-more-filtering",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-5-more-filtering",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 5: More Filtering",
+    "text": "Task 5: More Filtering\nUse the filter() function and nrow() to determine the percentage of LGBTQ comic characters introduced in 1970 or later. Based on the result is there evidence that the Pride Movement may have had an impact on LGBTQ representation?"
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-6-selecting-columns",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-6-selecting-columns",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 6: Selecting Columns",
+    "text": "Task 6: Selecting Columns\nThe Selecting a Subset of Columns section of Data Wrangling with dplyr included syntax for selecting a subset of data and exporting it to a directory on your computer. Modify the syntax to export a CSV of the LGBTQ character data to the desktop on your computer.\nAlso try modifying the syntax to export the CSV file to another folder/directory on your computer."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-7-mutating-columns",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-7-mutating-columns",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 7: Mutating Columns",
+    "text": "Task 7: Mutating Columns\nCreate a new column called first_appearance_pride that indicates how many years before or after the Pride Movement (1970) the character’s first appearance happened. For example a character that first appeared in 1980 would have a value of 10, and a character that first appeared in 1968 would have a value of -2. Assign the data that includes this column into an object called comics2."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-learning-dplyr.html#task-8-grouping-and-summarizing",
+    "href": "worksheets/worksheet-02-learning-dplyr.html#task-8-grouping-and-summarizing",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 8: Grouping and Summarizing",
+    "text": "Task 8: Grouping and Summarizing\nModify the syntax in the Computations on Groups section of Data Wrangling with dplyr to determine the average number of appearances for both DC and Marvel LGBTQ and non-LGBTQ characters (as well as the standard deviation and sample size) before and after the Pride Movement."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html",
+    "href": "worksheets/worksheet-03-ggplot2.html",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nVisualizing Data with ggplot2\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#directions",
+    "href": "worksheets/worksheet-03-ggplot2.html#directions",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nVisualizing Data with ggplot2\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-1-import-data",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-1-import-data",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 1: Import Data",
+    "text": "Task 1: Import Data\nImport the riverview.csv data into an object named city. Also, examine the data codebook so you are familiar with the different attributes."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-2-sketch",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-2-sketch",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 2: Sketch",
+    "text": "Task 2: Sketch\nMake a rough sketch of the plot you think this syntax will produce. Try not to run the syntax until you create a sketch. After you have created your rough sketch, run the syntax to check your work.\n\nggplot(data = city, aes(x = education, y = income)) +\n  geom_point() +\n  xlab(\"Education level (in years)\") +\n  ylab(\"Annual income (in U.S. dollars)\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-3-mimic-a-plot",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-3-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 3: Mimic a Plot",
+    "text": "Task 3: Mimic a Plot\nWrite syntax to create the following plot, which was created using the city (riverview) data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line. (Hint: If you want to be exact, use Tin Eye Lab’s Color Extraction tool to extract the hex codes for the color.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-4-export-a-plot-and-import-it-into-a-document",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-4-export-a-plot-and-import-it-into-a-document",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 4: Export a Plot and Import it into a Document",
+    "text": "Task 4: Export a Plot and Import it into a Document\nExport the plot you created in Task 3 as a PNG file. Be sure the aspect ratio of the plot is reasonable (the plot is not scrunched or stretched). Import the exported PNG file into a word-processed document. Re-size the plot so that it is not taking up excess space in the document, and also still readable. Add a figure number and caption to your plot."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-5-mimic-a-plot",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-5-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 5: Mimic a Plot",
+    "text": "Task 5: Mimic a Plot\nWrite syntax to create the following plot, which was created using the city (riverview) data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-6-mimic-a-plot",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-6-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 6: Mimic a Plot",
+    "text": "Task 6: Mimic a Plot\nWrite syntax to create the following plot, which was created using the gapminder.csv data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line.\n\n\n\n\n\nLife expectancy versus per-peron income for 193 countries."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-ggplot2.html#task-7-add-text-to-label-a-point",
+    "href": "worksheets/worksheet-03-ggplot2.html#task-7-add-text-to-label-a-point",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 7: Add Text to Label a Point",
+    "text": "Task 7: Add Text to Label a Point\nAdd text to the plot you created in Task 6 to label the country with the highest life expectancy."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-z-scores.html",
+    "href": "worksheets/worksheet-04-z-scores.html",
+    "title": "z-Scores",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your break out group. You will have no more than 20 minutes."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-z-scores.html#directions",
+    "href": "worksheets/worksheet-04-z-scores.html#directions",
+    "title": "z-Scores",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your break out group. You will have no more than 20 minutes."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-z-scores.html#problem-set-i",
+    "href": "worksheets/worksheet-04-z-scores.html#problem-set-i",
+    "title": "z-Scores",
+    "section": "Problem Set I",
+    "text": "Problem Set I\nConsider the distribution of the following six observations: \\(X = \\{1, 2, 2,3,4,12\\}\\).\n\nPlot these values. (Don’t bother using R, just create a dot plot by hand.)\nDescribe the shape of the distribution.\nCompute the mean of the distribution. (You can enter these observation into R using the c() function.)\nCompute the standard deviation of the distribution."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-interactions.html",
+    "href": "worksheets/worksheet-05-interactions.html",
+    "title": "Interactions",
+    "section": "",
+    "text": "Use the fertility.csv data to fit an interaction model that uses the effects of female education level and the dummy-coded GNI predictor (high_gni) to explain variation in infant mortality rates. Remember, to fit an interaction model you need to create the interaction term and then include the constituent main effects AND the interaction term in the lm()."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-interactions.html#directions",
+    "href": "worksheets/worksheet-05-interactions.html#directions",
+    "title": "Interactions",
+    "section": "",
+    "text": "Use the fertility.csv data to fit an interaction model that uses the effects of female education level and the dummy-coded GNI predictor (high_gni) to explain variation in infant mortality rates. Remember, to fit an interaction model you need to create the interaction term and then include the constituent main effects AND the interaction term in the lm()."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-interactions.html#questions",
+    "href": "worksheets/worksheet-05-interactions.html#questions",
+    "title": "Interactions",
+    "section": "Questions",
+    "text": "Questions\n\nFit the interaction model and write out the fitted equation.\nGive a general interpretation about what it means to have an interaction effect between female education level and GNI on infant mortality rates. (No need to look at any output for this.)\nBased on the coefficient-level output, is there an interaction effect between female education level and GNI on infant mortality rates?\nWrite out the fitted equation for low GNI countries.\nWrite out the fitted equation for high GNI countries.\nPlot the two fitted equations.\nIs this an ordinal or disordinal interaction? Explain.\nUse the plot and the coefficient estimates to add to the general interpretation of the interaction effect you gave previously in Question 3. You should be able to give a more nuanced interpretation, including quantifying some findings.\nRemember that every interaction can be interpreted in two manners. You gave one of those interpretations in Question 3 (and 8). What is another way we can interpret the interaction effect between female education level and GNI on infant mortality rates."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-multiple-regression.html",
+    "href": "worksheets/worksheet-05-multiple-regression.html",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your small group. Import the mn-schools.csv data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-multiple-regression.html#directions",
+    "href": "worksheets/worksheet-05-multiple-regression.html#directions",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your small group. Import the mn-schools.csv data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition."
+  },
+  {
+    "objectID": "worksheets/worksheet-05-multiple-regression.html#questions",
+    "href": "worksheets/worksheet-05-multiple-regression.html#questions",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "Questions",
+    "text": "Questions\n\nWrite the fitted equation.\nInterpret both effects in the model.\nCreate a plot to show the effects. Put SAT score on the x-axis and display lines corresponding to an “inexpensive” and an “expensive” school. (Use the data to choose those values.)\n\nMake sure the lines are displayed in different colors and linetypes;\nPlay around with labelling the lines using text in the plot; Google geom_text() for help.\n\nExplain how we can use the plot to interpret the effect of SAT.\nExplain how we can use the plot to interpret the effect of tuition.\nCreate the same plot, but this time separate the “inexpensive” and “expensive” schools into separate panels (i.e., create a diptych plot.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-06-multiple-comparisons.html",
+    "href": "worksheets/worksheet-06-multiple-comparisons.html",
+    "title": "Hospitalizations and Astrological Sign",
+    "section": "",
+    "text": "Discuss the following study with your group. Do you believe the findings? Why or why not?\n\nMethods\nA study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (\\(p=.0108\\)).\nThe p-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1."
+  },
+  {
+    "objectID": "worksheets/worksheet-06-multiple-comparisons.html#directions",
+    "href": "worksheets/worksheet-06-multiple-comparisons.html#directions",
+    "title": "Hospitalizations and Astrological Sign",
+    "section": "",
+    "text": "Discuss the following study with your group. Do you believe the findings? Why or why not?\n\nMethods\nA study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (\\(p=.0108\\)).\nThe p-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1."
   }
 ]

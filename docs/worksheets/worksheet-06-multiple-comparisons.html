@@ -9,7 +9,7 @@
 <meta name="author" content="Small Group">
 <meta name="dcterms.date" content="2023-06-20">
 
-<title>EPsy 8251 - Learning dplyr Worksheet</title>
+<title>EPsy 8251 - Hospitalizations and Astrological Sign</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -63,6 +63,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 </head>
@@ -129,14 +131,6 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#directions" id="toc-directions" class="nav-link active" data-scroll-target="#directions">Directions</a></li>
-  <li><a href="#task-1-import-data" id="toc-task-1-import-data" class="nav-link" data-scroll-target="#task-1-import-data">Task 1: Import Data</a></li>
-  <li><a href="#task-2-arranging" id="toc-task-2-arranging" class="nav-link" data-scroll-target="#task-2-arranging">Task 2: Arranging</a></li>
-  <li><a href="#task-3-more-arranging" id="toc-task-3-more-arranging" class="nav-link" data-scroll-target="#task-3-more-arranging">Task 3: More Arranging</a></li>
-  <li><a href="#task-4-filtering-rows" id="toc-task-4-filtering-rows" class="nav-link" data-scroll-target="#task-4-filtering-rows">Task 4: Filtering Rows</a></li>
-  <li><a href="#task-5-more-filtering" id="toc-task-5-more-filtering" class="nav-link" data-scroll-target="#task-5-more-filtering">Task 5: More Filtering</a></li>
-  <li><a href="#task-6-selecting-columns" id="toc-task-6-selecting-columns" class="nav-link" data-scroll-target="#task-6-selecting-columns">Task 6: Selecting Columns</a></li>
-  <li><a href="#task-7-mutating-columns" id="toc-task-7-mutating-columns" class="nav-link" data-scroll-target="#task-7-mutating-columns">Task 7: Mutating Columns</a></li>
-  <li><a href="#task-8-grouping-and-summarizing" id="toc-task-8-grouping-and-summarizing" class="nav-link" data-scroll-target="#task-8-grouping-and-summarizing">Task 8: Grouping and Summarizing</a></li>
   </ul>
 </nav>
     </div>
@@ -145,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Learning dplyr Worksheet</h1>
+<h1 class="title">Hospitalizations and Astrological Sign</h1>
 </div>
 
 
@@ -174,58 +168,16 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="directions" class="level2">
 <h2 class="anchored" data-anchor-id="directions">Directions</h2>
-<p>Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:</p>
-<ul>
-<li><a href="https://zief0002.github.io/toolkit-quarto/05-data-wrangling-with-dplyr.html">Data Wrangling with dplyr</a></li>
-</ul>
-<p>As part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:</p>
-<ul>
-<li>Include comments</li>
-<li>Include spaces</li>
-<li>Include a line break after every pipe operator you use.</li>
-</ul>
-<p>You can check in with Andy or the TA at the completion of each task to check your work.</p>
+<p>Discuss the following study with your group. Do you believe the findings? Why or why not?</p>
 <p><br></p>
-</section>
-<section id="task-1-import-data" class="level2">
-<h2 class="anchored" data-anchor-id="task-1-import-data">Task 1: Import Data</h2>
-<p>Import the <a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/comic-characters.csv">comic-characters.csv</a> data into an object named <code>comics</code>. Also, examine the <a href="https://zief0002.github.io/rustic-penguin/codebooks/comic-characters.html">data codebook</a> so you are familiar with the different variables.</p>
-<p><br></p>
-</section>
-<section id="task-2-arranging" class="level2">
-<h2 class="anchored" data-anchor-id="task-2-arranging">Task 2: Arranging</h2>
-<p>Use the <code>arrange()</code> function to determine whether Marvel and DC introduced LGBTQ characters around the same time, or whether one company was more progressive?</p>
-<p><br></p>
-</section>
-<section id="task-3-more-arranging" class="level2">
-<h2 class="anchored" data-anchor-id="task-3-more-arranging">Task 3: More Arranging</h2>
-<p>Use the <code>arrange()</code> function to determine the first appearance of an LGBTQ female character in DC comics.</p>
-<p><br></p>
-</section>
-<section id="task-4-filtering-rows" class="level2">
-<h2 class="anchored" data-anchor-id="task-4-filtering-rows">Task 4: Filtering Rows</h2>
-<p>Use the <code>filter()</code> function and <code>nrow()</code> to determine the percentage of female comic characters.</p>
-<p><br></p>
-</section>
-<section id="task-5-more-filtering" class="level2">
-<h2 class="anchored" data-anchor-id="task-5-more-filtering">Task 5: More Filtering</h2>
-<p>Use the <code>filter()</code> function and <code>nrow()</code> to determine the percentage of LGBTQ comic characters introduced in 1970 or later. Based on the result is there evidence that the Pride Movement may have had an impact on LGBTQ representation?</p>
-<p><br></p>
-</section>
-<section id="task-6-selecting-columns" class="level2">
-<h2 class="anchored" data-anchor-id="task-6-selecting-columns">Task 6: Selecting Columns</h2>
-<p>The <a href="https://zief0002.github.io/toolkit-quarto/05-data-wrangling-with-dplyr.html#selecting-a-subset-of-columns">Selecting a Subset of Columns</a> section of <em>Data Wrangling with dplyr</em> included syntax for selecting a subset of data and exporting it to a directory on your computer. Modify the syntax to export a CSV of the LGBTQ character data to the desktop on your computer.</p>
-<p>Also try modifying the syntax to export the CSV file to another folder/directory on your computer.</p>
-<p><br></p>
-</section>
-<section id="task-7-mutating-columns" class="level2">
-<h2 class="anchored" data-anchor-id="task-7-mutating-columns">Task 7: Mutating Columns</h2>
-<p>Create a new column called <code>first_appearance_pride</code> that indicates how many years before or after the Pride Movement (1970) the character’s first appearance happened. For example a character that first appeared in 1980 would have a value of 10, and a character that first appeared in 1968 would have a value of -2. Assign the data that includes this column into an object called <code>comics2</code>.</p>
-<p><br></p>
-</section>
-<section id="task-8-grouping-and-summarizing" class="level2">
-<h2 class="anchored" data-anchor-id="task-8-grouping-and-summarizing">Task 8: Grouping and Summarizing</h2>
-<p>Modify the syntax in the <a href="https://zief0002.github.io/toolkit-quarto/05-data-wrangling-with-dplyr.html#computations-on-groups">Computations on Groups</a> section of <em>Data Wrangling with dplyr</em> to determine the average number of appearances for both DC and Marvel LGBTQ and non-LGBTQ characters (as well as the standard deviation and sample size) before and after the Pride Movement.</p>
+<p><strong>Methods</strong></p>
+<p>A study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (<span class="math inline">\(p=.0108\)</span>).</p>
+<p>The <em>p</em>-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="../img/worksheet-06-table-01.png" class="img-fluid" width="823"></p>
+</div>
+</div>
 <p><br></p>
 
 

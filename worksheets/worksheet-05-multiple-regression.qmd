@@ -1,26 +1,20 @@
 ---
 title: "Displaying Effects from a Multiple Regression Model"
-author: "Breakout Group"
-date: "November 04, 2020"
-output:
-  prettydoc::html_pretty:
-    theme: lumen
-    highlight: github
+author: "Small Group"
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
 ---
-
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
 
 ## Directions
 
-Complete the problems on this worksheet with your break out group.
-
+Complete the problems on this worksheet with your small group. Import the [mn-schools.csv](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/mn-schools.csv) data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition.
 
 <br />
 
-Open the *mn-schools.csv* data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition.
 
+## Questions
 
 1. Write the fitted equation.
 
@@ -37,5 +31,5 @@ Open the *mn-schools.csv* data and fit a model to explain variation in graduatio
 
 6. Create the same plot, but this time separate the "inexpensive" and "expensive" schools into separate panels (i.e., create a diptych plot.)
 
-
+<br />
 

@@ -1,20 +1,21 @@
 ---
-title: "Using RStudio Worksheet"
-author: "Breakout Group"
-date: "September 10, 2020"
-output:
-  prettydoc::html_pretty:
-    theme: lumen
-    highlight: github
+title: "z-Scores"
+author: "Small Group"
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
 ---
 
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
+<!-- <script type="text/javascript" async -->
+<!--   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> -->
+<!-- </script> -->
 
 ## Directions
 
 Complete the problems on this worksheet with your break out group. You will have no more than 20 minutes.
+
+<br />
 
 
 ## Problem Set I
@@ -26,11 +27,11 @@ Consider the distribution of the following six observations: $X = \{1, 2, 2,3,4,
 
 2. Describe the shape of the distribution.
 
-3. Compute the mean of the distribution.
+3. Compute the mean of the distribution. (You can enter these observation into R using the `c()` function.)
 
 4. Compute the standard deviation of the distribution.
 
-
+<br />
 
 
 # Problem Set II
@@ -46,7 +47,7 @@ Mean center the values of $X$ by subtracting the mean from each observation.
 
 8. Compute the standard deviation of the distribution.
 
-
+<br />
 
 
 # Problem Set III
@@ -60,4 +61,7 @@ Standardize the values of $X$ (create $z$-scores) by subtracting the mean from e
 7. Compute the mean of the distribution.
 
 8. Compute the standard deviation of the distribution.
+
+
+<br />
 
