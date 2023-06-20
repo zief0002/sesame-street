@@ -5,583 +5,470 @@ title: "Calendar"
 
 The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor's discretion.
 
+As part of the course, there are several articles, papers and technical reports that you will need to read during the semester. Most of the articles themselves are accessible through the University of Minnesota library website (http://www.lib.umn.edu). In order to access the full text of some of the articles, you will need to log in using your University x500 username and password. More detailed information, including references or links to specific readings, are linked under the day's "Reading".
+
 <br /><br />
 
 
 <br />
 
+
 <table class="table">
 
 <thead>
 <tr>
-<th style="width:8%;"></th>
-<th style="width:8%;">T/R</th>
-<th style="width:8%;">M/W</th>
-<th style="width:8%;text-align:center">Prep</th>
-<th style="width:40%;">Topic</th>
-<th style="width:8%;text-align:center">Notes</th>
-<th style="width:8%;text-align:center">QMD</th>
-<th style="width:8%;text-align:center">Script</th>
+<th style="width:10%;text-align:center"></th>
+<th style="width:10%;">Date</th>
+<th style="width:10%;text-align:center">Reading</th>
+<th style="width:50%;">Topic</th>
+<th style="width:10%;text-align:center">Notes</th>
+<th style="width:10%;text-align:center">Script</th>
 </tr>
 </thead>
 
+<!-- <thead> -->
+<!-- <tr> -->
+<!-- <th style="width:10%;text-align:center"></th> -->
+<!-- <th style="width:10%;">T/R</th> -->
+<!-- <th style="width:10%;">M/W</th> -->
+<!-- <th style="width:10%;text-align:center">Reading</th> -->
+<!-- <th style="width:40%;">Topic</th> -->
+<!-- <th style="width:10%;text-align:center">Notes</th> -->
+<!-- <th style="width:10%;text-align:center">Script</th> -->
+<!-- </tr> -->
+<!-- </thead> -->
+
 <tbody>
 
-
-<!-- <span style="margin-left:5px; color:#5a067d;font-size:12px;">*[Updated script file and notes 02-06-2020]*</span> -->
-
-<!-- ---------------------------------- -->
-<!-- Unit 00: Welcome                   -->
-<!-- ---------------------------------- -->
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Jan. 17</td>
-<td>Jan. 18</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/01-welcome-to-8252.html)
-</td>
-<td rowspan="2">Welcome to Epsy 8252/Regression Review</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-file-pdf" style="font-size: 17px;"></span>](files/01-regression-review.pdf)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   <span class="fab fa-markdown" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/01-regression-review.R)
-</td>
-</tr>
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Jan. 19</td>
-<td>Jan. 23</td>
-</tr>
-
-
-<!-- ---------------------------------- -->
-<!-- Unit 01: Introduction to Quarto    -->
-<!-- ---------------------------------- -->
-
-<tr>
-<td colspan="8"><b>Unit 01: Introduction to Quarto</b></td>
-</tr>
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Jan. 24</td>
-<td>Jan. 25</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/02-project-organization.html)
-</td>
-<td style="vertical-align:middle;">Project Organization</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/02-project-organization.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/02-project-organization.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-code" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-</tr>
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Jan. 26</td>
-<td>Jan. 30</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/03-introduction-to-quarto.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">Introduction to Quarto</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/03-introduction-to-quarto.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/03-introduction-to-quarto.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  <span class="fa fa-code" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-</tr>
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Jan. 31</td>
-<td>Feb. 01</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td></td>
-<td></td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">More Quarto (Citations, Etc.)</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/03-more-quarto.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/03-more-quarto.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-code" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td></td>
-<td></td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">Creating Tables with `{gt}` <br /><span style="margin-left:5px; color:#5a067d;font-size:12px;">*[Updated 02-13-2023]*</span></td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/03-creating-tables.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/03-creating-tables.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-code" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-</tr>
-
-
-
-<!-- ------------------------------------- -->
-<!-- Unit 02: Model Selection and Evidence -->
-<!-- ------------------------------------- -->
-
-<tr>
-<td colspan="8"><b>Unit 02: Model Selection and Evidence</b></td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 02</td>
-<td>Feb. 06</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/04-probability-distributions.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">Likelihood: A framework for evidence</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/04-likelihood-evidence.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/04-likelihood-evidence.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/04-likelihood-evidence.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 07</td>
-<td>Feb. 08</td>
-</tr>
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td></td>
-<td></td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-book" style="font-size: 17px; color: #f1f1f1"></span>
-</td>
-<td style="vertical-align:middle;">*Optional:* Likelihood: A Framework for Estimation</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/04-optional-likelihood-estimation.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/04-optional-likelihood-estimation.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-code" style="font-size: 17px; color: #f1f1f1"></span>
-</td>
-</tr>
-
-
-<tr>
-<td colspan="8"><b>Unit 03: Dealing with Nonlinearity</b></td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 09</td>
-<td>Feb. 13</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/05-polynomial-effects.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">Polynomial Effects</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/05-polynomial-effects.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/05-polynomial-effects.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/05-polynomial-effects.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 14</td>
-<td>Feb. 15</td>
-</tr>
-
-<tr>
-<td colspan="8"><b>Unit 02 (Revisited): Model Selection and Evidence</b></td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 16</td>
-<td>Feb. 20</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/06-information-criteria-and-model-selection.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">Information Criteria and Model Selection</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/06-information-criteria-and-model-selection.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/06-information-criteria-and-model-selection.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/06-information-criteria-and-model-selection.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 21</td>
-<td>Feb. 22</td>
-</tr>
-
-
-
-<!-- ---------------------------------- -->
-<!-- Unit 03: Dealing with Nonlinearity -->
-<!-- ---------------------------------- -->
-
-<tr>
-<td colspan="8"><b>Unit 03 (Revisited): Dealing with Nonlinearity</b></td>
-</tr>
+<!-- <span style="margin-left:5px; color:#5a067d;font-size:12px;">*[Notes and Script file updated 09-24-2019]*</span></td> -->
 
 
 
 <tr>
 <td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 23</td>
-<td>Feb. 27</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/07-logarithmic-transformations-predictor.html)
+<!-- <td>Sept. 03</td> -->
+<td>Sept. 07</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
 </td>
-<td style="vertical-align:middle;" rowspan="2">Log-Transforming the Predictor</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/07-logarithmic-transformations-predictor.html)
+<td>Welcome to EPsy 8251</td>
+<td align="center" style="vertical-align:middle;">
+  <span class="fas fa-link" style="color: #f1f1f1; font-size: 20px;"></span>
 </td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/07-logarithmic-transformations-predictor.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/07-logarithmic-transformations-predictor.R)
+<td align="center" style="vertical-align:middle;">
+  <span class="fa fa-code" style="color: #f1f1f1; font-size: 20px;"></span>
 </td>
 </tr>
 
 
+<!-- Unit 01: INTRODUCTION TO STATISTICAL COMPUTING -->
+
 <tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Feb. 28</td>
-<td>Mar. 01</td>
+<td colspan="7"><b>Unit 01: Introduction to Statistical Computing</b></td>
 </tr>
 
-
-
 <tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 02</td>
-<td>Mar. 13</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/08-logarithmic-transformations-outcome.html)
-</td>
-<td style="vertical-align:middle;">Log-Transforming the Outcome</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/08-logarithmic-transformations-outcome.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/08-logarithmic-transformations-outcome.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/08-logarithmic-transformations-outcome.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td colspan="2">Mar. 06&ndash;10</td>
 <td align="center" style="vertical-align:middle;"></td>
-<td style="vertical-align:middle;">`r emo::ji("tada")` `r emo::ji("tropical_drink")` SPRING BREAK &mdash; NO CLASS &nbsp; `r emo::ji("bed")`</td>
+<!-- <td>Sept. 05</td> -->
+<td>Sept. 12</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td>Introduction to R and RStudio</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-01-using-R.html)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/01-introduction-to-r.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 10</td> -->
+<td>Sept. 14</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td>Data Wrangling with dplyr</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-02-learning-dplyr.html)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-data-wrangling-with-dplyr.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 12</td> -->
+<td>Sept. 19</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td>Plotting with ggplot2</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-03-ggplot2.html)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/03-plotting-with-ggplot2.R)
+</td>
+</tr>
+
+
+<!-- Unit 02: REGRESSION BASICS -->
+
+<tr>
+<td colspan="7"><b>Unit 02: Regression Basics</b></td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 17</td> -->
+<td>Sept. 21</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Simple Linear Regression: Description
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/slrd.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-simple-linear-regression-description.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 19</td> -->
+<td>Sept. 26</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 24</td> -->
+<td>Sept. 28</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;">Ordinary Least Squares (OLS) Estimation
+<td align="center" style="vertical-align:middle;">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/ordinary-least-squares-ols-estimation.html)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/05-ordinary-least-squares-estimation.R)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 26</td> -->
+<td>Oct. 03</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Correlation and Standardized Regression</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/cor.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/06-correlation-and-standardized-regression.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 01</td> -->
+<td>Oct. 05</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 03</td> -->
+<td>Oct. 10</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Coefficient-Level Inference</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/coefinf.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/07-coefficient-level-inference.R)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 08</td> -->
+<td>Oct. 12</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 10</td> -->
+<td>Oct. 17</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Model-Level Inference</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/modinf.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/08-model-level-inference.R)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 15</td> -->
+<td>Oct. 19</td>
+</tr>
+
+
+<!-- Unit 03: DEEPER UNDERSTANDING -->
+
+
+<tr>
+<td colspan="7"><b>Unit 03: Deeper Understanding</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 17</td> -->
+<td>Oct. 24</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Introduction to Multiple Linear Regression</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/multreg.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/09-introduction-to-multiple-regression.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 22</td> -->
+<td>Oct. 26</td>
+</tr>
+
+<!-- UNDERSTANDING STATISTICAL CONTROL -->
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 24</td> -->
+<td>Oct. 31</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Understanding Statistical Control</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/statcontrol.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/10-understanding-statistical-control.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 29</td> -->
+<td>Nov. 02</td>
+</tr>
+
+
+<!-- <tr> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <!-- <td>Sept. 24</td> --> 
+<!-- <td>Nov. 07</td> 
+<!-- <td align="center" style="vertical-align:middle;"> -->
+<!--   <!-- <a href="preparation.html#control"> --> 
+<!--   <!--   <span class="fa fa-book" style="font-size: 20px;"></span> -->
+<!--   <!-- </a> --> 
+<!-- </td> -->
+<!-- <td style="vertical-align:middle;">*NO CLASS&mdash;Mental Health Day --- Andy at a conference* -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- </tr> -->
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Oct. 31</td> -->
+<td>Nov. 07</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Assumptions of the Regression Model</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/assumptions.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/11-distributional-assumptions-underlying-the-regression-model.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 05</td> -->
+<td>Nov. 09</td>
+</tr>
+
+
+
+
+
+<!-- Unit 04: EXTENDING THE REGRESSION MODEL -->
+
+<tr>
+<td colspan="7"><b>Unit 04: Extending the Regression Model</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 07</td> -->
+<td>Nov. 14</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Dummy Coding Categorical Predictors</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/dummy.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/12-dummy-coding-categorical-predictors.R)
+</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 12</td> -->
+<td>Nov. 16</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 19</td> -->
+<td>Nov. 21</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;">Polychotomous Categorical Predictors</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/polychotomous.html)
+</td>
+<td align="center" style="vertical-align:middle;">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/14-polychotomous-categorical-predictors.R)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 24</td> -->
+<td>Nov. 23</td>
+<td align="center" style="vertical-align:middle;">
+  <!-- <a href="preparation.html#control"> -->
+  <!--   <span class="fa fa-book" style="font-size: 20px;"></span> -->
+  <!-- </a> -->
+</td>
+<td style="vertical-align:middle;">*NO CLASS&mdash;Mental Health Day*
 <td align="center" style="vertical-align:middle;"></td>
 <td align="center" style="vertical-align:middle;"></td>
+</tr>
+
+
+<tr>
 <td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 19</td> -->
+<td>Nov. 28</td>
+<td align="center" style="vertical-align:middle;"  rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;"  rowspan="2">Polychotomous Categorical Predictors</td>
+<td align="center" style="vertical-align:middle;"  rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/polychotomous.html)
+</td>
+<td align="center" style="vertical-align:middle;"  rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/14-polychotomous-categorical-predictors.R)
+</td>
 </tr>
 
 
 <tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 14</td>
-<td>Mar. 15</td>
 <td align="center" style="vertical-align:middle;"></td>
-<td style="vertical-align:middle;">Log-Transforming the Outcome</td>
+<!-- <td>Nov. 05</td> -->
+<td>Nov. 30</td>
+</tr>
+
+
+<tr>
 <td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Nov. 26</td> -->
+<td>Dec. 05</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">Introduction to Interaction Effects</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/interaction-01.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/15-introduction-to-interaction-effects.R)
+</td>
+</tr>
+
+
+<tr>
 <td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Dec. 03</td> -->
+<td>Dec. 07</td>
+</tr>
+
+<tr>
 <td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Dec. 09</td> -->
+<td>Dec. 12</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+</td>
+<td style="vertical-align:middle;" rowspan="2">More Interaction Effects</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/interaction-02.html)
+</td>
+<td align="center" style="vertical-align:middle;" rowspan="2">
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/16-more-interaction-effects.R)
+</td>
 </tr>
-
 
 <tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 16</td>
-<td>Mar. 20</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">Rule of the Bulge---An Example</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/09-rule-of-the-bulge.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/09-rule-of-the-bulge.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/09-rule-of-the-bulge.R)
-</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td>Dec. 14</td>
 </tr>
 
 
-
-<!-- -------------------------------------- -->
-<!-- Unit 04: Modeling Dichotomous Outcomes -->
-<!-- -------------------------------------- -->
-
-<tr>
-<td colspan="8"><b>Unit 04: Modeling Dichotomous Outcomes</b></td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 21</td>
-<td>Mar. 22</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">Linear Probability Model</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/10-linear-probability-model.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/10-linear-probability-model.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/10-linear-probability-model.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 28</td>
-<td>Mar. 27</td>
-<td align="center" style="vertical-align:middle;" >
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/11-logistic-regression.html)
-</td>
-<td style="vertical-align:middle;">Logistic Regression Model</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/11-logistic-regression.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/11-logistic-regression.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/11-logistic-regression.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Mar. 30</td>
-<td>Mar. 29</td>
-<td align="center" style="vertical-align:middle;" >
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">More Logistic Regression</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](notes/12-more-logistic-regression.html)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/12-more-logistic-regression.qmd)
-</td>
-<td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](scripts/12-more-logistic-regression.R)
-</td>
-</tr>
-
-
-<!-- ----------------------------------------------- -->
-<!-- Unit 05: Linear Mixed-Effects Regression Models -->
-<!-- ----------------------------------------------- -->
-
-<tr>
-<td colspan="8"><b>Unit 05: Linear Mixed-Effects Regression Models</b></td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 04</td>
-<td>Apr. 03</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/13-introduction-to-mixed-effects-models.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">Introduction to Mixed-Effects Regression Models</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](https://zief0002.github.io/bespectacled-antelope/notes/13-introduction-to-mixed-effects-models.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/13-introduction-to-mixed-effects-models.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](https://github.com/zief0002/bespectacled-antelope/raw/main/scripts/13-introduction-to-mixed-effects-models.R)
-</td>
-</tr>
-
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 06</td>
-<td>Apr. 05</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 11</td>
-<td>Apr. 10</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;" rowspan="2">LMER: Average Change Over Time</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](https://zief0002.github.io/bespectacled-antelope/notes/14-lmer-average-change-over-time.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/14-lmer-average-change-over-time.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](https://github.com/zief0002/bespectacled-antelope/raw/main/scripts/14-lmer-average-change-over-time.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 13</td>
-<td>Apr. 12</td>
-</tr>
-
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 18</td>
-<td>Apr. 17</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/15-lmer-other-random-effects-and-covariates.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">LMER: Other Random-Effects and Covariates</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](https://zief0002.github.io/bespectacled-antelope/notes/15-lmer-other-random-effects-and-covariates.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/15-lmer-other-random-effects-and-covariates.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](https://github.com/zief0002/bespectacled-antelope/raw/main/scripts/15-lmer-other-random-effects-and-covariates.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 20</td>
-<td>Apr. 19</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 24</td>
-<td>Apr. 25</td>
-<td align="center" style="vertical-align:middle;" >
-  <span class="fa fa-book" style="color: #f1f1f1; font-size: 17px;"></span>
-</td>
-<td style="vertical-align:middle;">Q&amp;A and Future Coursework</td>
-<td align="center" style="vertical-align:middle;">
-   [<span class="fas fa-link" style="font-size: 17px;"></span>](files/qme-course-map-2023-04-10.pdf)
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fab fa-markdown" style="font-size: 17px; color: #f1f1f1;"></span>
-</td>
-<td align="center" style="vertical-align:middle;">
-  <span class="fa fa-code" style="font-size: 17px; color: #f1f1f1;"></span>
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>Apr. 27</td>
-<td>Apr. 26</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 17px;"></span>](readings/16-lmer-alt-representations-and-assumptions.html)
-</td>
-<td style="vertical-align:middle;" rowspan="2">NO CLASS --- Optional: LMER: Alternative Representations and Assumptions</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 17px;"></span>](https://zief0002.github.io/bespectacled-antelope/notes/16-lmer-alt-representations-and-assumptions.html)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fab fa-markdown" style="font-size: 17px;"></span>](https://raw.githubusercontent.com/zief0002/bespectacled-antelope/main/notes/16-lmer-alt-representations-and-assumptions.qmd)
-</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 17px;"></span>](https://github.com/zief0002/bespectacled-antelope/raw/main/scripts/16-lmer-alt-representations-and-assumptions.R)
-</td>
-</tr>
-
-
-<tr>
-<td align="center" style="vertical-align:middle;">&nbsp;</td>
-<td>&nbsp;</td>
-<td>May 01</td>
-</tr>
-
+<!-- <tr> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <td>Dec. 14</td> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <td style="vertical-align:middle;">TBA</td> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- </tr> -->
 
 </tbody>
 </table>    
+
+

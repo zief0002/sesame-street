@@ -5,16 +5,16 @@ $font-weight-base: 400 !default;
 
 
 // Links
-$link-color:                              #BC69AA;
+$link-color:                              #f3722c;
 $link-decoration:                         underline !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color(#1B2A41, 100%) !default;
 $link-hover-decoration:                   underline !default;
 
 // Top Navigation
-$nav-link-color:                    #373a3c;
-$nav-link-hover-color:              #1B2A41;
-
+$nav-link-color: #373a3c;
+$nav-link-hover-color: #1B2A41;
+$navbar-bg: #90be6d;
 
 /*-- scss:rules --*/
 
