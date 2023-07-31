@@ -9,16 +9,20 @@ date: today
 
 **Required**
 
+Read:
+
+- [R and RStudio Installation and Setup](https://zief0002.github.io/modeling/01-01-r-and-rstudio-installation.html) [*Statistical Modeling*]
+
+Install R and RStudio:
 
 - Download and install the most recent version of [R (version 4.3.1; *Beagle Scouts*)](https://www.r-project.org/) on your computer.
 - Download and install the most recent version of and [RStudio Desktop (version 2023.06.0+421)](https://posit.co/download/rstudio-desktop/) on your computer. 
 
-See [R and RStudio Installation and Setup](https://zief0002.github.io/toolkit-quarto/02-r-and-rstudio-installation.html) for help.
 
-Read the following:
+Read and work through the following:
 
-- [Getting Started with R](https://zief0002.github.io/toolkit-quarto/03-getting-started-with-r.html) [*Computational Toolkit*]
-- [Data Structures in R](https://zief0002.github.io/toolkit-quarto/04-data-structures-in-r.html) [*Computational Toolkit*]
+- [Getting Started with R](https://zief0002.github.io/modeling/01-02-getting-started-with-r.html) [*Statistical Modeling*]
+- [Data Structures in R](https://zief0002.github.io/modeling/01-03-data-structures-in-r.html) [*Statistical Modeling*]
 
 
 **Additional Resources**

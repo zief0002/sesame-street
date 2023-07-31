@@ -7,7 +7,7 @@ format:
 date: today
 ---
 
-This goal of this assignment is to give you experience fitting and interpreting regression models with categorical predictors. For this assignment, you will again examine whether there are differences in course evaluation scores---and thus on earnings differences---between native and non-native English speaking professors. To do so, you will use the data in the *evaluations.csv* file to fit a series of regression models to predict the variation in course evaluation ratings.
+The goal of this assignment is to give you experience fitting and interpreting regression models with categorical predictors. For this assignment, you will again examine whether there are differences in course evaluation scores---and thus on earnings differences---between native and non-native English speaking professors. To do so, you will use the data in the *evaluations.csv* file to fit a series of regression models to predict the variation in course evaluation ratings.
 
 - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv)
 - [[Data Codebook]](https://zief0002.github.io/rustic-penguin/codebooks/evaluations.html)

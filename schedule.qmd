@@ -47,9 +47,9 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;">&nbsp;</td>
 <!-- <td>Sept. 03</td> -->
-<td>Sept. 07</td>
+<td>Sept. 06</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/00-welcome-to-8251.html)
 </td>
 <td>Welcome to EPsy 8251</td>
 <td align="center" style="vertical-align:middle;">
@@ -70,48 +70,48 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 05</td> -->
-<td>Sept. 12</td>
+<td>Sept. 11</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/01-01-introduction-to-r-and-rstudio.html)
 </td>
 <td>Introduction to R and RStudio</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-01-using-R.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-01-01-using-R.html)
 </td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/01-introduction-to-r.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/01-01-introduction-to-r.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 10</td> -->
-<td>Sept. 14</td>
+<td>Sept. 13</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/01-04-data-wrangling-with-dplyr.html)
 </td>
 <td>Data Wrangling with dplyr</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-02-learning-dplyr.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-01-04-learning-dplyr.html)
 </td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-data-wrangling-with-dplyr.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/01-04-data-wrangling-with-dplyr.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 12</td> -->
-<td>Sept. 19</td>
+<td>Sept. 18</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/01-05-plotting-with-ggplot2)
 </td>
 <td>Plotting with ggplot2</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-03-ggplot2.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](worksheets/worksheet-01-05-ggplot2.html)
 </td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/03-plotting-with-ggplot2.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/01-05-plotting-with-ggplot2.R)
 </td>
 </tr>
 
@@ -125,39 +125,39 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 17</td> -->
-<td>Sept. 21</td>
+<td>Sept. 20</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-01-simple-linear-regression-description.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Simple Linear Regression: Description
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/slrd.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-01-simple-regression-description.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-simple-linear-regression-description.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-01-simple-linear-regression-description.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 19</td> -->
-<td>Sept. 26</td>
+<td>Sept. 25</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 24</td> -->
-<td>Sept. 28</td>
+<td>Sept. 27</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-02-ols-estimation.html)
 </td>
 <td style="vertical-align:middle;">Ordinary Least Squares (OLS) Estimation
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/ordinary-least-squares-ols-estimation.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-02-ols-estimation.html)
 </td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/05-ordinary-least-squares-estimation.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-02-ols-estimation.R)
 </td>
 </tr>
 
@@ -165,39 +165,39 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 26</td> -->
-<td>Oct. 03</td>
+<td>Oct. 02</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-03-correlation-and-standardized-regression.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Correlation and Standardized Regression</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/cor.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-03-correlation.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/06-correlation-and-standardized-regression.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-03-correlation-and-standardized-regression.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 01</td> -->
-<td>Oct. 05</td>
+<td>Oct. 04</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 03</td> -->
-<td>Oct. 10</td>
+<td>Oct. 09</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-04-coefficient-level-inference.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Coefficient-Level Inference</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/coefinf.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-04-coefficient-level-inference.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/07-coefficient-level-inference.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-04-coefficient-level-inference.R)
 </td>
 </tr>
 
@@ -205,23 +205,23 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 08</td> -->
-<td>Oct. 12</td>
+<td>Oct. 11</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 10</td> -->
-<td>Oct. 17</td>
+<td>Oct. 16</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-05-model-level-inference.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Model-Level Inference</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/modinf.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-05-model-level-inference.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/08-model-level-inference.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-05-model-level-inference.R)
 </td>
 </tr>
 
@@ -229,7 +229,7 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 15</td> -->
-<td>Oct. 19</td>
+<td>Oct. 18</td>
 </tr>
 
 
@@ -244,23 +244,23 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 17</td> -->
-<td>Oct. 24</td>
+<td>Oct. 23</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/03-01-introduction-to-multiple-linear-regression.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Introduction to Multiple Linear Regression</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/multreg.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/03-01-intro-to-multiple-regression.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/09-introduction-to-multiple-regression.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/03-01-introduction-to-multiple-regression.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 22</td> -->
-<td>Oct. 26</td>
+<td>Oct. 25</td>
 </tr>
 
 <!-- UNDERSTANDING STATISTICAL CONTROL -->
@@ -268,23 +268,23 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 24</td> -->
-<td>Oct. 31</td>
+<td>Oct. 30</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/03-02-understanding-statistical-control.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Understanding Statistical Control</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/statcontrol.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/03-02-understanding-statistical-control.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/10-understanding-statistical-control.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/03-02-understanding-statistical-control.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 29</td> -->
-<td>Nov. 02</td>
+<td>Nov. 01</td>
 </tr>
 
 
@@ -305,23 +305,23 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 31</td> -->
-<td>Nov. 07</td>
+<td>Nov. 06</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/03-03-distributional-assumptions-underlying-the-regression-model.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Assumptions of the Regression Model</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/assumptions.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/03-03-assumptions.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/11-distributional-assumptions-underlying-the-regression-model.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/03-03-distributional-assumptions-underlying-the-regression-model.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 05</td> -->
-<td>Nov. 09</td>
+<td>Nov. 08</td>
 </tr>
 
 
@@ -338,39 +338,39 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 07</td> -->
-<td>Nov. 14</td>
+<td>Nov. 13</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-01-dichotomous-categorical-predictors.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Dummy Coding Categorical Predictors</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/dummy.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/04-01-dichotomous-predictors.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/12-dummy-coding-categorical-predictors.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-01-dichotomous-categorical-predictors.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 12</td> -->
-<td>Nov. 16</td>
+<td>Nov. 15</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 19</td> -->
-<td>Nov. 21</td>
+<td>Nov. 20</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/https://zief0002.github.io/modeling/04-02-polychotomous-predictors.html)
 </td>
 <td style="vertical-align:middle;">Polychotomous Categorical Predictors</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/polychotomous.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/04-02-polychotomous-predictors.html)
 </td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/14-polychotomous-categorical-predictors.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-02-polychotomous-categorical-predictors.R)
 </td>
 </tr>
 
@@ -378,7 +378,7 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 24</td> -->
-<td>Nov. 23</td>
+<td>Nov. 22</td>
 <td align="center" style="vertical-align:middle;">
   <!-- <a href="preparation.html#control"> -->
   <!--   <span class="fa fa-book" style="font-size: 20px;"></span> -->
@@ -393,16 +393,16 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 19</td> -->
-<td>Nov. 28</td>
+<td>Nov. 27</td>
 <td align="center" style="vertical-align:middle;"  rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-02-polychotomous-predictors.html)
 </td>
 <td style="vertical-align:middle;"  rowspan="2">Polychotomous Categorical Predictors</td>
 <td align="center" style="vertical-align:middle;"  rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/polychotomous.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/04-02-polychotomous-predictors.html)
 </td>
 <td align="center" style="vertical-align:middle;"  rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/14-polychotomous-categorical-predictors.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-02-polychotomous-categorical-predictors.R)
 </td>
 </tr>
 
@@ -410,23 +410,23 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 05</td> -->
-<td>Nov. 30</td>
+<td>Nov. 29</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Nov. 26</td> -->
-<td>Dec. 05</td>
+<td>Dec. 04</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-03-introduction-to-interaction-effects.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">Introduction to Interaction Effects</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/interaction-01.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/04-03-interaction-effects.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/15-introduction-to-interaction-effects.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-03-introduction-to-interaction-effects.R)
 </td>
 </tr>
 
@@ -434,28 +434,28 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Dec. 03</td> -->
-<td>Dec. 07</td>
+<td>Dec. 06</td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Dec. 09</td> -->
-<td>Dec. 12</td>
+<td>Dec. 11</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](#readings)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-04-more-interaction-effects.html)
 </td>
 <td style="vertical-align:middle;" rowspan="2">More Interaction Effects</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://epsy-8251.netlify.app/interaction-02.html)
+  [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/04-04-more-interaction-effects.html)
 </td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
-  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/16-more-interaction-effects.R)
+  [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/04-04-more-interaction-effects.R)
 </td>
 </tr>
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
-<td>Dec. 14</td>
+<td>Dec. 13</td>
 </tr>
 
 

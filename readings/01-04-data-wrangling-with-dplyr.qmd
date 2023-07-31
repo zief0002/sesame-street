@@ -9,7 +9,7 @@ date: today
 
 **Required**
 
-- [Data Wrangling with dplyr](https://zief0002.github.io/toolkit-quarto/05-data-wrangling-with-dplyr.html) [*Computational Toolkit*]
+- [Data Wrangling with dplyr](https://zief0002.github.io/modeling/01-04-data-wrangling-with-dplyr.html) [*Statistical Modeling*]
 
 **Additional Resources**
 

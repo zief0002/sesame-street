@@ -81,7 +81,7 @@ After importing the broadband data into RStudio, create a new data frame object 
 
 ## Part II: State-Level Broadband Access
 
-In this section, you will use all the data in *broadband.csv* to create state-level summaries (means and standard deviations) of the `microsoft_useage` and the `fcc_availability` variables. Filter out Washington DC so it is not included. (Hint: Make sure that every state has mean and standard deviation values when you are done!) Use this state-level data to answer the following questions.
+In this section, you will use the data in *broadband.csv* to create state-level summaries of the `microsoft_useage` and the `fcc_availability` variables. Begin by filtering out Washington DC so it is not included. Then compute means and standard deviations for each state. (Hint: Make sure that every state has mean and standard deviation values  for both variables when you are done!) Use this state-level data to answer the following questions.
 
 
 5. Based on the Microsoft and FCC estimates, does it seem that the FCC estimates (which are provided by the ISPs) are "overestimating" America's broadband access? Explain.

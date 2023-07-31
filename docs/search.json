@@ -53,7 +53,7 @@
     "href": "assignments/assignment-01-introduction-to-statistical-computing.html#part-ii-state-level-broadband-access",
     "title": "Assignment 01",
     "section": "Part II: State-Level Broadband Access",
-    "text": "Part II: State-Level Broadband Access\nIn this section, you will use all the data in broadband.csv to create state-level summaries (means and standard deviations) of the microsoft_useage and the fcc_availability variables. Filter out Washington DC so it is not included. (Hint: Make sure that every state has mean and standard deviation values when you are done!) Use this state-level data to answer the following questions.\n\nBased on the Microsoft and FCC estimates, does it seem that the FCC estimates (which are provided by the ISPs) are “overestimating” America’s broadband access? Explain.\nUsing the Microsoft estimates, which states have the best and worst broadband access based on the means? Which states are the most and least homogenous (across counties) in terms of their broadband access?\nCreate a table that includes the Microsoft and FCC estimates of broadband access you computed for the states in bordering Minnesota: Minnesota (MN), Iowa (IA), South Dakota (SD), North Dakota (ND), and Wisconsin (WI). Report these values in a word-processed table alphabetically by state. To format this table: Examine the structure and formatting of Table 2 at https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html. Notice that variables are presented in rows and summary statistics are presented in columns. Mimic the format and structure of this table to create a table to present the numerical summary information asked for in this question. Finally, give your table a name (e.g., Table 1) and an appropriate caption."
+    "text": "Part II: State-Level Broadband Access\nIn this section, you will use the data in broadband.csv to create state-level summaries of the microsoft_useage and the fcc_availability variables. Begin by filtering out Washington DC so it is not included. Then compute means and standard deviations for each state. (Hint: Make sure that every state has mean and standard deviation values for both variables when you are done!) Use this state-level data to answer the following questions.\n\nBased on the Microsoft and FCC estimates, does it seem that the FCC estimates (which are provided by the ISPs) are “overestimating” America’s broadband access? Explain.\nUsing the Microsoft estimates, which states have the best and worst broadband access based on the means? Which states are the most and least homogenous (across counties) in terms of their broadband access?\nCreate a table that includes the Microsoft and FCC estimates of broadband access you computed for the states in bordering Minnesota: Minnesota (MN), Iowa (IA), South Dakota (SD), North Dakota (ND), and Wisconsin (WI). Report these values in a word-processed table alphabetically by state. To format this table: Examine the structure and formatting of Table 2 at https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html. Notice that variables are presented in rows and summary statistics are presented in columns. Mimic the format and structure of this table to create a table to present the numerical summary information asked for in this question. Finally, give your table a name (e.g., Table 1) and an appropriate caption."
   },
   {
     "objectID": "assignments/assignment-01-introduction-to-statistical-computing.html#part-iii-state-level-broadband-access-versus-poverty",
@@ -95,14 +95,14 @@
     "href": "assignments/assignment-02-simple-regression-description.html#questions",
     "title": "Assignment 02",
     "section": "Questions",
-    "text": "Questions\n\nCreate a plot of the distribution of total SAT scores. Make sure your plot has a caption.\nExamine the structure and formatting of Table 1 at https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html. Mimic the format and structure of this table to create a table to present the numerical summary information for the distributions of SAT total scores and salaries. Provide the same measures for these variables as is given in Table 1 in the article. Re-create the formatting of Table 1 as closely as you can. Finally, make sure the table you create also has an appropriate caption.\nCreate a scatterplot of the distribution of SAT total scores (Y) conditioned on teacher salaries (X). Make sure your plot has a caption.\nDescribe the relationship between teacher salaries and SAT total scores. Be sure to comment on the structural form, direction and strength of the relationship. Also comment on any potential observations that deviate from following this relationship (unusual observations or clusters of observations).\nRegress total SAT scores on teacher salaries. Write the fitted equation using Equation Editor (or some other program that correctly types mathematical expressions).\nInterpret the value of the intercept from the regression equation using the context of the data.\nInterpret the value of the slope from the regression equation using the context of the data.\nCompute, report, and interpret the value for \\(R^2\\) based on values from the ANOVA decomposition. Show your work for full credit.\nCompute and report the predicted mean total SAT score for Minnesota students based on the average teacher salary in the state using the fitted regression equation. Show your work for full credit.\nCompute and report the residual for Minnesota. Show your work for full credit.\nExplain what the sign and magnitude of the residual value you computed in Question 10 tells you about how Minnesota’s mean SAT score compares to the mean SAT score for states having the same average teacher salary as Minnesota."
+    "text": "Questions\n\nCreate a density plot of the distribution of total SAT scores. Make sure your plot has a caption.\nExamine the structure and formatting of Table 1 at https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html. Mimic the format and structure of this table to create a table to present the numerical summary information for the distributions of SAT total scores and salaries. Provide the same measures for these variables as is given in Table 1 in the article. Re-create the formatting of Table 1 as closely as you can. Finally, make sure the table you create also has an appropriate caption.\nCreate a scatterplot of the distribution of SAT total scores (Y) conditioned on teacher salaries (X). Make sure your plot has a caption.\nDescribe the relationship between teacher salaries and SAT total scores. Be sure to comment on the structural form, direction and strength of the relationship. Also comment on any potential observations that deviate from following this relationship (unusual observations or clusters of observations).\nRegress total SAT scores on teacher salaries. Write the fitted equation using Equation Editor (or some other program that correctly types mathematical expressions).\nInterpret the value of the intercept from the regression equation using the context of the data.\nInterpret the value of the slope from the regression equation using the context of the data.\nCompute, report, and interpret the value for \\(R^2\\) based on values from the ANOVA decomposition. Show your work for full credit.\nCompute and report the predicted mean total SAT score for Minnesota students based on the average teacher salary in the state using the fitted regression equation. Show your work for full credit.\nCompute and report the residual for Minnesota. Show your work for full credit.\nExplain what the sign and magnitude of the residual value you computed in Question 10 tells you about how Minnesota’s mean SAT score compares to the mean SAT score for states having the same average teacher salary as Minnesota."
   },
   {
     "objectID": "assignments/assignment-03-correlation-and-standardized-regression.html",
     "href": "assignments/assignment-03-correlation-and-standardized-regression.html",
     "title": "Assignment 03",
     "section": "",
-    "text": "Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level.\nThis goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file state-education.csv to examine the relationship between teacher salaries and student total SAT scores at the state level."
+    "text": "Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level.\nThe goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file state-education.csv to examine the relationship between teacher salaries and student total SAT scores at the state level."
   },
   {
     "objectID": "assignments/assignment-03-correlation-and-standardized-regression.html#instructions",
@@ -130,21 +130,21 @@
     "href": "assignments/assignment-05-introduction-to-multiple-regression.html",
     "title": "Assignment 05",
     "section": "",
-    "text": "Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates.\nFertility rate is a measure directly linked to population and has been useful to explore hypotheses about factors related to combating overpopulation. For this assignment, you will use the file fertility.csv to fit three models in order to explore the effects of contraceptive use on fertility rates."
+    "text": "Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates.\nFertility rate is a measure directly linked to population and has been useful to explore hypotheses about factors related to combating overpopulation. For this assignment, you will use the file fertility.csv to fit three models in order to explore three hypotheses about the effects of contraceptive use on fertility rates."
   },
   {
     "objectID": "assignments/assignment-05-introduction-to-multiple-regression.html#instructions",
     "href": "assignments/assignment-05-introduction-to-multiple-regression.html#instructions",
     "title": "Assignment 05",
     "section": "Instructions",
-    "text": "Instructions\nThe models you will fit are:\n\nModel 1: Contraception use in a country is thought to be negatively associated with fertility rates.\nModel 2: Women in countries with higher infant mortality rates will, on average, have more children (higher fertility rates). Controlling for the infant mortality rate is important to gain a more accurate view of the effect of contraception use on fertility rate.\nModel 3: Contraception use is really a function of educating women, so after controlling for education there is no/little effect of contraception use on fertility rate. In this model we will also still control for infant mortality rates.\n\nSubmit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 16 points. (Each question is worth 1 point unless otherwise noted.)"
+    "text": "Instructions\nThe hypotheses you will examine are:\n\nHypothesis 1: Contraception use in a country is thought to be negatively associated with fertility rates.\nHypothesis 2: Women in countries with higher infant mortality rates will, on average, have more children (higher fertility rates). Controlling for the infant mortality rate is important to gain a more accurate view of the effect of contraception use on fertility rate.\nHypothesis 3: Contraception use is really a function of educating women, so after controlling for education there is no/little effect of contraception use on fertility rate. In this model we will also still control for infant mortality rates.\n\nSubmit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 16 points. (Each question is worth 1 point unless otherwise noted.)"
   },
   {
     "objectID": "assignments/assignment-05-introduction-to-multiple-regression.html#preparation",
     "href": "assignments/assignment-05-introduction-to-multiple-regression.html#preparation",
     "title": "Assignment 05",
     "section": "Preparation",
-    "text": "Preparation\nBegin by standardizing the fertility rate variable (outcome) and each of the three predictors used in the models listed above. Use the standardized variables to fit the regression models corresponding to each of the three models. You will use the output from the fitted models to answer the questions in the assignment."
+    "text": "Preparation\nBegin by standardizing the fertility rate variable (outcome) and each of the three predictors used in the models listed above. Use the standardized variables to fit the regression models corresponding to each of the three hypotheses. You will use the output from the fitted models to answer the questions in the assignment."
   },
   {
     "objectID": "assignments/assignment-05-introduction-to-multiple-regression.html#part-i",
@@ -165,28 +165,28 @@
     "href": "assignments/assignment-06-regression-assumptions.html",
     "title": "Assignment 06",
     "section": "",
-    "text": "This goal of this assignment is to give you more experience evaluating the assumptions underlying regression models. Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 15 points. (Each question is worth 1 point unless otherwise noted.)"
+    "text": "The goal of this assignment is to give you more experience evaluating the assumptions underlying regression models. Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 15 points. (Each question is worth 1 point unless otherwise noted.)"
   },
   {
     "objectID": "assignments/assignment-06-regression-assumptions.html#part-i-evaluating-assumptions-for-the-simple-regression-model",
     "href": "assignments/assignment-06-regression-assumptions.html#part-i-evaluating-assumptions-for-the-simple-regression-model",
     "title": "Assignment 06",
     "section": "Part I: Evaluating Assumptions for the Simple Regression Model",
-    "text": "Part I: Evaluating Assumptions for the Simple Regression Model\nResearch. Teaching. Service. The trifecta upon which that almost every university instructor is evaluated, and, ultimately compensated. One way which academic administrators judge teaching quality is through teachers’ course evaluations. While we know evaluation scores are not perfectly measures of teaching quality, nonetheless, they do play a role in the tenure and promotion process. Unfortunately, many other non-teaching related factors are also associated with evaluation scores (e.g., professor’s ethnicity, professor’s sex).\nFor this part of the assignment, you will examine whether instructor attractiveness explains differences in course evaluation scores—and thus on earnings differences. To do so, you will use the data in the evaluations.csv file to fit a regression model that uses professors’ beauty ratings to predict the variation in course evaluation ratings.\n\n[CSV]\n[Data Codebook]\n\nFit the regression model to predict the variation in course evaluation ratings using professors’ beauty ratings. You will use the output from the fitted model to answer the questions in Part I.\n\n\nPreliminary Examination of Model Assumptions\n\nCreate and include the density plot for the outcome. Does the distribution foreshadow problems for the normality assumption? Explain.\nCreate and include the scatterplot of the outcome vs. the predictor. Include the loess smoother in the plots. Does this relationship foreshadow problems for the linearity assumption? Explain.\n\n\n\n\nExamination of the Standardized Residuals from the Simple Regression Model\n\nCreate and include the density plot of the marginal distribution of the standardized residuals from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.\nCreate and include the scatterplot of the standardized residuals versus the fitted values from the fitted model. In the plot identify observation with extreme residuals (\\(\\leq-3\\) or \\(\\geq3\\)) by indicating the row number of that observation in the plot.\nDoes this plot suggest problems about meeting the linearity assumption? Explain.\nDoes this plot suggest problems about meeting the homogeneity of variance assumption? Explain.\nIs the independence assumption tenable? Explain."
+    "text": "Part I: Evaluating Assumptions for the Simple Regression Model\nResearch. Teaching. Service. The trifecta upon which that almost every university instructor is evaluated, and, ultimately compensated. One way in which academic administrators judge teaching quality is through teachers’ course evaluations. While we know evaluation scores are not perfect measures of teaching quality, nonetheless, they do play a role in the tenure and promotion process. Unfortunately, many other non-teaching related factors are also associated with evaluation scores (e.g., professor’s ethnicity, professor’s sex).\nFor this part of the assignment, you will examine whether instructor attractiveness explains differences in course evaluation scores—and thus on earnings differences. To do so, you will use the data in the evaluations.csv file to fit a regression model that uses professors’ beauty ratings to predict the variation in course evaluation ratings.\n\n[CSV]\n[Data Codebook]\n\nFit the regression model to predict the variation in course evaluation ratings using professors’ beauty ratings. You will use the output from the fitted model to answer the questions in Part I.\n\n\nPreliminary Examination of Model Assumptions\n\nCreate and include the density plot for the outcome. Does the distribution foreshadow problems for the normality assumption? Explain.\nCreate and include the scatterplot of the outcome vs. the predictor. Include the loess smoother in the plots. Does this relationship foreshadow problems for the linearity assumption? Explain.\n\n\n\n\nExamination of the Standardized Residuals from the Simple Regression Model\n\nCreate and include the density plot of the marginal distribution of the standardized residuals from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.\nCreate and include the scatterplot of the standardized residuals versus the fitted values from the fitted model. In the plot identify observation with extreme residuals (\\(\\leq-3\\) or \\(\\geq3\\)) by indicating the row number of that observation in the plot.\nDoes this plot suggest problems about meeting the linearity assumption? Explain.\nDoes this plot suggest problems about meeting the homogeneity of variance assumption? Explain.\nIs the independence assumption tenable? Explain."
   },
   {
     "objectID": "assignments/assignment-06-regression-assumptions.html#part-ii-evaluating-assumptions-for-the-multiple-regression-model",
     "href": "assignments/assignment-06-regression-assumptions.html#part-ii-evaluating-assumptions-for-the-multiple-regression-model",
     "title": "Assignment 06",
     "section": "Part II: Evaluating Assumptions for the Multiple Regression Model",
-    "text": "Part II: Evaluating Assumptions for the Multiple Regression Model\nHuman overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. For this part of the assignment, you will use the file fertility.csv to fit a model in order to explore the effects of contraceptive use on fertility rates.\n\n[CSV]\n[Data Codebook]\n\nFit the regression model to predict the variation in fertility rates using contraception use, female education, and infant mortality rate (three predictors). You will use the output from the fitted model to answer the questions in Part II.\n\n\nPreliminary Examination of Model Assumptions\n\nCreate and include the density plot for the outcome. Does the distribution foreshadow problems for the normality assumption? Explain.\nCreate and include the scatterplot of the outcome vs. each predictor (three total). Include the loess smoother in each of the plots. Do any of these relationships foreshadow problems for the linearity assumption? Explain. (2pts.)\n\n\n\n\nExamination of the Standardized Residuals from the Multiple Regression Model\n\nCreate and include the density plot of the marginal distribution of the standardized residuals from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.\nCreate and include the scatterplot of the standardized residuals versus the fitted values from the fitted model. In the plot identify observation with extreme residuals (\\(\\leq-3\\) or \\(\\geq3\\)) by indicating the country associated with that observation in the plot.\nDoes this plot suggest problems about meeting the linearity assumption? Explain.\nDoes this plot suggest problems about meeting the homogeneity of variance assumption? Explain.\nIs the independence assumption tenable? Explain."
+    "text": "Part II: Evaluating Assumptions for the Multiple Regression Model\nHuman overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. For this part of the assignment, you will use the file fertility.csv to fit a model in order to explore the effects of contraceptive use on fertility rates.\n\n[CSV]\n[Data Codebook]\n\nFit the regression model to predict the variation in fertility rates using contraception use, female education, and infant mortality rate (three predictors). You will use the output from the fitted model to answer the questions in Part II.\n\n\nPreliminary Examination of Model Assumptions\n\nCreate and include the density plot for the outcome. Does the distribution foreshadow problems for the normality assumption? Explain.\nCreate and include the scatterplot of the outcome vs. each predictor (three total). Include the loess smoother in each of the plots. Do any of these relationships foreshadow problems for the linearity assumption? Explain. (2pts.)\n\n\n\n\nExamination of the Standardized Residuals from the Multiple Regression Model\n\nCreate and include the density plot of the marginal distribution of the standardized residuals from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.\nCreate and include the scatterplot of the standardized residuals versus the fitted values from the fitted model. In the plot identify observation with extreme residuals (\\(\\leq-3\\) or \\(\\geq3\\)) by indicating the country associated with that observation in the plot.\nDoes this plot suggest problems about meeting the linearity assumption? Explain.\nDoes this plot suggest problems about meeting the homogeneity of variance assumption? Explain.\nIs the independence assumption tenable? Explain."
   },
   {
     "objectID": "assignments/assignment-07-dichotomous-categorical-predictors.html",
     "href": "assignments/assignment-07-dichotomous-categorical-predictors.html",
     "title": "Assignment 07",
     "section": "",
-    "text": "This goal of this assignment is to give you experience fitting and interpreting regression models with categorical predictors. For this assignment, you will again examine whether there are differences in course evaluation scores—and thus on earnings differences—between native and non-native English speaking professors. To do so, you will use the data in the evaluations.csv file to fit a series of regression models to predict the variation in course evaluation ratings."
+    "text": "The goal of this assignment is to give you experience fitting and interpreting regression models with categorical predictors. For this assignment, you will again examine whether there are differences in course evaluation scores—and thus on earnings differences—between native and non-native English speaking professors. To do so, you will use the data in the evaluations.csv file to fit a series of regression models to predict the variation in course evaluation ratings."
   },
   {
     "objectID": "assignments/assignment-07-dichotomous-categorical-predictors.html#instructions",
@@ -326,7 +326,7 @@
     "href": "codebooks/broadband.html",
     "title": "broadband.csv",
     "section": "",
-    "text": "Russell Brandom and William Joel in an article for The Verge wrote,\n\n“If broadband access was a problem before 2020, the pandemic turned it into a crisis. As everyday businesses moved online, city council meetings or court proceedings became near-inaccessible to anyone whose connection couldn’t support a Zoom call.”\n\nBut, who in America has access to broadband internet? As part of their ongoing work to improve software and service performance and security, Microsoft collected router speed data from individuals who accessed their cloud services. After aggregating and anonomyzing these data, they made these data available publicly to help researchers and policymakers understand and improve problems related to broadband access.\nThe data in broadband.csv, collected by Microsoft (2021), give us much better insight as to the true broadband access (defined as internet download speeds of at least 25 Mbps) of Americans as, to date, most studies of broadband access have use data collated by the FCC that is based on individual Internet Service Providers’ descriptions of the areas they serve. To better contextualize this, the data have also been augmented with several county-level poverty and education indicators. The variables are:\n\nstate: State postal code\ncounty: County name\nfips: Five-digit Federal Information Processing Standards code which uniquely identified counties and county equivalents in the United States\nrural_urban: Rural-urban continuum code\n\n1: Metropolitan - Counties in metropolitan areas of 1 million population or more\n2: Metropolitan - Counties in metropolitan areas of 250,000 to 1 million population\n3: Metropolitan - Counties in metropolitan areas of fewer than 250,000 population\n4: Nonmetropolitan - Urban population of 20,000 or more, adjacent to a metropolitan area\n5: Nonmetropolitan - Urban population of 20,000 or more, not adjacent to a metropolitan area\n6: Nonmetropolitan - Urban population of 2,500 to 19,999, adjacent to a metropolitan area\n7: Nonmetropolitan - Urban population of 2,500 to 19,999, not adjacent to a metropolitan area\n8: Nonmetropolitan - Completely rural or less than 2,500 urban population, adjacent to a metropolitan area\n9: Nonmetropolitan - Completely rural or less than 2,500 urban population, not adjacent to a metropolitan area\n\nmetro: Classification of the county as metropolitan (metro) or nonmetropolitan (nonmetro) based on the rural-urban continuum code\nfcc_availability: Proportion of people in the county with access to fixed terrestrial broadband at speeds of 25 Mbps/3 Mbps as of the end of 2019 as measured by the FCC\nmicrosoft_useage: Proportion of people in the county that use the internet at broadband speeds estimated by Microsoft\npct_poverty: Estimate of the percentage of people (of all ages) in the county living in poverty in 2019\nmedian_income: Estimate of median household income in the county in 2019\nlt_hs_2019: Percentage of the county with less than a high school diploma (2015–2019)\nhs_2019: Percentage of the county with a high school diploma (2015–2019)\nsome_college_2019: Percentage of the county with some college or an associate’s degree (2015–2019)\ncollege_2019: Percentage of the county with a bachelor’s degree, or higher (2015–2019)\n\n\n\nPreview\n\n# Import data\nbroadband = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv\")\n\n# View data\nbroadband\n\n# A tibble: 3,143 × 13\n   state county         fips rural_urban metro fcc_availability microsoft_useage\n   &lt;chr&gt; &lt;chr&gt;         &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;            &lt;dbl&gt;\n 1 AL    Autauga Coun…  1001           2 Metro             0.81             0.28\n 2 AL    Baldwin Coun…  1003           3 Metro             0.88             0.3 \n 3 AL    Barbour Coun…  1005           6 Nonm…             0.59             0.18\n 4 AL    Bibb County    1007           1 Metro             0.29             0.07\n 5 AL    Blount County  1009           1 Metro             0.69             0.09\n 6 AL    Bullock Coun…  1011           6 Nonm…             0.06             0.05\n 7 AL    Butler County  1013           6 Nonm…             0.78             0.11\n 8 AL    Calhoun Coun…  1015           3 Metro             0.93             0.32\n 9 AL    Chambers Cou…  1017           6 Nonm…             0.82             0.34\n10 AL    Cherokee Cou…  1019           6 Nonm…             0.99             0.1 \n# ℹ 3,133 more rows\n# ℹ 6 more variables: pct_poverty &lt;dbl&gt;, median_income &lt;dbl&gt;, lt_hs_2019 &lt;dbl&gt;,\n#   hs_2019 &lt;dbl&gt;, some_college_2019 &lt;dbl&gt;, college_2019 &lt;dbl&gt;\n\n\n\n\n\nReferences\nBrandom, R., & Joel, W. (2021, May 10). This is a map of America’s broadband problem: A county-by-county look at the broadband gap. The Verge.\nEconomic Research Service, U.S. Department of Agriculture. (2021). County-Level Data Sets.\nMicrosoft. (2021). United States Broadband Usage Percentages Dataset. Github repository."
+    "text": "Russell Brandom and William Joel in an article for The Verge wrote,\n\n“If broadband access was a problem before 2020, the pandemic turned it into a crisis. As everyday businesses moved online, city council meetings or court proceedings became near-inaccessible to anyone whose connection couldn’t support a Zoom call.”\n\nBut, who in America has access to broadband internet? As part of their ongoing work to improve software and service performance and security, Microsoft collected router speed data from individuals who accessed their cloud services. After aggregating and anonymizing these data, they made these data available publicly to help researchers and policymakers understand and improve problems related to broadband access.\nThe data in broadband.csv, collected by Microsoft (2021), give us much better insight as to the true broadband access (defined as internet download speeds of at least 25 Mbps) of Americans as, to date, most studies of broadband access have used data collated by the FCC that is based on individual Internet Service Providers’ descriptions of the areas they serve. To better contextualize this, the data have also been augmented with several county-level poverty and education indicators. The variables are:\n\nstate: State postal code\ncounty: County name\nfips: Five-digit Federal Information Processing Standards code which uniquely identified counties and county equivalents in the United States\nrural_urban: Rural-urban continuum code\n\n1: Metropolitan - Counties in metropolitan areas of 1 million population or more\n2: Metropolitan - Counties in metropolitan areas of 250,000 to 1 million population\n3: Metropolitan - Counties in metropolitan areas of fewer than 250,000 population\n4: Nonmetropolitan - Urban population of 20,000 or more, adjacent to a metropolitan area\n5: Nonmetropolitan - Urban population of 20,000 or more, not adjacent to a metropolitan area\n6: Nonmetropolitan - Urban population of 2,500 to 19,999, adjacent to a metropolitan area\n7: Nonmetropolitan - Urban population of 2,500 to 19,999, not adjacent to a metropolitan area\n8: Nonmetropolitan - Completely rural or less than 2,500 urban population, adjacent to a metropolitan area\n9: Nonmetropolitan - Completely rural or less than 2,500 urban population, not adjacent to a metropolitan area\n\nmetro: Classification of the county as metropolitan (metro) or nonmetropolitan (nonmetro) based on the rural-urban continuum code\nfcc_availability: Proportion of people in the county with access to fixed terrestrial broadband at speeds of 25 Mbps/3 Mbps as of the end of 2019 as measured by the FCC\nmicrosoft_useage: Proportion of people in the county that use the internet at broadband speeds estimated by Microsoft\npct_poverty: Estimate of the percentage of people (of all ages) in the county living in poverty in 2019\nmedian_income: Estimate of median household income in the county in 2019\nlt_hs_2019: Percentage of the county with less than a high school diploma (2015–2019)\nhs_2019: Percentage of the county with a high school diploma (2015–2019)\nsome_college_2019: Percentage of the county with some college or an associate’s degree (2015–2019)\ncollege_2019: Percentage of the county with a bachelor’s degree, or higher (2015–2019)\n\n\n\nPreview\n\n# Import data\nbroadband = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv\")\n\n# View data\nbroadband\n\n# A tibble: 3,143 × 13\n   state county         fips rural_urban metro fcc_availability microsoft_useage\n   &lt;chr&gt; &lt;chr&gt;         &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;            &lt;dbl&gt;            &lt;dbl&gt;\n 1 AL    Autauga Coun…  1001           2 Metro             0.81             0.28\n 2 AL    Baldwin Coun…  1003           3 Metro             0.88             0.3 \n 3 AL    Barbour Coun…  1005           6 Nonm…             0.59             0.18\n 4 AL    Bibb County    1007           1 Metro             0.29             0.07\n 5 AL    Blount County  1009           1 Metro             0.69             0.09\n 6 AL    Bullock Coun…  1011           6 Nonm…             0.06             0.05\n 7 AL    Butler County  1013           6 Nonm…             0.78             0.11\n 8 AL    Calhoun Coun…  1015           3 Metro             0.93             0.32\n 9 AL    Chambers Cou…  1017           6 Nonm…             0.82             0.34\n10 AL    Cherokee Cou…  1019           6 Nonm…             0.99             0.1 \n# ℹ 3,133 more rows\n# ℹ 6 more variables: pct_poverty &lt;dbl&gt;, median_income &lt;dbl&gt;, lt_hs_2019 &lt;dbl&gt;,\n#   hs_2019 &lt;dbl&gt;, some_college_2019 &lt;dbl&gt;, college_2019 &lt;dbl&gt;\n\n\n\n\n\nReferences\nBrandom, R., & Joel, W. (2021, May 10). This is a map of America’s broadband problem: A county-by-county look at the broadband gap. The Verge.\nEconomic Research Service, U.S. Department of Agriculture. (2021). County-Level Data Sets.\nMicrosoft. (2021). United States Broadband Usage Percentages Dataset. Github repository."
   },
   {
     "objectID": "codebooks/carbon.html",
@@ -361,7 +361,7 @@
     "href": "codebooks/fertility.html",
     "title": "fertility.csv",
     "section": "",
-    "text": "Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. The data in fertility.csv were collected from several sources (e.g., World Bank) and are thought to correlate with fertility rates, a measure directly linked to population. The variables are:\n\ncountry: Country name\nregion: Region of the world\nfertility_rate: Average number of children that would be born to a woman if she were to live to the end of her childbearing years and bear children in accordance with age-specific fertility rates.\neduc_female: Average number of years of formal education (schooling) for females\ninfant_mortality: Number of infants dying before reaching one year of age, per 1,000 live births in a given year.\ncontraceptive: Percentage of women who are practicing, or whose sexual partners are practicing, any form of contraception. It is usually measured for women ages 15–49 who are married or in union.\ngni_class: Categorization based on country’s gross national income per capita (calculated using the World Bank Atlas method)\n\nLow: Low-income economies; GNI per capita of $1,025 or less;\nLow/Middle: Lower-middle-income economies; GNI per capita between $1,026 and $3,995;\nUpper/Middle: Upper middle-income economies; GNI per capita between $3,996 and $12,375;\nUpper: High-income economies; GNI per capita of $12,376 or more.\n\nhigh_gni: Dummy variable indicating if the country is has an upper-middle or high income economy (low- or low/middle-income = 0; upper/middle or upper income = 1)\n\n\n\nPreview\n\n# Import Data\nfertility = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv\")\n\n# View data\nfertility\n\n# A tibble: 124 × 8\n   country      region fertility_rate educ_female infant_mortality contraceptive\n   &lt;chr&gt;        &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;            &lt;dbl&gt;         &lt;dbl&gt;\n 1 Albania      Europ…           1.49         9.1             15              46\n 2 Algeria      Middl…           2.78         5.9             17.2            57\n 3 Armenia      Europ…           1.39        10.8             14.7            57\n 4 Austria      Europ…           1.42         8.9              3.3            66\n 5 Azerbaijan   Europ…           1.92        10.5             30.8            55\n 6 Bahamas, The Latin…           1.97        11.1             13.9            45\n 7 Bangladesh   South…           2.5          4.6             33.1            62\n 8 Belgium      Europ…           1.65        10.5              3.4            67\n 9 Belize       Latin…           3.08         9.2             15.7            51\n10 Benin        Sub-S…           5.13         2               58.5            16\n# ℹ 114 more rows\n# ℹ 2 more variables: gni_class &lt;chr&gt;, high_gni &lt;dbl&gt;\n\n\n\n\n\nReferences\nRoser, M. (2017). Fertility rate. Our world in data.\nUNICEF. (2016). State of the world’s children 2016. United Nations Population Division’s World Contraceptive Use, household surveys including Demographic and Health Surveys and Multiple Indicator Cluster Surveys.\nWorld Bank (2019). World Bank open data."
+    "text": "Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. The data in fertility.csv were collected from several sources (e.g., World Bank) and are thought to correlate with fertility rates, a measure directly linked to population. The variables are:\n\ncountry: Country name\nregion: Region of the world\nfertility_rate: Average number of children that would be born to a woman if she were to live to the end of her childbearing years and bear children in accordance with age-specific fertility rates.\neduc_female: Average number of years of formal education (schooling) for females\ninfant_mortality: Number of infants dying before reaching one year of age, per 1,000 live births in a given year.\ncontraceptive: Percentage of women who are practicing, or whose sexual partners are practicing, any form of contraception. It is usually measured for women ages 15–49 who are married or in union.\ngni_class: Categorization based on country’s gross national income per capita (calculated using the World Bank Atlas method)\n\nLow: Low-income economies; GNI per capita of $1,025 or less;\nLow/Middle: Lower-middle-income economies; GNI per capita between $1,026 and $3,995;\nUpper/Middle: Upper middle-income economies; GNI per capita between $3,996 and $12,375;\nUpper: High-income economies; GNI per capita of $12,376 or more.\n\nhigh_gni: Dummy variable indicating if the country is has an upper-middle or high income economy (low- or low/middle-income = 0; upper/middle or upper income = 1)\n\n\n\nPreview\n\n# Import Data\nfertility = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv\")\n\n# View data\nfertility\n\n# A tibble: 124 × 8\n   country      region fertility_rate educ_female infant_mortality contraceptive\n   &lt;chr&gt;        &lt;chr&gt;           &lt;dbl&gt;       &lt;dbl&gt;            &lt;dbl&gt;         &lt;dbl&gt;\n 1 Albania      Europ…           1.49         9.1             15              46\n 2 Algeria      Middl…           2.78         5.9             17.2            57\n 3 Armenia      Europ…           1.39        10.8             14.7            57\n 4 Austria      Europ…           1.42         8.9              3.3            66\n 5 Azerbaijan   Europ…           1.92        10.5             30.8            55\n 6 Bahamas, The Latin…           1.97        11.1             13.9            45\n 7 Bangladesh   South…           2.5          4.6             33.1            62\n 8 Belgium      Europ…           1.65        10.5              3.4            67\n 9 Belize       Latin…           3.08         9.2             15.7            51\n10 Benin        Sub-S…           5.13         2               58.5            16\n# ℹ 114 more rows\n# ℹ 2 more variables: gni_class &lt;chr&gt;, high_gni &lt;dbl&gt;\n\n\n\n\n\nReferences\nRoser, M. (2017). Fertility rate. Our world in data.\nUNICEF. (2016). State of the world’s children 2016. United Nations Population Division’s World Contraceptive Use, household surveys including Demographic and Health Surveys and Multiple Indicator Cluster Surveys.\nWorld Bank (2019). World Bank open data."
   },
   {
     "objectID": "codebooks/gapminder.html",
@@ -396,7 +396,7 @@
     "href": "codebooks/scoobydoo.html",
     "title": "scoobydoo.csv",
     "section": "",
-    "text": "Scooby-Doo is a popular television and movie franchise in the United States which has been airing for over 50 years! Scoobypedia (an encyclopedia of the franchise) describes the show as follows:\n\nThe show follows the iconic mystery solving detectives, know as Mystery Inc., as they set out to solve crime and unmask criminals, bent on revenge or committing criminal acts for their own personal gain.\n\nMystery Inc. are an amateur crime-solving group of friends composed of Fred Jones (the team’s leader), Daphne Blake (fashionista and musician), Velma Dinkley (bespectacled resident genius), Shaggy Rogers (owner and best friend to Scooby-Doo), and Scooby-Doo (the talking dog mascot).\nThe data in scoobydoo.csv are a subset of data collected by plummye who “[t]ook ~1 year to watch every Scooby-Doo iteration and track every variable.” There are 372 cases in the data.\nThe variables are:\n\ntitle: Title of the episode or movie\nseries_name: Name of the series in which the episode takes place. For movies this is the grouping classification from Scoobypedia.\ndate_aired: Dated aired in United States.\nengagement: Engagement measure based on the log-number of reviews on IMDb. Higher values indicate more engagement.\ncaught_by: Which Mystery Inc. members caught the villain\n\nFred/Daphne/Velma: Villain caught by Fred Jones, Daphne Blake, Velma Dinkley, or some combination of these three Mystery Inc. members;\nShaggy/Scooby: Villain caught by either Shaggy Rogers, Scooby-Doo, or both;\nCombo: Villain caught by a combination of the five Mystery Inc. members;\nOther: Villain caught by non-Mystery Inc. member.\n\nimdb_rating: Weighted average of all individual IMDb ratings (from 1 to 10)\nformat: Type of media (TV or Movie)\ncatchphrase: Number of times any catchphrase (e.g., zoinks, rooby rooby roo) was uttered in the episode or movie\n\n\n\nPreview\n\n# Import Data\nscoobydoo = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv\")\n\n# View data\nscoobydoo\n\n# A tibble: 372 × 8\n   title          series_name date_aired engagement caught_by imdb_rating format\n   &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt; \n 1 What a Night … Scooby Doo… 9/13/69          6.32 Shaggy/S…         8.1 TV    \n 2 A Clue for Sc… Scooby Doo… 9/20/69          6.17 Shaggy/S…         8.1 TV    \n 3 Hassle in the… Scooby Doo… 9/27/69          6.12 Shaggy/S…         8   TV    \n 4 Mine Your Own… Scooby Doo… 10/4/69          6.05 Fred/Dap…         7.8 TV    \n 5 Decoy for a D… Scooby Doo… 10/11/69         5.97 Shaggy/S…         7.5 TV    \n 6 What the Hex … Scooby Doo… 10/18/69         5.95 Fred/Dap…         8.4 TV    \n 7 Never Ape an … Scooby Doo… 10/25/69         5.88 Fred/Dap…         7.6 TV    \n 8 The Backstage… Scooby Doo… 11/8/69          5.92 Shaggy/S…         8.1 TV    \n 9 Bedlam in the… Scooby Doo… 11/15/69         5.85 Shaggy/S…         8   TV    \n10 A Gaggle of G… Scooby Doo… 11/22/69         5.94 Shaggy/S…         8.5 TV    \n# ℹ 362 more rows\n# ℹ 1 more variable: catchphrase &lt;dbl&gt;"
+    "text": "Scooby-Doo is a popular television and movie franchise in the United States which has been airing for over 50 years! Scoobypedia (an encyclopedia of the franchise) describes the show as follows:\n\nThe show follows the iconic mystery solving detectives, know as Mystery Inc., as they set out to solve crime and unmask criminals, bent on revenge or committing criminal acts for their own personal gain.\n\nMystery Inc. is an amateur crime-solving group of friends composed of Fred Jones (the team’s leader), Daphne Blake (fashionista and musician), Velma Dinkley (bespectacled resident genius), Shaggy Rogers (owner and best friend to Scooby-Doo), and Scooby-Doo (the talking dog mascot).\nThe data in scoobydoo.csv are a subset of data collected by plummye who “[t]ook ~1 year to watch every Scooby-Doo iteration and track every variable.” There are 372 cases in the data.\nThe variables are:\n\ntitle: Title of the episode or movie\nseries_name: Name of the series in which the episode takes place. For movies this is the grouping classification from Scoobypedia.\ndate_aired: Dated aired in United States.\nengagement: Engagement measure based on the log-number of reviews on IMDb. Higher values indicate more engagement.\ncaught_by: Which Mystery Inc. members caught the villain\n\nFred/Daphne/Velma: Villain caught by Fred Jones, Daphne Blake, Velma Dinkley, or some combination of these three Mystery Inc. members;\nShaggy/Scooby: Villain caught by either Shaggy Rogers, Scooby-Doo, or both;\nCombo: Villain caught by a combination of the five Mystery Inc. members;\nOther: Villain caught by non-Mystery Inc. member.\n\nimdb_rating: Weighted average of all individual IMDb ratings (from 1 to 10)\nformat: Type of media (TV or Movie)\ncatchphrase: Number of times any catchphrase (e.g., zoinks, rooby rooby roo) was uttered in the episode or movie\n\n\n\nPreview\n\n# Import Data\nscoobydoo = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv\")\n\n# View data\nscoobydoo\n\n# A tibble: 372 × 8\n   title          series_name date_aired engagement caught_by imdb_rating format\n   &lt;chr&gt;          &lt;chr&gt;       &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt; &lt;chr&gt; \n 1 What a Night … Scooby Doo… 9/13/69          6.32 Shaggy/S…         8.1 TV    \n 2 A Clue for Sc… Scooby Doo… 9/20/69          6.17 Shaggy/S…         8.1 TV    \n 3 Hassle in the… Scooby Doo… 9/27/69          6.12 Shaggy/S…         8   TV    \n 4 Mine Your Own… Scooby Doo… 10/4/69          6.05 Fred/Dap…         7.8 TV    \n 5 Decoy for a D… Scooby Doo… 10/11/69         5.97 Shaggy/S…         7.5 TV    \n 6 What the Hex … Scooby Doo… 10/18/69         5.95 Fred/Dap…         8.4 TV    \n 7 Never Ape an … Scooby Doo… 10/25/69         5.88 Fred/Dap…         7.6 TV    \n 8 The Backstage… Scooby Doo… 11/8/69          5.92 Shaggy/S…         8.1 TV    \n 9 Bedlam in the… Scooby Doo… 11/15/69         5.85 Shaggy/S…         8   TV    \n10 A Gaggle of G… Scooby Doo… 11/22/69         5.94 Shaggy/S…         8.5 TV    \n# ℹ 362 more rows\n# ℹ 1 more variable: catchphrase &lt;dbl&gt;"
   },
   {
     "objectID": "codebooks/spice-girls.html",
@@ -410,7 +410,7 @@
     "href": "codebooks/state-education.html",
     "title": "state-education.csv",
     "section": "",
-    "text": "This data, stored in state-education.csv includes state-level aggregate data on six attributes. The attributes, collected for all 50 states and the District of Columbia, are:\n\nstate: State name\npostal: State postal code\nregion: Region of the country identified by the National Education Association (Far West, Great Lakes, Mid East, New England, Plains, Rocky Mountains, Southeast, Southwest)\nsat_participate: Percentage of students in the state who took the SAT.\nsat_ebrw: Average score on the Evidence-Based Reading and Writing (EBRW) scale in the state.\nsat_math: Average score on the math scale in the state.\nsat_total: Average total SAT score in the state.\nsalary_2020_21: Average 2020–2021 public teacher salary in the state.\n\nNote: All of the SAT data is based on students in the class of 2020 who took the current SAT during high school. The SAT is made up of three sections: (1) Reading, (2) Writing and Language (also just called Writing), and (3) Math. The Math section is scored on a scale of 200–800. The Reading and Writing sections are combined to give a Evidence-Based Reading and Writing (EBRW) score, also ranging from 200–800. By combining the Math and EBRW scores, we get a total SAT score ranging from 400–1600.\n\n\nPreview\n\n# Import Data\nstate_educ = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv\")\n\n# View data\nstate_educ\n\n# A tibble: 51 × 8\n   state               postal region sat_participate sat_ebrw sat_math sat_total\n   &lt;chr&gt;               &lt;chr&gt;  &lt;chr&gt;            &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n 1 Alabama             AL     South…               7      576      551      1127\n 2 Alaska              AK     Far W…              37      555      543      1098\n 3 Arizona             AZ     South…              29      571      568      1139\n 4 Arkansas            AR     South…               4      590      567      1157\n 5 California          CA     Far W…              67      527      522      1049\n 6 Colorado            CO     Rocky…             100      511      501      1012\n 7 Connecticut         CT     New E…             100      527      512      1039\n 8 Delaware            DE     Mid E…             100      497      481       978\n 9 District of Columb… DC     Mid E…             100      498      482       979\n10 Florida             FL     South…             100      512      479       992\n# ℹ 41 more rows\n# ℹ 1 more variable: salary_2020_21 &lt;dbl&gt;\n\n\n\n\n\nReferences\nCollege Board. (2020). SAT suite of assessments annual report. Author.\nNEA Research. (2021). Rankings of the states 2020 and estimates of school statistics 2021. National Education Association."
+    "text": "This data, stored in state-education.csv includes state-level aggregate data on six attributes. The attributes, collected for all 50 states and the District of Columbia, are:\n\nstate: State name\npostal: State postal code\nregion: Region of the country identified by the National Education Association (Far West, Great Lakes, Mid East, New England, Plains, Rocky Mountains, Southeast, Southwest)\nsat_participate: Percentage of students in the state who took the SAT.\nsat_ebrw: Average score on the Evidence-Based Reading and Writing (EBRW) scale in the state.\nsat_math: Average score on the math scale in the state.\nsat_total: Average total SAT score in the state.\nsalary_2020_21: Average 2020–2021 public teacher salary in the state.\n\nNote: All of the SAT data is based on students in the class of 2020 who took the current SAT during high school. The SAT is made up of three sections: (1) Reading, (2) Writing and Language (also just called Writing), and (3) Math. The Math section is scored on a scale of 200–800. The Reading and Writing sections are combined to give an Evidence-Based Reading and Writing (EBRW) score, also ranging from 200–800. By combining the Math and EBRW scores, we get a total SAT score ranging from 400–1600.\n\n\nPreview\n\n# Import Data\nstate_educ = readr::read_csv(file = \"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv\")\n\n# View data\nstate_educ\n\n# A tibble: 51 × 8\n   state               postal region sat_participate sat_ebrw sat_math sat_total\n   &lt;chr&gt;               &lt;chr&gt;  &lt;chr&gt;            &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt;\n 1 Alabama             AL     South…               7      576      551      1127\n 2 Alaska              AK     Far W…              37      555      543      1098\n 3 Arizona             AZ     South…              29      571      568      1139\n 4 Arkansas            AR     South…               4      590      567      1157\n 5 California          CA     Far W…              67      527      522      1049\n 6 Colorado            CO     Rocky…             100      511      501      1012\n 7 Connecticut         CT     New E…             100      527      512      1039\n 8 Delaware            DE     Mid E…             100      497      481       978\n 9 District of Columb… DC     Mid E…             100      498      482       979\n10 Florida             FL     South…             100      512      479       992\n# ℹ 41 more rows\n# ℹ 1 more variable: salary_2020_21 &lt;dbl&gt;\n\n\n\n\n\nReferences\nCollege Board. (2020). SAT suite of assessments annual report. Author.\nNEA Research. (2021). Rankings of the states 2020 and estimates of school statistics 2021. National Education Association."
   },
   {
     "objectID": "codebooks/substance-family.html",
@@ -613,7 +613,7 @@
     "href": "schedule.html",
     "title": "Calendar",
     "section": "",
-    "text": "The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor’s discretion.\nAs part of the course, there are several articles, papers and technical reports that you will need to read during the semester. Most of the articles themselves are accessible through the University of Minnesota library website (http://www.lib.umn.edu). In order to access the full text of some of the articles, you will need to log in using your University x500 username and password. More detailed information, including references or links to specific readings, are linked under the day’s “Reading”.\n\n\n\n\n\n\n\n\n\nDate\n\n\nReading\n\n\nTopic\n\n\nNotes\n\n\nScript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nSept. 07\n\n\n\n\n\nWelcome to EPsy 8251\n\n\n\n\n\n\n\n\n\n\n\nUnit 01: Introduction to Statistical Computing\n\n\n\n\n\n\n\nSept. 12\n\n\n\n\n\nIntroduction to R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 14\n\n\n\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 19\n\n\n\n\n\nPlotting with ggplot2\n\n\n\n\n\n\n\n\n\n\n\nUnit 02: Regression Basics\n\n\n\n\n\n\n\nSept. 21\n\n\n\n\n\nSimple Linear Regression: Description\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 26\n\n\n\n\n\n\n\nSept. 28\n\n\n\n\n\nOrdinary Least Squares (OLS) Estimation\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 03\n\n\n\n\n\nCorrelation and Standardized Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 05\n\n\n\n\n\n\n\nOct. 10\n\n\n\n\n\nCoefficient-Level Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 12\n\n\n\n\n\n\n\nOct. 17\n\n\n\n\n\nModel-Level Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 19\n\n\n\n\n\nUnit 03: Deeper Understanding\n\n\n\n\n\n\n\nOct. 24\n\n\n\n\n\nIntroduction to Multiple Linear Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 26\n\n\n\n\n\n\n\n\nOct. 31\n\n\n\n\n\nUnderstanding Statistical Control\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 07\n\n\n\n\n\nAssumptions of the Regression Model\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 09\n\n\n\n\n\nUnit 04: Extending the Regression Model\n\n\n\n\n\n\n\nNov. 14\n\n\n\n\n\nDummy Coding Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 16\n\n\n\n\n\n\n\nNov. 21\n\n\n\n\n\nPolychotomous Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 23\n\n\n\n\n\n\n\nNO CLASS—Mental Health Day\n\n\n\n\n\n\n\n\n\n\nNov. 28\n\n\n\n\n\nPolychotomous Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 30\n\n\n\n\n\n\n\nDec. 05\n\n\n\n\n\nIntroduction to Interaction Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec. 07\n\n\n\n\n\n\n\nDec. 12\n\n\n\n\n\nMore Interaction Effects\n\n\n\n\n\n\n\n\n\n\n\n\nDec. 14"
+    "text": "The calendar below lists the tentative course topics. The dates listed are subject to change at the instructor’s discretion.\nAs part of the course, there are several articles, papers and technical reports that you will need to read during the semester. Most of the articles themselves are accessible through the University of Minnesota library website (http://www.lib.umn.edu). In order to access the full text of some of the articles, you will need to log in using your University x500 username and password. More detailed information, including references or links to specific readings, are linked under the day’s “Reading”.\n\n\n\n\n\n\n\n\n\nDate\n\n\nReading\n\n\nTopic\n\n\nNotes\n\n\nScript\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\nSept. 06\n\n\n\n\n\nWelcome to EPsy 8251\n\n\n\n\n\n\n\n\n\n\n\nUnit 01: Introduction to Statistical Computing\n\n\n\n\n\n\n\nSept. 11\n\n\n\n\n\nIntroduction to R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 13\n\n\n\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 18\n\n\n\n\n\nPlotting with ggplot2\n\n\n\n\n\n\n\n\n\n\n\nUnit 02: Regression Basics\n\n\n\n\n\n\n\nSept. 20\n\n\n\n\n\nSimple Linear Regression: Description\n\n\n\n\n\n\n\n\n\n\n\n\nSept. 25\n\n\n\n\n\n\n\nSept. 27\n\n\n\n\n\nOrdinary Least Squares (OLS) Estimation\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 02\n\n\n\n\n\nCorrelation and Standardized Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 04\n\n\n\n\n\n\n\nOct. 09\n\n\n\n\n\nCoefficient-Level Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 11\n\n\n\n\n\n\n\nOct. 16\n\n\n\n\n\nModel-Level Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 18\n\n\n\n\n\nUnit 03: Deeper Understanding\n\n\n\n\n\n\n\nOct. 23\n\n\n\n\n\nIntroduction to Multiple Linear Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\nOct. 25\n\n\n\n\n\n\n\n\nOct. 30\n\n\n\n\n\nUnderstanding Statistical Control\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 01\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 06\n\n\n\n\n\nAssumptions of the Regression Model\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 08\n\n\n\n\n\nUnit 04: Extending the Regression Model\n\n\n\n\n\n\n\nNov. 13\n\n\n\n\n\nDummy Coding Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 15\n\n\n\n\n\n\n\nNov. 20\n\n\n\n\n\nPolychotomous Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 22\n\n\n\n\n\n\n\nNO CLASS—Mental Health Day\n\n\n\n\n\n\n\n\n\n\nNov. 27\n\n\n\n\n\nPolychotomous Categorical Predictors\n\n\n\n\n\n\n\n\n\n\n\n\n\nNov. 29\n\n\n\n\n\n\n\nDec. 04\n\n\n\n\n\nIntroduction to Interaction Effects\n\n\n\n\n\n\n\n\n\n\n\n\n\nDec. 06\n\n\n\n\n\n\n\nDec. 11\n\n\n\n\n\nMore Interaction Effects\n\n\n\n\n\n\n\n\n\n\n\n\nDec. 13"
   },
   {
     "objectID": "umn-policies.html",
@@ -964,5 +964,362 @@
     "title": "Hospitalizations and Astrological Sign",
     "section": "",
     "text": "Discuss the following study with your group. Do you believe the findings? Why or why not?\n\nMethods\nA study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (\\(p=.0108\\)).\nThe p-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1."
+  },
+  {
+    "objectID": "readings/00-welcome-to-8251.html",
+    "href": "readings/00-welcome-to-8251.html",
+    "title": "📖 Welcome to EPsy 8251",
+    "section": "",
+    "text": "Here are some things to do before the first class:\nRequired\n\nRead through and familiarize yourself with the course website. This website acts as the syllabus for the course."
+  },
+  {
+    "objectID": "readings/01-01-introduction-to-r-and-rstudio.html",
+    "href": "readings/01-01-introduction-to-r-and-rstudio.html",
+    "title": "📖 Introduction to R and RStudio",
+    "section": "",
+    "text": "Required\nRead:\n\nR and RStudio Installation and Setup [Statistical Modeling]\n\nInstall R and RStudio:\n\nDownload and install the most recent version of R (version 4.3.1; Beagle Scouts) on your computer.\nDownload and install the most recent version of and RStudio Desktop (version 2023.06.0+421) on your computer.\n\nRead and work through the following:\n\nGetting Started with R [Statistical Modeling]\nData Structures in R [Statistical Modeling]\n\nAdditional Resources\n\nRStudio Cheatsheets\nRStudio Keyboard Shortcuts\nR Cookbook [book; UMN Library]\ntidy data video [video]\nTeacups, Giraffes, and Statistics: Learn statistics & R coding through a series of modules that teach in an intuitive, playful, and approachable way"
+  },
+  {
+    "objectID": "readings/01-04-data-wrangling-with-dplyr.html",
+    "href": "readings/01-04-data-wrangling-with-dplyr.html",
+    "title": "📖 Data Wrangling with dplyr",
+    "section": "",
+    "text": "Required\n\nData Wrangling with dplyr [Statistical Modeling]\n\nAdditional Resources\n\nData Transformation with dplyr Cheatsheet\nData Wrangling Part 1: Basic to Advanced Ways to Select Columns\nData Wrangling Part 2: Transforming your columns into the right shape\nData Wrangling Part 3: Basic and more advanced ways to filter rows\nData Wrangling Part 4: Summarizing and slicing your data\nCreate tidyverse inspired clothing. See how Amelia McNamara created a tidyverse dress and make your own clothing, shower curtain, etc. with the Spoonflower printed fabric she made available."
+  },
+  {
+    "objectID": "readings/01-05-plotting-with-ggplot2.html",
+    "href": "readings/01-05-plotting-with-ggplot2.html",
+    "title": "📖 Plotting with ggplot2",
+    "section": "",
+    "text": "Required\n\nVisualizing Data with ggplot2 [Statistical Modeling]\n\nAdditional Resources\n\nData Visualization with ggplot2 Cheatsheet\nCookbook for R: Graphs\nPlotting with ggplot: Part 1 [video]\nPlotting with ggplot: Part 2 [video]"
+  },
+  {
+    "objectID": "readings/02-01-simple-linear-regression-description.html",
+    "href": "readings/02-01-simple-linear-regression-description.html",
+    "title": "📖 Simple Linear Regression: Description",
+    "section": "",
+    "text": "Required\n\nLewis-Beck & Lewis-Beck [Chap. 1]\nClayton, A. (2020, Oct. 28). How eugenics shaped statistics: Exposing the damned lies of three science pioneers. Nautilus, 92 (Frontiers)."
+  },
+  {
+    "objectID": "readings/02-02-ols-estimation.html",
+    "href": "readings/02-02-ols-estimation.html",
+    "title": "📖 Ordinary Least Squares (OLS) Estimation",
+    "section": "",
+    "text": "Required\n\nOrdinary Least Squares Regression: Explained Visually"
+  },
+  {
+    "objectID": "readings/02-03-correlation-and-standardized-regression.html",
+    "href": "readings/02-03-correlation-and-standardized-regression.html",
+    "title": "📖 Correlation and Standardized Regression",
+    "section": "",
+    "text": "Required\n\nEasy Correlation Matrix Analysis in R Using Corrr Package\n\nAdditional Resources\n\ncorrr Package Vignette\nExploring correlations in R with corrr\nGuess the Correlation Game [fun game]\nBring, J. (1994). How to standardize regression coefficients. The American Statistician, 48(3), 209–213."
+  },
+  {
+    "objectID": "readings/02-04-coefficient-level-inference.html",
+    "href": "readings/02-04-coefficient-level-inference.html",
+    "title": "📖 Coefficient-Level Inference",
+    "section": "",
+    "text": "Required\n\nLewis-Beck & Lewis-Beck [Chap. 2]\nAmrhein, V., Greenland, S., & McShane, B. (2019). Comment: Retire statistical significance. Nature, 567, 305–307.\n\nAdditional Resources\n\nDance of the p-values [video]"
+  },
+  {
+    "objectID": "readings/02-05-model-level-inference.html",
+    "href": "readings/02-05-model-level-inference.html",
+    "title": "📖 Model-Level Inference",
+    "section": "",
+    "text": "Required\n\nThe Boy Who Cried Type I Error\nType I and Type II Errors Simplified"
+  },
+  {
+    "objectID": "readings/03-01-introduction-to-multiple-linear-regression.html",
+    "href": "readings/03-01-introduction-to-multiple-linear-regression.html",
+    "title": "📖 Introduction to Multiple Linear Regression",
+    "section": "",
+    "text": "Required\n\nLewis-Beck & Lewis-Beck [Chap. 3]\n\nAdditional Resources\n\nMcDonald, J. H. (2014). Confounding variables. In Handbook of biological statistics (3rd ed., pp. 24–28). Sparky House Publishing."
+  },
+  {
+    "objectID": "readings/03-02-understanding-statistical-control.html",
+    "href": "readings/03-02-understanding-statistical-control.html",
+    "title": "📖 Understanding Statistical Control",
+    "section": "",
+    "text": "Required\n\nPourhoseingholi, M. A.Baghestani, A. R., & Vahedi, M. (2012). How to control confounding effects by statistical analysis. Gastroenterology and hepatology from bed to bench, 5(2), 79–83."
+  },
+  {
+    "objectID": "readings/03-03-distributional-assumptions-underlying-the-regression-model.html",
+    "href": "readings/03-03-distributional-assumptions-underlying-the-regression-model.html",
+    "title": "📖 Distributional Assumptions Underlying the Regression Model",
+    "section": "",
+    "text": "Required\n\nRe-read Lewis-Beck & Lewis-Beck [Chap. 3]\n\nAdditional Resources\n\nVisualizing Residuals [blog post]\nOsborne, J. W., & Overbay, A. (2004). The power of outliers (and why researchers should ALWAYS check for them). Practical Assessment, Research & Evaluation, 9(6)."
+  },
+  {
+    "objectID": "readings/04-01-dichotomous-categorical-predictors.html",
+    "href": "readings/04-01-dichotomous-categorical-predictors.html",
+    "title": "📖 Dichotomous Categorical Predictors",
+    "section": "",
+    "text": "Required\n\nWhat is Dummy Coding? [web article]"
+  },
+  {
+    "objectID": "readings/04-02-polychotomous-categorical-predictors.html",
+    "href": "readings/04-02-polychotomous-categorical-predictors.html",
+    "title": "📖 Polychotomous Categorical Predictors",
+    "section": "",
+    "text": "Required\n\nTechnical Methods Report: Guidelines for Multiple Testing in Impact Evaluations\n\nAdditional Resources\n\nGelman, A., Hill, J., & Yajima, M. (2012). Why we (usually) don’t have to worry about multiple comparisons. Journal of Research on Educational Effectiveness, 5, 189–211.\nScience isn’t Broken [web article]\nVeazie, P. J. (2006). When to combine hypotheses and adjust for multiple Tests. Health Services Research, 41(3 Pt 1), 804–818. doi: 10.1111/j.1475-6773.2006.00512.x"
+  },
+  {
+    "objectID": "readings/04-03-introduction-to-interaction-effects.html",
+    "href": "readings/04-03-introduction-to-interaction-effects.html",
+    "title": "📖 Introduction to Interaction Effects",
+    "section": "",
+    "text": "Required\n\nBrambor, T., Clark, W. R., & Golder, M. (2006). Understanding interaction models: Improving empirical analyses. Political Analysis, 14, 63–82.\n\nAdditional resources\n\nFrost, J. (2018). Understanding Interaction Effects in Statistics. [blog post]"
+  },
+  {
+    "objectID": "readings/04-04-more-interaction-effects.html",
+    "href": "readings/04-04-more-interaction-effects.html",
+    "title": "📖 More Interaction Effects",
+    "section": "",
+    "text": "Required\n\nWilliams, R. (2015). Interpreting interaction effects; interaction effects and centering."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-01-using-R.html",
+    "href": "worksheets/worksheet-01-01-using-R.html",
+    "title": "Using RStudio Worksheet",
+    "section": "",
+    "text": "Complete the problems on this worksheet with 2–3 other students. You may want to refer to the Getting Started with R and Data Structures in R chapters in the Computational Toolkit for Educational Scientists."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-01-using-R.html#directions",
+    "href": "worksheets/worksheet-01-01-using-R.html#directions",
+    "title": "Using RStudio Worksheet",
+    "section": "",
+    "text": "Complete the problems on this worksheet with 2–3 other students. You may want to refer to the Getting Started with R and Data Structures in R chapters in the Computational Toolkit for Educational Scientists."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-01-using-R.html#problem-set-i",
+    "href": "worksheets/worksheet-01-01-using-R.html#problem-set-i",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set I",
+    "text": "Problem Set I\nUse R to compute the answer to the following problems. You can (for now) work in the console or use a script file. This problem set will focus on skills and ideas you learn in the section Getting Started with R.\n\nCompute: \\(2 + 3 \\times 5\\). Does R follow order of operations or not?\nCompute: \\((3 \\times5^2 \\div 15)-(5-2^2)\\)\nCompute: \\(\\sqrt{~\\left\\vert3-4\\right\\vert~}\\)\nCreate a sequence of the numbers 1 and 5. Store this in an object called one_five.\nCreate a sequence of all integers between 10 and 1. This sequence should begin at 10 and end at 1. (e.g., \\(10,9,8,7,\\ldots,1\\)). Store this in an object called my_num.\nUse the length() function to count the number of elements in the one_five object. Also use it to count the number of elements in my_num.\nCompute \\(\\mathtt{one\\_five}+\\mathtt{my\\_num}\\). Explain how R is using the two objects to obtain the result it did.\nInstall the following three packages from CRAN: dplyr, ggplot2 and remotes.\nLoad the remotes package.\nInstall the educate package from GitHub."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-01-using-R.html#problem-set-ii",
+    "href": "worksheets/worksheet-01-01-using-R.html#problem-set-ii",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set II",
+    "text": "Problem Set II\nUse R to compute the answer to the following problems. For these problems, please work in a script file. This problem set will focus on skills and ideas you learn in Data Structures in R.\n\nCreate a new script file. Save it on your computer. When you do this give it a name other than Untitled.\nUse the c() function to create a vector that includes the number of pets each person in your group has. Name this vector pets. (If you have 2 or fewer people in your group, combine your results with another group so that you have at least 3 values.)\nCreate a data frame that includes two columns. The first column will be the first names of everyone in your group (or combined groups). Call this column first_name. The second column will be the number of credits each person in your breakout room is taking this semester. Call this column credits. Assign this data frame a name so that you can compute on it later. (Feel free to make it a three column data frame by adding the pets column.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-01-using-R.html#problem-set-iii",
+    "href": "worksheets/worksheet-01-01-using-R.html#problem-set-iii",
+    "title": "Using RStudio Worksheet",
+    "section": "Problem Set III",
+    "text": "Problem Set III\nUse R to compute the answer to the following problems. For these problems, please continue to work in the script file. This problem set will focus on skills and ideas you learn in Data Structures in R.\n\nImport the comic-characters.csv data into R. Assign this to an object called comics. If you use the Import button to do this, make sure you copy the syntax into your script file.\nExamine the codebook for the comic-characters.csv data.\nRun the syntax View(comics). This should display the imported data in a tab in RStudio. Use the search bar in the tab to search for “Hobgoblin”. How many Hobgoblin characters are there?\nUse the search bar in the tab to search for “Skrull”. How many Skrull characters are female? (Hint: Click the arrows in the sex heading to sort by sex.) How many Skrull characters have brown eyes? What years were Skrull characters part of the Marvel storyline?\nRun the syntax mean(appearances). You should get an error. Try to figure out why you are getting this error. (Hint: Look at the objects in your environment.) Can you figure out the syntax to find the average number of appearances for a comic character? (Hint: Because there are missing values in this column, you will need to add the argument na.rm=TRUE in the mean() function.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html",
+    "title": "Learning dplyr Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nData Wrangling with dplyr\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#directions",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#directions",
+    "title": "Learning dplyr Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nData Wrangling with dplyr\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-1-import-data",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-1-import-data",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 1: Import Data",
+    "text": "Task 1: Import Data\nImport the comic-characters.csv data into an object named comics. Also, examine the data codebook so you are familiar with the different variables."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-2-arranging",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-2-arranging",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 2: Arranging",
+    "text": "Task 2: Arranging\nUse the arrange() function to determine whether Marvel and DC introduced LGBTQ characters around the same time, or whether one company was more progressive?"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-3-more-arranging",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-3-more-arranging",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 3: More Arranging",
+    "text": "Task 3: More Arranging\nUse the arrange() function to determine the first appearance of an LGBTQ female character in DC comics."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-4-filtering-rows",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-4-filtering-rows",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 4: Filtering Rows",
+    "text": "Task 4: Filtering Rows\nUse the filter() function and nrow() to determine the percentage of female comic characters."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-5-more-filtering",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-5-more-filtering",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 5: More Filtering",
+    "text": "Task 5: More Filtering\nUse the filter() function and nrow() to determine the percentage of LGBTQ comic characters introduced in 1970 or later. Based on the result is there evidence that the Pride Movement may have had an impact on LGBTQ representation?"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-6-selecting-columns",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-6-selecting-columns",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 6: Selecting Columns",
+    "text": "Task 6: Selecting Columns\nThe Selecting a Subset of Columns section of Data Wrangling with dplyr included syntax for selecting a subset of data and exporting it to a directory on your computer. Modify the syntax to export a CSV of the LGBTQ character data to the desktop on your computer.\nAlso try modifying the syntax to export the CSV file to another folder/directory on your computer."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-7-mutating-columns",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-7-mutating-columns",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 7: Mutating Columns",
+    "text": "Task 7: Mutating Columns\nCreate a new column called first_appearance_pride that indicates how many years before or after the Pride Movement (1970) the character’s first appearance happened. For example a character that first appeared in 1980 would have a value of 10, and a character that first appeared in 1968 would have a value of -2. Assign the data that includes this column into an object called comics2."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-04-learning-dplyr.html#task-8-grouping-and-summarizing",
+    "href": "worksheets/worksheet-01-04-learning-dplyr.html#task-8-grouping-and-summarizing",
+    "title": "Learning dplyr Worksheet",
+    "section": "Task 8: Grouping and Summarizing",
+    "text": "Task 8: Grouping and Summarizing\nModify the syntax in the Computations on Groups section of Data Wrangling with dplyr to determine the average number of appearances for both DC and Marvel LGBTQ and non-LGBTQ characters (as well as the standard deviation and sample size) before and after the Pride Movement."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html",
+    "href": "worksheets/worksheet-01-05-ggplot2.html",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nVisualizing Data with ggplot2\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#directions",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#directions",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "",
+    "text": "Work with one or more other students to complete each of the tasks in this document. As you work through these tasks, you may want to refer to the following:\n\nVisualizing Data with ggplot2\n\nAs part of this, include the syntax you use to complete each tasks in a script file. As you write your script file, adhere to good coding practices:\n\nInclude comments\nInclude spaces\nInclude a line break after every pipe operator you use.\n\nYou can check in with Andy or the TA at the completion of each task to check your work."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-1-import-data",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-1-import-data",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 1: Import Data",
+    "text": "Task 1: Import Data\nImport the riverview.csv data into an object named city. Also, examine the data codebook so you are familiar with the different attributes."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-2-sketch",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-2-sketch",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 2: Sketch",
+    "text": "Task 2: Sketch\nMake a rough sketch of the plot you think this syntax will produce. Try not to run the syntax until you create a sketch. After you have created your rough sketch, run the syntax to check your work.\n\nggplot(data = city, aes(x = education, y = income)) +\n  geom_point() +\n  xlab(\"Education level (in years)\") +\n  ylab(\"Annual income (in U.S. dollars)\") +\n  theme_bw()"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-3-mimic-a-plot",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-3-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 3: Mimic a Plot",
+    "text": "Task 3: Mimic a Plot\nWrite syntax to create the following plot, which was created using the city (riverview) data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line. (Hint: If you want to be exact, use Tin Eye Lab’s Color Extraction tool to extract the hex codes for the color.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-4-export-a-plot-and-import-it-into-a-document",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-4-export-a-plot-and-import-it-into-a-document",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 4: Export a Plot and Import it into a Document",
+    "text": "Task 4: Export a Plot and Import it into a Document\nExport the plot you created in Task 3 as a PNG file. Be sure the aspect ratio of the plot is reasonable (the plot is not scrunched or stretched). Import the exported PNG file into a word-processed document. Re-size the plot so that it is not taking up excess space in the document, and also still readable. Add a figure number and caption to your plot."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-5-mimic-a-plot",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-5-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 5: Mimic a Plot",
+    "text": "Task 5: Mimic a Plot\nWrite syntax to create the following plot, which was created using the city (riverview) data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-6-mimic-a-plot",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-6-mimic-a-plot",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 6: Mimic a Plot",
+    "text": "Task 6: Mimic a Plot\nWrite syntax to create the following plot, which was created using the gapminder.csv data. Write this syntax in a script file. Be sure you are using good coding practices and putting each layer on a different line.\n\n\n\n\n\nLife expectancy versus per-peron income for 193 countries."
+  },
+  {
+    "objectID": "worksheets/worksheet-01-05-ggplot2.html#task-7-add-text-to-label-a-point",
+    "href": "worksheets/worksheet-01-05-ggplot2.html#task-7-add-text-to-label-a-point",
+    "title": "Learning ggplot2 Worksheet",
+    "section": "Task 7: Add Text to Label a Point",
+    "text": "Task 7: Add Text to Label a Point\nAdd text to the plot you created in Task 6 to label the country with the highest life expectancy."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-03-z-scores.html",
+    "href": "worksheets/worksheet-02-03-z-scores.html",
+    "title": "z-Scores",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your break out group. You will have no more than 20 minutes."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-03-z-scores.html#directions",
+    "href": "worksheets/worksheet-02-03-z-scores.html#directions",
+    "title": "z-Scores",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your break out group. You will have no more than 20 minutes."
+  },
+  {
+    "objectID": "worksheets/worksheet-02-03-z-scores.html#problem-set-i",
+    "href": "worksheets/worksheet-02-03-z-scores.html#problem-set-i",
+    "title": "z-Scores",
+    "section": "Problem Set I",
+    "text": "Problem Set I\nConsider the distribution of the following six observations: \\(X = \\{1, 2, 2,3,4,12\\}\\).\n\nPlot these values. (Don’t bother using R, just create a dot plot by hand.)\nDescribe the shape of the distribution.\nCompute the mean of the distribution. (You can enter these observation into R using the c() function.)\nCompute the standard deviation of the distribution."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-02-multiple-regression.html",
+    "href": "worksheets/worksheet-03-02-multiple-regression.html",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your small group. Import the mn-schools.csv data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-02-multiple-regression.html#directions",
+    "href": "worksheets/worksheet-03-02-multiple-regression.html#directions",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "",
+    "text": "Complete the problems on this worksheet with your small group. Import the mn-schools.csv data and fit a model to explain variation in graduation rates using the predictors of median SAT score and tuition."
+  },
+  {
+    "objectID": "worksheets/worksheet-03-02-multiple-regression.html#questions",
+    "href": "worksheets/worksheet-03-02-multiple-regression.html#questions",
+    "title": "Displaying Effects from a Multiple Regression Model",
+    "section": "Questions",
+    "text": "Questions\n\nWrite the fitted equation.\nInterpret both effects in the model.\nCreate a plot to show the effects. Put SAT score on the x-axis and display lines corresponding to an “inexpensive” and an “expensive” school. (Use the data to choose those values.)\n\nMake sure the lines are displayed in different colors and linetypes;\nPlay around with labelling the lines using text in the plot; Google geom_text() for help.\n\nExplain how we can use the plot to interpret the effect of SAT.\nExplain how we can use the plot to interpret the effect of tuition.\nCreate the same plot, but this time separate the “inexpensive” and “expensive” schools into separate panels (i.e., create a diptych plot.)"
+  },
+  {
+    "objectID": "worksheets/worksheet-04-02-multiple-comparisons.html",
+    "href": "worksheets/worksheet-04-02-multiple-comparisons.html",
+    "title": "Hospitalizations and Astrological Sign",
+    "section": "",
+    "text": "Discuss the following study with your group. Do you believe the findings? Why or why not?\n\nMethods\nA study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (\\(p=.0108\\)).\nThe p-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-02-multiple-comparisons.html#directions",
+    "href": "worksheets/worksheet-04-02-multiple-comparisons.html#directions",
+    "title": "Hospitalizations and Astrological Sign",
+    "section": "",
+    "text": "Discuss the following study with your group. Do you believe the findings? Why or why not?\n\nMethods\nA study was conducted of 5,337,472 residents of Ontario aged between 18 and 100 years in 2000 using the Registered Person’s Database. These residents were classified according to their astrological sign. The researchers then searched through 223 of the most common diagnoses for hospitalization and identified 72 (32.3%) for which residents born under one astrological sign had a significantly higher probability of hospitalization compared to residents born under the other astrological signs combined. For example, Libras were 1.37 times more likely to be hospitalized for a fractured pelvis than people born under other astrological signs (\\(p=.0108\\)).\nThe p-values for the 72 significant associations ranged from 0.0003 to 0.0488. The two most frequently occurring diagnoses for which each astrological sign had a higher probability of hospitalization compared to the other astrological signs combined are described in Table 1."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-03-interactions.html",
+    "href": "worksheets/worksheet-04-03-interactions.html",
+    "title": "Interactions",
+    "section": "",
+    "text": "Use the fertility.csv data to fit an interaction model that uses the effects of female education level and the dummy-coded GNI predictor (high_gni) to explain variation in infant mortality rates. Remember, to fit an interaction model you need to create the interaction term and then include the constituent main effects AND the interaction term in the lm()."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-03-interactions.html#directions",
+    "href": "worksheets/worksheet-04-03-interactions.html#directions",
+    "title": "Interactions",
+    "section": "",
+    "text": "Use the fertility.csv data to fit an interaction model that uses the effects of female education level and the dummy-coded GNI predictor (high_gni) to explain variation in infant mortality rates. Remember, to fit an interaction model you need to create the interaction term and then include the constituent main effects AND the interaction term in the lm()."
+  },
+  {
+    "objectID": "worksheets/worksheet-04-03-interactions.html#questions",
+    "href": "worksheets/worksheet-04-03-interactions.html#questions",
+    "title": "Interactions",
+    "section": "Questions",
+    "text": "Questions\n\nFit the interaction model and write out the fitted equation.\nGive a general interpretation about what it means to have an interaction effect between female education level and GNI on infant mortality rates. (No need to look at any output for this.)\nBased on the coefficient-level output, is there an interaction effect between female education level and GNI on infant mortality rates?\nWrite out the fitted equation for low GNI countries.\nWrite out the fitted equation for high GNI countries.\nPlot the two fitted equations.\nIs this an ordinal or disordinal interaction? Explain.\nUse the plot and the coefficient estimates to add to the general interpretation of the interaction effect you gave previously in Question 3. You should be able to give a more nuanced interpretation, including quantifying some findings.\nRemember that every interaction can be interpreted in two manners. You gave one of those interpretations in Question 3 (and 8). What is another way we can interpret the interaction effect between female education level and GNI on infant mortality rates."
   }
 ]

@@ -9,7 +9,7 @@ date: today
 
 Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level. 
 
-This goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file *state-education.csv* to examine the relationship between teacher salaries and student total SAT scores at the state level.
+The goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file *state-education.csv* to examine the relationship between teacher salaries and student total SAT scores at the state level.
 
 - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv)
 - [[Data Codebook]](http://zief0002.github.io/rustic-penguin/codebooks/state-education.html)

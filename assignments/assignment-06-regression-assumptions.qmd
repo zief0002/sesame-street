@@ -8,7 +8,7 @@ date: today
 ---
 
 
-This goal of this assignment is to give you more experience evaluating the assumptions underlying regression models. Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 15 points. (Each question is worth 1 point unless otherwise noted.)
+The goal of this assignment is to give you more experience evaluating the assumptions underlying regression models. Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 15 points. (Each question is worth 1 point unless otherwise noted.)
 
 ```{r}
 #| echo: false
@@ -22,7 +22,7 @@ knitr::include_graphics("../img/assign-06.png")
 
 ## Part I: Evaluating Assumptions for the Simple Regression Model
 
-Research. Teaching. Service. The trifecta upon which that almost every university instructor is evaluated, and, ultimately compensated. One way which academic administrators judge teaching quality is through teachers' course evaluations. While we know evaluation scores are not perfectly measures of teaching quality, nonetheless, they do play a role in the tenure and promotion process. Unfortunately, many other non-teaching related factors are also associated with evaluation scores (e.g., professor's ethnicity, professor's sex). 
+Research. Teaching. Service. The trifecta upon which that almost every university instructor is evaluated, and, ultimately compensated. One way in which academic administrators judge teaching quality is through teachers' course evaluations. While we know evaluation scores are not perfect measures of teaching quality, nonetheless, they do play a role in the tenure and promotion process. Unfortunately, many other non-teaching related factors are also associated with evaluation scores (e.g., professor's ethnicity, professor's sex). 
 
 For this part of the assignment, you will examine whether instructor attractiveness explains differences in course evaluation scores---and thus on earnings differences. To do so, you will use the data in the *evaluations.csv* file to fit a regression model that uses professors' beauty ratings to predict the variation in course evaluation ratings.
 
@@ -61,7 +61,7 @@ Fit the regression model to predict the variation in course evaluation ratings u
 
 ## Part II: Evaluating Assumptions for the Multiple Regression Model
 
-Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. For this part of the assignment, you will use the file *fertility.csv* to fit a model in order to explore the effects of contraceptive use on fertility rates. 
+Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. For this part of the assignment, you will use the file *fertility.csv* to fit a model in order to explore the effects of contraceptive use on fertility rates. 
 
 - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv)
 - [[Data Codebook]](http://zief0002.github.io/rustic-penguin/codebooks/fertility.html)

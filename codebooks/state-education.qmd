@@ -30,7 +30,7 @@ This data, stored in [state-education.csv](https://raw.githubusercontent.com/zie
 - `salary_2020_21`: Average 2020--2021 public teacher salary in the state.
 
 
-Note: All of the SAT data is based on students in the class of 2020 who took the current SAT during high school. The SAT is made up of three sections: (1) Reading, (2) Writing and Language (also just called Writing), and (3) Math. The Math section is scored on a scale of 200--800. The Reading and Writing sections are combined to give a Evidence-Based Reading and Writing (EBRW) score, also ranging from 200--800. By combining the Math and EBRW scores, we get a total SAT score ranging from 400--1600.
+Note: All of the SAT data is based on students in the class of 2020 who took the current SAT during high school. The SAT is made up of three sections: (1) Reading, (2) Writing and Language (also just called Writing), and (3) Math. The Math section is scored on a scale of 200--800. The Reading and Writing sections are combined to give an Evidence-Based Reading and Writing (EBRW) score, also ranging from 200--800. By combining the Math and EBRW scores, we get a total SAT score ranging from 400--1600.
 
 
 

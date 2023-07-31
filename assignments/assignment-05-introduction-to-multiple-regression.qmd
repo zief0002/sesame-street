@@ -8,9 +8,9 @@ date: today
 ---
 
 
-Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one that ) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. 
+Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. 
 
-Fertility rate is a measure directly linked to population and has been useful to explore hypotheses about factors related to combating overpopulation. For this assignment, you will use the file *fertility.csv* to fit three models in order to explore the effects of contraceptive use on fertility rates. 
+Fertility rate is a measure directly linked to population and has been useful to explore hypotheses about factors related to combating overpopulation. For this assignment, you will use the file *fertility.csv* to fit three models in order to explore three hypotheses about the effects of contraceptive use on fertility rates. 
 
 - [[CSV]](https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv)
 - [[Data Codebook]](https://zief0002.github.io/rustic-penguin/codebooks/fertility.html)
@@ -26,11 +26,11 @@ knitr::include_graphics("../img/assign-05.png")
 
 ## Instructions
 
-The models you will fit are:
+The hypotheses you will examine are:
 
-- **Model 1:** Contraception use in a country is thought to be negatively associated with fertility rates.
-- **Model 2:** Women in countries with higher infant mortality rates will, on average, have more children (higher fertility rates). Controlling for the infant mortality rate is important to gain a more accurate view of the effect of contraception use on fertility rate.
-- **Model 3:** Contraception use is really a function of educating women, so after controlling for education there is no/little effect of contraception use on fertility rate. In this model we will also still control for infant mortality rates.
+- **Hypothesis 1:** Contraception use in a country is thought to be negatively associated with fertility rates.
+- **Hypothesis 2:** Women in countries with higher infant mortality rates will, on average, have more children (higher fertility rates). Controlling for the infant mortality rate is important to gain a more accurate view of the effect of contraception use on fertility rate.
+- **Hypothesis 3:** Contraception use is really a function of educating women, so after controlling for education there is no/little effect of contraception use on fertility rate. In this model we will also still control for infant mortality rates.
 
 
 Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 16 points. (Each question is worth 1 point unless otherwise noted.)
@@ -40,7 +40,7 @@ Submit your responses to each of the questions below in a PDF document. All grap
 
 ## Preparation
 
-Begin by standardizing the fertility rate variable (outcome) and each of the three predictors used in the models listed above. Use the standardized variables to fit the regression models corresponding to each of the three models. You will use the output from the fitted models to answer the questions in the assignment.
+Begin by standardizing the fertility rate variable (outcome) and each of the three predictors used in the models listed above. Use the standardized variables to fit the regression models corresponding to each of the three hypotheses. You will use the output from the fitted models to answer the questions in the assignment.
 
 <br />
 
