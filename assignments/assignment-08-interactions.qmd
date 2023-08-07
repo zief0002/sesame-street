@@ -1,5 +1,5 @@
 ---
-title: "Assignment 09"
+title: "Assignment 08"
 subtitle: "INTERACTION EFFECTS"
 format:
   html:
@@ -63,7 +63,7 @@ You will use the output from these fitted models to answer the questions in the 
 
 ## Table of Regression Results
 
-3. Examine the structure and formatting of the table in the "Presenting Results from Many Fitted Regression Models" section [here](https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html#creating-tables-to-present-statistical-results). Mimic the format and structure of this table to create a table to present the numerical information from the three models you fitted in this assignment. Make sure the table you create also has an appropriate caption. If the table is too wide, change the page orientation in your word processing program to ``Landscape'', rather than changing the size of the font. **(2pts.)**
+3. Examine the structure and formatting of Table 9 in the "Presenting Results from Many Fitted Regression Models" section [here](https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html#creating-tables-to-present-statistical-results). Mimic the format and structure of this table to create a table to present the numerical information from the three models you fitted in this assignment. Make sure the table you create also has an appropriate caption. If the table is too wide, change the page orientation in your word processing program to ``Landscape'', rather than changing the size of the font. **(2pts.)**
 
 <br />
 

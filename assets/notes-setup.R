@@ -1,6 +1,7 @@
 ## Load libraries
 library(knitr)
 library(rmdformats)
+library(gt)
 
 ## Global options
 options(

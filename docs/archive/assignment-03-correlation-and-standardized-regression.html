@@ -62,6 +62,8 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://kit.fontawesome.com/e5da75ca36.js" crossorigin="anonymous"></script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../assets/sticky-notes.css">
 <link rel="stylesheet" href="assets/styles.css">
@@ -128,10 +130,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-i-unstandardized-regression" id="toc-part-i-unstandardized-regression" class="nav-link active" data-scroll-target="#part-i-unstandardized-regression">Part I: Unstandardized Regression</a></li>
-  <li><a href="#part-ii-centering-a-predictor" id="toc-part-ii-centering-a-predictor" class="nav-link" data-scroll-target="#part-ii-centering-a-predictor">Part II: Centering a Predictor</a></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#part-i-correlation" id="toc-part-i-correlation" class="nav-link" data-scroll-target="#part-i-correlation">Part I: Correlation</a></li>
+  <li><a href="#part-ii-regression-with-a-mean-centered-predictor" id="toc-part-ii-regression-with-a-mean-centered-predictor" class="nav-link" data-scroll-target="#part-ii-regression-with-a-mean-centered-predictor">Part II: Regression with a Mean Centered Predictor</a></li>
   <li><a href="#part-iii-standardized-regression" id="toc-part-iii-standardized-regression" class="nav-link" data-scroll-target="#part-iii-standardized-regression">Part III: Standardized Regression</a></li>
-  <li><a href="#part-iv-study-design-and-causation" id="toc-part-iv-study-design-and-causation" class="nav-link" data-scroll-target="#part-iv-study-design-and-causation">Part IV: Study Design and Causation</a></li>
   </ul>
 </nav>
     </div>
@@ -141,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Assignment 03</h1>
-<p class="subtitle lead">SIMPLE LINEAR REGRESSION: INFERENCE</p>
+<p class="subtitle lead">CORRELATION AND STANDARDIZED REGRESSION</p>
 </div>
 
 
@@ -163,10 +165,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level.</p>
-<p>This goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file <em>state-education.csv</em> to examine the relationship between teacher salaries and student total SAT scores at the state level.</p>
+<p>The goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file <em>state-education.csv</em> to examine the relationship between teacher salaries and student total SAT scores at the state level.</p>
 <ul>
 <li><a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv">[CSV]</a></li>
-<li><a href="https://zief0002.github.io/rustic-penguin/codebooks/state-education.html">[Data Codebook]</a></li>
+<li><a href="http://zief0002.github.io/rustic-penguin/codebooks/state-education.html">[Data Codebook]</a></li>
 </ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -177,37 +179,54 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<section id="part-i-unstandardized-regression" class="level1">
-<h1>Part I: Unstandardized Regression</h1>
-<p>Before carrying out any analyses, create a predictor called <code>salary_thousand</code> that indicates the average state salary in thousands of dollars (e.g., if salary = 52143; salary_thousand = 52.143). This variable (not <code>salary</code>) should be used in all analyses for Part I. Fit a regression model using teacher salaries to predict SAT scores.</p>
-<ol type="1">
-<li><p>Using symbols, write the null hypothesis that is tested by the <em>F</em>-statistic in this analysis.</p></li>
-<li><p>Write no more than three sentences (to be included in a publication) that summarizes the results of the omnibus analysis. A summary of the results includes a written description of what is being tested by the <em>F</em>-test and the statistical results. At a minimum report the <em>F</em>-statistic, <em>df</em>, and <em>p</em>-value. A summary should also indicate what the statistical results suggest about the compatibility of the empirical data to the null hypothesis and what this means about the potential relationship between states’ average teacher salaries and average SAT scores.</p></li>
-<li><p>Using symbols, write the null hypothesis that is tested by the <em>t</em>-statistic for the slope.</p></li>
-<li><p>Based on the results of the <em>t</em>-test for the slope, are the empirical data consistent with the null hypothesis that the sample slope is entirely due to sampling error? Explain.</p></li>
-<li><p>Compute and interpret the 95% compatibility interval for the slope.</p></li>
-<li><p>Create a plot that displays the regression line from the unstandardized regression analysis. This plot should also include a confidence envelope (uncertainty) for the regression line. Be sure to give your plot an appropriate caption.</p></li>
-</ol>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<p>Submit a PDF document of your responses to the following questions. Please adhere to the following guidelines for further formatting your assignment:</p>
+<ul>
+<li>All plots should be resized so that they do not take up more room than necessary.</li>
+<li>All figures and tables should have a name (e.g., Figure 1) <em>and</em> an appropriate caption.</li>
+</ul>
+<p>This assignment is worth 10 points.</p>
+<p><br></p>
 </section>
-<section id="part-ii-centering-a-predictor" class="level1">
-<h1>Part II: Centering a Predictor</h1>
-<p>Center the <code>salary_thousand</code> predictor by subtracting the mean teacher salary from each value. Call this new variable <code>center_salary_thousand</code> (e.g., <code>centered_salary_thousand = salary_thousand - mean(salary_thousand)</code>). This variable should be used in all analyses in Part II. Regress the SAT scores on the centered salaries.</p>
-<ol start="7" type="1">
-<li><p>The results of the <em>F</em>-test for this analysis are identical to the results of the <em>F</em>-test for the analysis in Part I. Explain why this is expected by referring to and comparing the hypothesis being tested in both sets of analyses.</p></li>
-<li><p>The results of the <em>t</em>-test for the intercept in this analysis are different than the results of the <em>t</em>-test for the intercept in the analysis in Part I. Explain why this is expected by referring to and comparing the hypothesis being tested (and what that means) in both sets of analyses.</p></li>
+<section id="part-i-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="part-i-correlation">Part I: Correlation</h2>
+<p>Before carrying out any analyses, create a predictor called <code>salary_thousand</code> that indicates the average state salary in thousands of dollars (e.g., <code>salary</code> = 52143; <code>salary_thousand</code> = 52.143). This variable (not <code>salary</code>) should be used in all analyses in Part I.</p>
+<ol type="1">
+<li><p>Compute and report the Pearson correlation coefficient between SAT scores and teacher salaries.</p></li>
+<li><p>Is the Pearson correlation coefficient an appropriate summary measure of the relationship? Explain. (Hint: Pay attention to the structural form in the data!)</p></li>
 </ol>
+<p><br></p>
+</section>
+<section id="part-ii-regression-with-a-mean-centered-predictor" class="level1">
+<h1>Part II: Regression with a Mean Centered Predictor</h1>
+<p>Center the <code>salary_thousand</code> predictor by subtracting the mean teacher salary from each value. Call this new variable <code>center_salary_thousand</code> This variable should be used in all analyses in Part II.</p>
+<ol start="3" type="1">
+<li><p>Compute and report (a) the mean centered teacher salary, (b) the standard deviation of centered teacher salaries, and (c) the Pearson correlation coefficient between SAT scores and centered teacher salaries. How do these values compare to the values you computed in the previous assignment using the uncentered teacher salaries?</p></li>
+<li><p>Report and interpret the value of Minnesota’s centered teacher salary.</p></li>
+<li><p>Explain how the slope of the uncentered regression you found in the previous assignment will compare to the slope of the regression if we regressed SAT scores on the centered teacher salaries by making reference to the values in the mathematical formula for slope, which is:</p></li>
+</ol>
+<p><span class="math display">\[
+\hat\beta_1 = r_{XY} \times \left( \frac{SD_{Y}}{SD_{X}}\right)
+\]</span></p>
+<ol start="6" type="1">
+<li>Explain how the intercept of the uncentered regression you found in the previous assignment will compare to the intercept of the regression if we regressed SAT scores on the centered teacher salaries by making reference to the values in the mathematical formula for intercept, which is:</li>
+</ol>
+<p><span class="math display">\[
+\hat\beta_0 = \bar{Y} - \hat\beta_1(\bar{X})
+\]</span></p>
+<ol start="7" type="1">
+<li>Regress SAT scores on the centered teacher salaries. Write the <em>fitted equation</em> using Equation Editor (or some other program that correctly types mathematical expressions). (You should be able to now check your previous response as well.)</li>
+</ol>
+<p><br></p>
 </section>
 <section id="part-iii-standardized-regression" class="level1">
 <h1>Part III: Standardized Regression</h1>
-<p>Convert the uncentered teacher salaries (<code>salary_thousand</code>) into <em>z</em>-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable <code>z_salary</code> (e.g., <code>z_salary = (salary_thousand - mean(salary_thousand)) / sd(salary_thousand)</code>). Also convert the SAT scores into <em>z</em>-scores and call that variable <code>z_sat</code> (e.g., <code>z_sat = (sat - mean(sat)) / sd(sat)</code>). Regress the SAT <em>z</em>-scores on the salary <em>z</em>-scores.</p>
-<ol start="9" type="1">
-<li>The <em>p</em>-value of the <em>t</em>-test for the intercept in this analysis is one. Explain why this is expected by referring to the hypothesis being tested in this analysis. (Hint: Think about what the intercept is and how that relates to what is being tested.)</li>
-</ol>
-</section>
-<section id="part-iv-study-design-and-causation" class="level1">
-<h1>Part IV: Study Design and Causation</h1>
-<ol start="10" type="1">
-<li>The test of the slope (regardless of analysis) suggests that teacher salaries seem to be related to SAT scores. Unfortunately this relationship is negative, indicating that higher teacher salaries are associated with lower SAT scores. A public-policy wonk wants to use this data to support the de-funding of public schools. Write a couple sentences that explain to this person why your analysis does not support this causal conclusion <strong>based on the study design</strong>. (Hint: Recall that inferring causation requires particular study designs. You may need to go back to your pre-requisite knowledge here.)</li>
+<p>Convert the uncentered teacher salaries (<code>salary_thousand</code>) into <em>z</em>-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable <code>z_salary</code>. Also convert the SAT scores into <em>z</em>-scores and call that variable <code>z_sat</code>. Regress the <code>z_sat</code> variable on the <code>z_salary</code> variable.</p>
+<ol start="8" type="1">
+<li><p>Using the mathematical formula for intercept from Question #6, explain why the intercept from regressing <span class="math inline">\(z_{\mathrm{Outcome}}\)</span> on <span class="math inline">\(z_{\mathrm{Predictor}}\)</span> will be 0.</p></li>
+<li><p>Using the mathematical formula for slope from Question #5, explain why the slope from regressing <span class="math inline">\(z_{\mathrm{Outcome}}\)</span> on <span class="math inline">\(z_{\mathrm{Predictor}}\)</span> will be the correlation coefficient between the predictor and outcome.</p></li>
+<li><p>Compute and report the residual for Minnesota from the fitted standardized regression equation. Explain what the sign and magnitude of the residual value tells you about how Minnesota’s mean SAT score compares to the mean SAT score for other states having the same average teacher salary?</p></li>
 </ol>
 <p><br></p>
 

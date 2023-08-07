@@ -7,6 +7,9 @@ project:
     - "files/"
     - "handouts/"
     - "scripts/"
+    - "!admin/"
+    - "!archive/"
+    - "!answer-keys/"
 
 website:
   title: "EPsy 8251"

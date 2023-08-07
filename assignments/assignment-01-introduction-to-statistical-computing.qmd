@@ -96,7 +96,7 @@ In this section, you will use the data in *broadband.csv* to create state-level 
 
 ## Part III: State-Level Broadband Access versus Poverty
 
-In this section, you will use all the data in *broadband.csv* to create state-level means of the `microsoft_useage` and the `pct_poverty` variables. (Hint: Make sure that every state has mean values when you are done!) Use this state-level data to answer the following questions. 
+In this section, you will use all the data in *broadband.csv* to create state-level means of the `microsoft_useage` and the `pct_poverty` variables. Again, filter out Washington DC so it is not included. (Hint: Make sure that every state has mean values when you are done!) Use this state-level data to answer the following questions. 
 
 8. Use `ggplot()` to create a scatterplot of the relationship between the proportion of users with access to broadband and the proportion of people living in poverty using the state-level data. (Put the proportion living in poverty on the *x*-axis.) Change the axis labels so that both the _x_- and _y_-axis have labels that suitably describe the variables being plotted. (For help on this, read the *Axes* page of the [Cookbook for R website](http://www.cookbook-r.com/Graphs/).) Include this plot in a word-processed document. Resize the plot so it does not take up any more space than necessary. Finally, give your figure a name (e.g., Figure 1) and an appropriate caption.
 

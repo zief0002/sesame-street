@@ -1,5 +1,5 @@
 ---
-title: "Assignment 04"
+title: "Assignment 03"
 subtitle: "SIMPLE LINEAR REGRESSION: INFERENCE"
 format:
   html:
@@ -27,7 +27,7 @@ knitr::include_graphics("../img/assign-02.png")
 
 # Part I: Unstandardized Regression
 
-Before carrying out any analyses, create a predictor called `salary_thousand` that indicates the average state salary in thousands of dollars (e.g., salary = 52143; salary_thousand = 52.143). This variable (not `salary`) should be used in all analyses for Part I. Fit a regression model using teacher salaries to predict SAT scores.
+Before carrying out any analyses, create a predictor called `salary_thousand` that indicates the average state salary in thousands of dollars (e.g., if salary = 52143; salary_thousand = 52.143). This variable (not `salary`) should be used in all analyses for Part I. Fit a regression model using teacher salaries to predict SAT scores.
 
 1. Using symbols, write the null hypothesis that is tested by the *F*-statistic in this analysis.
 
@@ -44,7 +44,7 @@ Before carrying out any analyses, create a predictor called `salary_thousand` th
 
 # Part II: Centering a Predictor
 
-Center the `salary_thousand` predictor by subtracting the mean teacher salary from each value. Call this new variable `center_salary_thousand` This variable should be used in all analyses in Part II. Regress the SAT scores on the centered salaries.
+Center the `salary_thousand` predictor by subtracting the mean teacher salary from each value. Call this new variable `center_salary_thousand` (e.g., `centered_salary_thousand = salary_thousand - mean(salary_thousand)`). This variable should be used in all analyses in Part II. Regress the SAT scores on the centered salaries.
 
 7. The results of the *F*-test for this analysis are identical to the results of the *F*-test for the analysis in Part I. Explain why this is expected by referring to and comparing the hypothesis being tested in both sets of analyses.
 
@@ -53,11 +53,14 @@ Center the `salary_thousand` predictor by subtracting the mean teacher salary fr
 
 # Part III: Standardized Regression
 
-Convert the uncentered teacher salaries (`salary_thousand`) into *z*-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable `z_salary`. Also convert the SAT scores into *z*-scores and call that variable `z_sat`. Regress the SAT *z*-scores on the salary *z*-scores.
+Convert the uncentered teacher salaries (`salary_thousand`) into *z*-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable `z_salary`  (e.g., `z_salary = (salary_thousand - mean(salary_thousand)) / sd(salary_thousand)`). Also convert the SAT scores into *z*-scores and call that variable `z_sat` (e.g., `z_sat = (sat - mean(sat)) / sd(sat)`). Regress the SAT *z*-scores on the salary *z*-scores.
 
 9. The *p*-value of the *t*-test for the intercept in this analysis is one. Explain why this is expected by referring to the hypothesis being tested in this analysis. (Hint: Think about what the intercept is and how that relates to what is being tested.)
 
-10. The test of the slope (regardless of analysis) suggests that teacher salaries seem to be related to SAT scores. Unfortunately this relationship is negative, indicating that higher teacher salaries are associated with lower SAT scores. A public-policy wonk wants to use this data to support the de-funding of public schools. Write a couple sentences that explain to this person why your analysis does not support this causal conclusion **based on the study design**. (Hint: Recall that inferring causation requires particular study designs.)
+
+# Part IV: Study Design and Causation
+
+10. The test of the slope (regardless of analysis) suggests that teacher salaries seem to be related to SAT scores. Unfortunately this relationship is negative, indicating that higher teacher salaries are associated with lower SAT scores. A public-policy wonk wants to use this data to support the de-funding of public schools. Write a couple sentences that explain to this person why your analysis does not support this causal conclusion **based on the study design**. (Hint: Recall that inferring causation requires particular study designs. You may need to go back to your pre-requisite knowledge here.)
 
 
 <br />
