@@ -44,7 +44,7 @@ Below are the due dates for the assignments, as well as links to each assignment
 
 <!-- <tr> -->
 <!-- <td>Assignment \#3: *Correlation and Standardized Regression*</td> -->
-<!-- <!-- <td>Oct. 10</td> --> -->
+<!-- <!-- <td>Oct. 10</td> -->
 <!-- <td>Oct. 11</td> -->
 <!-- <td align="center" style="vertical-align:middle;"> -->
 <!--   [<span class="fas fa-link" style="color: #ff2600; font-size: 20px;"></span>](assignments/f21-assignment-03-correlation-and-standardized-regression.html) -->
