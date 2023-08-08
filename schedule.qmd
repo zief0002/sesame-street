@@ -166,29 +166,29 @@ As part of the course, there are several articles, papers and technical reports 
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Sept. 26</td> -->
 <td>Oct. 02</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
+<td align="center" style="vertical-align:middle;">
   [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-03-correlation-and-standardized-regression.html)
 </td>
-<td style="vertical-align:middle;" rowspan="2">Correlation and Standardized Regression</td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
+<td style="vertical-align:middle;">Correlation (and Standardized Regression)</td>
+<td align="center" style="vertical-align:middle;">
   [<span class="fas fa-link" style="font-size: 20px;"></span>](https://zief0002.github.io/modeling/02-03-correlation.html)
 </td>
-<td align="center" style="vertical-align:middle;" rowspan="2">
+<td align="center" style="vertical-align:middle;">
   [<span class="fa fa-code" style="font-size: 20px;"></span>](scripts/02-03-correlation-and-standardized-regression.R)
 </td>
 </tr>
 
-<tr>
-<td align="center" style="vertical-align:middle;"></td>
-<!-- <td>Oct. 01</td> -->
-<td>Oct. 04</td>
-</tr>
+<!-- <tr> -->
+<!-- <td align="center" style="vertical-align:middle;"></td> -->
+<!-- <td>Oct. 01</td> --> 
+<!-- <td>Oct. 04</td> -->
+<!-- </tr> -->
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 03</td> -->
-<td>Oct. 09</td>
+<td>Oct. 04</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
   [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-04-coefficient-level-inference.html)
 </td>
@@ -205,14 +205,14 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 08</td> -->
-<td>Oct. 11</td>
+<td>Oct. 09</td>
 </tr>
 
 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 10</td> -->
-<td>Oct. 16</td>
+<td>Oct. 11</td>
 <td align="center" style="vertical-align:middle;" rowspan="2">
   [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/02-05-model-level-inference.html)
 </td>
@@ -229,9 +229,22 @@ As part of the course, there are several articles, papers and technical reports 
 <tr>
 <td align="center" style="vertical-align:middle;"></td>
 <!-- <td>Oct. 15</td> -->
-<td>Oct. 18</td>
+<td>Oct. 16</td>
 </tr>
 
+<tr>
+<td align="center" style="vertical-align:middle;"></td>
+<!-- <td>Sept. 24</td> -->
+<td>Oct. 18</td>
+<td align="center" style="vertical-align:middle;">
+  <!-- <a href="preparation.html#control"> -->
+  <!--   <span class="fa fa-book" style="font-size: 20px;"></span> -->
+  <!-- </a> -->
+</td>
+<td style="vertical-align:middle;">*NO CLASS&mdash;Mental Health Day*
+<td align="center" style="vertical-align:middle;"></td>
+<td align="center" style="vertical-align:middle;"></td>
+</tr>
 
 <!-- Unit 03: DEEPER UNDERSTANDING -->
 
