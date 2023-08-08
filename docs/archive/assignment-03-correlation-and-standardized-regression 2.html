@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-08-08">
+<meta name="dcterms.date" content="2023-08-07">
 
-<title>EPsy 8251 - Assignment 05</title>
+<title>EPsy 8251 - Assignment 03</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -130,16 +130,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#part-i-evaluating-assumptions-for-the-simple-regression-model" id="toc-part-i-evaluating-assumptions-for-the-simple-regression-model" class="nav-link active" data-scroll-target="#part-i-evaluating-assumptions-for-the-simple-regression-model">Part I: Evaluating Assumptions for the Simple Regression Model</a>
-  <ul class="collapse">
-  <li><a href="#preliminary-examination-of-model-assumptions" id="toc-preliminary-examination-of-model-assumptions" class="nav-link" data-scroll-target="#preliminary-examination-of-model-assumptions">Preliminary Examination of Model Assumptions</a></li>
-  <li><a href="#examination-of-the-standardized-residuals-from-the-simple-regression-model" id="toc-examination-of-the-standardized-residuals-from-the-simple-regression-model" class="nav-link" data-scroll-target="#examination-of-the-standardized-residuals-from-the-simple-regression-model">Examination of the Standardized Residuals from the Simple Regression Model</a></li>
-  </ul></li>
-  <li><a href="#part-ii-evaluating-assumptions-for-the-multiple-regression-model" id="toc-part-ii-evaluating-assumptions-for-the-multiple-regression-model" class="nav-link" data-scroll-target="#part-ii-evaluating-assumptions-for-the-multiple-regression-model">Part II: Evaluating Assumptions for the Multiple Regression Model</a>
-  <ul class="collapse">
-  <li><a href="#preliminary-examination-of-model-assumptions-1" id="toc-preliminary-examination-of-model-assumptions-1" class="nav-link" data-scroll-target="#preliminary-examination-of-model-assumptions-1">Preliminary Examination of Model Assumptions</a></li>
-  <li><a href="#examination-of-the-standardized-residuals-from-the-multiple-regression-model" id="toc-examination-of-the-standardized-residuals-from-the-multiple-regression-model" class="nav-link" data-scroll-target="#examination-of-the-standardized-residuals-from-the-multiple-regression-model">Examination of the Standardized Residuals from the Multiple Regression Model</a></li>
-  </ul></li>
+  <li><a href="#instructions" id="toc-instructions" class="nav-link active" data-scroll-target="#instructions">Instructions</a></li>
+  <li><a href="#part-i-correlation" id="toc-part-i-correlation" class="nav-link" data-scroll-target="#part-i-correlation">Part I: Correlation</a></li>
+  <li><a href="#part-ii-regression-with-a-mean-centered-predictor" id="toc-part-ii-regression-with-a-mean-centered-predictor" class="nav-link" data-scroll-target="#part-ii-regression-with-a-mean-centered-predictor">Part II: Regression with a Mean Centered Predictor</a></li>
+  <li><a href="#part-iii-standardized-regression" id="toc-part-iii-standardized-regression" class="nav-link" data-scroll-target="#part-iii-standardized-regression">Part III: Standardized Regression</a></li>
   </ul>
 </nav>
     </div>
@@ -148,8 +142,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assignment 05</h1>
-<p class="subtitle lead">REGRESSION ASSUMPTIONS</p>
+<h1 class="title">Assignment 03</h1>
+<p class="subtitle lead">CORRELATION AND STANDARDIZED REGRESSION</p>
 </div>
 
 
@@ -160,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 8, 2023</p>
+      <p class="date">August 7, 2023</p>
     </div>
   </div>
   
@@ -170,77 +164,73 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>The goal of this assignment is to give you more experience evaluating the assumptions underlying regression models. Submit your responses to each of the questions below in a PDF document. All graphics should be resized so that they do not take up more room than necessary and also should have an appropriate caption. This assignment is worth 15 points. (Each question is worth 1 point unless otherwise noted.)</p>
+<p>Should more money be spent on public schools or should that money be spent elsewhere? Both sides of this ongoing public debate have been argued passionately, using a multitude of anecdotal evidence. Although we will not settle this debate, we will examine data akin to the types of data that policy makers use to make funding decisions. Specifically, we will examine whether teacher salaries are related to SAT scores at the state level.</p>
+<p>The goal of this assignment is to give you more experience fitting and interpreting regression models. In this assignment, you will use the data from the file <em>state-education.csv</em> to examine the relationship between teacher salaries and student total SAT scores at the state level.</p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv">[CSV]</a></li>
+<li><a href="http://zief0002.github.io/rustic-penguin/codebooks/state-education.html">[Data Codebook]</a></li>
+</ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../img/assign-06.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p><img src="../img/assign-02.png" class="img-fluid figure-img" style="width:60.0%"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><br></p>
-<section id="part-i-evaluating-assumptions-for-the-simple-regression-model" class="level2">
-<h2 class="anchored" data-anchor-id="part-i-evaluating-assumptions-for-the-simple-regression-model">Part I: Evaluating Assumptions for the Simple Regression Model</h2>
-<p>Research. Teaching. Service. The trifecta upon which that almost every university instructor is evaluated, and, ultimately compensated. One way in which academic administrators judge teaching quality is through teachers’ course evaluations. While we know evaluation scores are not perfect measures of teaching quality, nonetheless, they do play a role in the tenure and promotion process. Unfortunately, many other non-teaching related factors are also associated with evaluation scores (e.g., professor’s ethnicity, professor’s sex).</p>
-<p>For this part of the assignment, you will examine whether instructor attractiveness explains differences in course evaluation scores—and thus on earnings differences. To do so, you will use the data in the <em>evaluations.csv</em> file to fit a regression model that uses professors’ beauty ratings to predict the variation in course evaluation ratings.</p>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+<p>Submit a PDF document of your responses to the following questions. Please adhere to the following guidelines for further formatting your assignment:</p>
 <ul>
-<li><a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/evaluations.csv">[CSV]</a></li>
-<li><a href="https://zief0002.github.io/rustic-penguin/codebooks/evaluations.html">[Data Codebook]</a></li>
+<li>All plots should be resized so that they do not take up more room than necessary.</li>
+<li>All figures and tables should have a name (e.g., Figure 1) <em>and</em> an appropriate caption.</li>
 </ul>
-<p>Fit the regression model to predict the variation in course evaluation ratings using professors’ beauty ratings. You will use the output from the fitted model to answer the questions in Part I.</p>
+<p>This assignment is worth 10 points.</p>
 <p><br></p>
-<section id="preliminary-examination-of-model-assumptions" class="level3">
-<h3 class="anchored" data-anchor-id="preliminary-examination-of-model-assumptions">Preliminary Examination of Model Assumptions</h3>
+</section>
+<section id="part-i-correlation" class="level2">
+<h2 class="anchored" data-anchor-id="part-i-correlation">Part I: Correlation</h2>
+<p>Before carrying out any analyses, create a predictor called <code>salary_thousand</code> that indicates the average state salary in thousands of dollars (e.g., <code>salary</code> = 52143; <code>salary_thousand</code> = 52.143). This variable (not <code>salary</code>) should be used in all analyses in Part I.</p>
 <ol type="1">
-<li><p>Create and include the density plot for the <strong>outcome</strong>. Does the distribution foreshadow problems for the normality assumption? Explain.</p></li>
-<li><p>Create and include the scatterplot of the <strong>outcome vs.&nbsp;the predictor</strong>. Include the loess smoother in the plot. Does this relationship foreshadow problems for the linearity assumption? Explain.</p></li>
+<li><p>Compute and report the Pearson correlation coefficient between SAT scores and teacher salaries.</p></li>
+<li><p>Is the Pearson correlation coefficient an appropriate summary measure of the relationship? Explain. (Hint: Pay attention to the structural form in the data!)</p></li>
 </ol>
 <p><br></p>
 </section>
-<section id="examination-of-the-standardized-residuals-from-the-simple-regression-model" class="level3">
-<h3 class="anchored" data-anchor-id="examination-of-the-standardized-residuals-from-the-simple-regression-model">Examination of the Standardized Residuals from the Simple Regression Model</h3>
+<section id="part-ii-regression-with-a-mean-centered-predictor" class="level1">
+<h1>Part II: Regression with a Mean Centered Predictor</h1>
+<p>Center the <code>salary_thousand</code> predictor by subtracting the mean teacher salary from each value. Call this new variable <code>center_salary_thousand</code> This variable should be used in all analyses in Part II.</p>
 <ol start="3" type="1">
-<li><p>Create and include the density plot of the marginal distribution of the <strong>standardized residuals</strong> from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.</p></li>
-<li><p>Create and include the scatterplot of the <strong>standardized residuals versus the fitted values</strong> from the fitted model. Include any smoothers or confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals (<span class="math inline">\(\leq-3\)</span> or <span class="math inline">\(\geq3\)</span>) by indicating the row number of that observation in the plot.</p></li>
-<li><p>Does this plot suggest problems about meeting the linearity assumption? Explain.</p></li>
-<li><p>Does this plot suggest problems about meeting the homogeneity of variance assumption? Explain.</p></li>
-<li><p>Is the independence assumption tenable? Explain.</p></li>
+<li><p>Compute and report (a) the mean centered teacher salary, (b) the standard deviation of centered teacher salaries, and (c) the Pearson correlation coefficient between SAT scores and centered teacher salaries. How do these values compare to the values you computed in the previous assignment using the uncentered teacher salaries?</p></li>
+<li><p>Report and interpret the value of Minnesota’s centered teacher salary.</p></li>
+<li><p>Explain how the slope of the uncentered regression you found in the previous assignment will compare to the slope of the regression if we regressed SAT scores on the centered teacher salaries by making reference to the values in the mathematical formula for slope, which is:</p></li>
+</ol>
+<p><span class="math display">\[
+\hat\beta_1 = r_{XY} \times \left( \frac{SD_{Y}}{SD_{X}}\right)
+\]</span></p>
+<ol start="6" type="1">
+<li>Explain how the intercept of the uncentered regression you found in the previous assignment will compare to the intercept of the regression if we regressed SAT scores on the centered teacher salaries by making reference to the values in the mathematical formula for intercept, which is:</li>
+</ol>
+<p><span class="math display">\[
+\hat\beta_0 = \bar{Y} - \hat\beta_1(\bar{X})
+\]</span></p>
+<ol start="7" type="1">
+<li>Regress SAT scores on the centered teacher salaries. Write the <em>fitted equation</em> using Equation Editor (or some other program that correctly types mathematical expressions). (You should be able to now check your previous response as well.)</li>
 </ol>
 <p><br></p>
 </section>
-</section>
-<section id="part-ii-evaluating-assumptions-for-the-multiple-regression-model" class="level2">
-<h2 class="anchored" data-anchor-id="part-ii-evaluating-assumptions-for-the-multiple-regression-model">Part II: Evaluating Assumptions for the Multiple Regression Model</h2>
-<p>Human overpopulation is a growing concern and has been associated with depletion of Earth’s natural resources (water is a big one) and degredation of the environment. This, in turn, has social and economic consequences such as global tension over resources such as water and food, higher cost of living and higher unemployment rates. For this part of the assignment, you will use the file <em>fertility.csv</em> to fit a model in order to explore the effects of contraceptive use on fertility rates.</p>
-<ul>
-<li><a href="https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/fertility.csv">[CSV]</a></li>
-<li><a href="http://zief0002.github.io/rustic-penguin/codebooks/fertility.html">[Data Codebook]</a></li>
-</ul>
-<p>Fit the regression model to predict the variation in fertility rates using contraception use, female education, and infant mortality rate (three predictors). You will use the output from the fitted model to answer the questions in Part II.</p>
-<p><br></p>
-<section id="preliminary-examination-of-model-assumptions-1" class="level3">
-<h3 class="anchored" data-anchor-id="preliminary-examination-of-model-assumptions-1">Preliminary Examination of Model Assumptions</h3>
+<section id="part-iii-standardized-regression" class="level1">
+<h1>Part III: Standardized Regression</h1>
+<p>Convert the uncentered teacher salaries (<code>salary_thousand</code>) into <em>z</em>-scores by subtracting the mean salary and dividing by the standard deviation. Call this new variable <code>z_salary</code>. Also convert the SAT scores into <em>z</em>-scores and call that variable <code>z_sat</code>. Regress the <code>z_sat</code> variable on the <code>z_salary</code> variable.</p>
 <ol start="8" type="1">
-<li><p>Create and include the density plot for the <strong>outcome</strong>. Does the distribution foreshadow problems for the normality assumption? Explain.</p></li>
-<li><p>Create and include the scatterplot of the <strong>outcome vs.&nbsp;each predictor</strong> (three total). Include the loess smoother in each of the plots. Do any of these relationships foreshadow problems for the linearity assumption? Explain. <strong>(2pts.)</strong></p></li>
-</ol>
-<p><br></p>
-</section>
-<section id="examination-of-the-standardized-residuals-from-the-multiple-regression-model" class="level3">
-<h3 class="anchored" data-anchor-id="examination-of-the-standardized-residuals-from-the-multiple-regression-model">Examination of the Standardized Residuals from the Multiple Regression Model</h3>
-<ol start="10" type="1">
-<li><p>Create and include the density plot of the marginal distribution of the <strong>standardized residuals</strong> from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.</p></li>
-<li><p>Create and include the scatterplot of the <strong>standardized residuals versus the fitted values</strong> from the fitted model. Include any smoothers or confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals (<span class="math inline">\(\leq-3\)</span> or <span class="math inline">\(\geq3\)</span>) by indicating the country associated with that observation in the plot.</p></li>
-<li><p>Does this plot suggest problems about meeting the linearity assumption? Explain.</p></li>
-<li><p>Does this plot suggest problems about meeting the homogeneity of variance assumption? Explain.</p></li>
-<li><p>Is the independence assumption tenable? Explain.</p></li>
+<li><p>Using the mathematical formula for intercept from Question #6, explain why the intercept from regressing <span class="math inline">\(z_{\mathrm{Outcome}}\)</span> on <span class="math inline">\(z_{\mathrm{Predictor}}\)</span> will be 0.</p></li>
+<li><p>Using the mathematical formula for slope from Question #5, explain why the slope from regressing <span class="math inline">\(z_{\mathrm{Outcome}}\)</span> on <span class="math inline">\(z_{\mathrm{Predictor}}\)</span> will be the correlation coefficient between the predictor and outcome.</p></li>
+<li><p>Compute and report the residual for Minnesota from the fitted standardized regression equation. Explain what the sign and magnitude of the residual value tells you about how Minnesota’s mean SAT score compares to the mean SAT score for other states having the same average teacher salary?</p></li>
 </ol>
 <p><br></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

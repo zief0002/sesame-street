@@ -39,7 +39,7 @@ Fit the regression model to predict the variation in course evaluation ratings u
 
 1. Create and include the density plot for the **outcome**. Does the distribution foreshadow problems for the normality assumption? Explain.
 
-2. Create and include the scatterplot of the **outcome vs. the predictor**. Include the loess smoother in the plots. Does this relationship foreshadow problems for the linearity assumption? Explain.
+2. Create and include the scatterplot of the **outcome vs. the predictor**. Include the loess smoother in the plot. Does this relationship foreshadow problems for the linearity assumption? Explain.
 
 <br />
 
@@ -48,7 +48,7 @@ Fit the regression model to predict the variation in course evaluation ratings u
 
 3. Create and include the density plot of the marginal distribution of the **standardized residuals** from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.
 
-4. Create and include the scatterplot of the **standardized residuals versus the fitted values** from the fitted model. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the row number of that observation in the plot.
+4. Create and include the scatterplot of the **standardized residuals versus the fitted values** from the fitted model. Include any smoothers or confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the row number of that observation in the plot.
 
 5. Does this plot suggest problems about meeting the linearity assumption? Explain.
 
@@ -84,7 +84,7 @@ Fit the regression model to predict the variation in fertility rates using contr
 
 10. Create and include the density plot of the marginal distribution of the **standardized residuals** from the fitted model. Add the confidence envelope for the normal distribution. Does this plot suggest problems about meeting the normality assumption? Explain.
 
-11. Create and include the scatterplot of the **standardized residuals versus the fitted values** from the fitted model. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the country associated with that observation in the plot.
+11. Create and include the scatterplot of the **standardized residuals versus the fitted values** from the fitted model. Include any smoothers or confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the country associated with that observation in the plot.
 
 12. Does this plot suggest problems about meeting the linearity assumption? Explain.
 

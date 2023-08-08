@@ -73,7 +73,7 @@ Now, suppose you want to examine differences in course evaluation scores between
 
 13. Create the density plot of the marginal distribution of the standardized residuals from the ANCOVA model. Add the confidence envelope for the normal distribution. Explain whether or not this plot suggests problems about meeting the normality assumption.
 
-14. Create the scatterplot of the standardized residuals versus the fitted values from the ANCOVA model. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the row number of that observation in the plot.
+14. Create the scatterplot of the standardized residuals versus the fitted values from the ANCOVA model. Include any smoothers or confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the row number of that observation in the plot.
 
 15. Explain whether or not this plot suggests problems about meeting the linearity and homogeneity of variance assumptions.
 
