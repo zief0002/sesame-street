@@ -16,9 +16,9 @@ knitr::include_graphics("img/epsy-8251-logo.png")
 ```
 
 
-## Welcome to EPsy 8251: Methods in Data Analysis for Educational Research I
+## Welcome to EPsy 8251: Statistical Methods in Education I
 
-EPsy 8251: Methods in Data Analysis for Educational Research I is the first course in an entry-level, doctoral sequence for students in education. The two semester sequence provides in-depth coverage of widely used statistical methods and models and prepares students for advanced statistical coursework. EPsy 8251 provides rigorous coverage of estimation and hypothesis testing with a particular focus on the General Linear Model. The roadmap for the course is:
+EPsy 8251: Statistical Methods in Education I is the first course in an entry-level, doctoral sequence for students in education. The two semester sequence provides in-depth coverage of widely used statistical methods and models and prepares students for advanced statistical coursework. EPsy 8251 provides rigorous coverage of estimation and hypothesis testing with a particular focus on the General Linear Model. The roadmap for the course is:
 
 ```{r}
 #| echo: false
