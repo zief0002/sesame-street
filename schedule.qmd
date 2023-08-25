@@ -376,7 +376,7 @@ As part of the course, there are several articles, papers and technical reports 
 <!-- <td>Nov. 19</td> -->
 <td>Nov. 20</td>
 <td align="center" style="vertical-align:middle;">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/https://zief0002.github.io/modeling/04-02-polychotomous-predictors.html)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-02-polychotomous-categorical-predictors.html)
 </td>
 <td style="vertical-align:middle;">Polychotomous Categorical Predictors</td>
 <td align="center" style="vertical-align:middle;">
@@ -408,7 +408,7 @@ As part of the course, there are several articles, papers and technical reports 
 <!-- <td>Nov. 19</td> -->
 <td>Nov. 27</td>
 <td align="center" style="vertical-align:middle;"  rowspan="2">
-  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-02-polychotomous-predictors.html)
+  [<span class="fa fa-book" style="font-size: 20px;"></span>](readings/04-02-polychotomous-categorical-predictors.html)
 </td>
 <td style="vertical-align:middle;"  rowspan="2">Polychotomous Categorical Predictors</td>
 <td align="center" style="vertical-align:middle;"  rowspan="2">

@@ -52,7 +52,7 @@ state_educ
 
 ### References
 
-College Board. (2020). [SAT suite of assessments annual report](https://reports.collegeboard.org/pdf/2020-total-group-sat-suite-assessments-annual-report.pdf). Author.
+College Board. (2020). [SAT suite of assessments annual report](https://reports.collegeboard.org/media/pdf/2020-total-group-sat-suite-assessments-annual-report.pdf). Author.
 
 NEA Research. (2021). [Rankings of the states 2020 and estimates of school statistics 2021](https://www.nea.org/sites/default/files/2021-04/2021%20Rankings_and_Estimates_Report.pdf). National Education Association.
 
