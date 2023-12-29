@@ -1,0 +1,481 @@
+---
+title: "Assignment 08"
+subtitle: "INTERACTION EFFECTS"
+author: "Answer Key"
+date: "`r Sys.Date()`"
+description: "This assignment is worth 12 points. Each question is worth 1 point unless otherwise noted."
+format:
+  html:
+    theme: yeti
+    mainfont: 'Raleway'
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    toc: true
+editor: source
+---
+
+
+```{=html}
+<style type="text/css">
+caption, .table-caption {
+  text-align: left;
+}
+</style>
+```
+
+
+# Fitting Models
+
+<!-- Fit the following regression models using R. You will use the output from the fitted models to answer the questions in the assignment. For all models, use the average in-state tuition as the response variable. -->
+
+<!-- - Model 1: Main effects of `public`, `act75`, and `admission`  -->
+<!-- - Model 2: Main effects of `public`, `act75`, and `admission`; and an interaction effect between `public` and `act75` -->
+<!-- - Model 3: Main effects of `public`, `act75`, and `admission`; and an interaction effect between `public` and `admission` -->
+<!-- - Model 4: Main effects of `public`, `act75`, and `admission`; and an interaction effect between `admission` and `act75` -->
+
+```{r}
+#| label: setup
+#| message: false
+source("../assets/notes-setup.R")
+
+# Load libraries
+library(corrr)
+library(tidyverse)
+library(patchwork)
+
+# Read in data
+scoobydoo = read_csv("https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv")
+
+# Create dummy variables
+scoobydoo = scoobydoo |>
+  mutate(
+    shaggy_scooby = ifelse(caught_by == "Shaggy/Scooby", 1, 0),
+    fred_daphne_velma = ifelse(caught_by == "Fred/Daphne/Velma", 1, 0),
+    other_combo = ifelse(caught_by == "Other" | caught_by == "Combo", 1, 0),
+    tv = if_else(format == "TV", 1, 0)
+)
+
+# Fit models
+lm.a = lm(engagement ~ shaggy_scooby + fred_daphne_velma + imdb_rating + catchphrase + tv, data = scoobydoo)
+lm.b = lm(engagement ~ shaggy_scooby + fred_daphne_velma + imdb_rating + catchphrase + tv + 
+            tv:imdb_rating, data = scoobydoo)
+lm.c = lm(engagement ~ shaggy_scooby + fred_daphne_velma + imdb_rating + catchphrase + tv +
+            catchphrase:imdb_rating, data = scoobydoo)
+```
+
+
+**1. Create and report a table of pairwise correlations between engagement, each of the three dummy variables you created to represent `caught_by`, IMDb rating, number of catchphrases uttered, and the media format dummy variable.**
+
+```{r}
+#| label: tbl-question-01
+#| tbl-cap: "Intercorrelations between seven measures collected from Scooby-Doo TV episodes and movies."
+tab_01 = scoobydoo |>
+  select(engagement, shaggy_scooby, fred_daphne_velma, other_combo, imdb_rating, catchphrase, tv) |>
+  correlate() |>
+  shave(upper = TRUE) |>
+  fashion(decimals = 2, na_print = "—") |>
+  data.frame()
+
+tab_01[1, 3:8] = ""
+tab_01[2, 4:8] = ""
+tab_01[3, 5:8] = ""
+tab_01[4, 6:8] = ""
+tab_01[5, 7:8] = ""
+tab_01[6, 8:8] = ""
+tab_01[7,   8] = ""
+
+tab_01 |>
+  mutate(
+    term = c("1. IMDb Engagement", "2. Shaggy/Scooby", "3. Fred/Daphne/Velma", "4. Other/Combo",
+                "5. IMDb Rating", "6. Catchphrase", "7. TV")
+  ) |>
+  gt() |>
+  cols_label(
+    term = "Measure",
+    engagement = "1",
+    shaggy_scooby = "2",
+    fred_daphne_velma = "3",
+    other_combo = "4",
+    imdb_rating = "5", 
+    catchphrase = "6", 
+    tv = "7"
+  ) |>
+  cols_align(
+    columns = c(term),
+    align = "left"
+  ) |>
+  cols_align(
+    columns = c(engagement, shaggy_scooby, fred_daphne_velma, other_combo, imdb_rating, catchphrase, tv),
+    align = "center"
+  ) |>
+  tab_options(
+    table.width = pct(100),
+    table.align = "left"
+  )
+```
+
+
+<br />
+
+**2. Based on the correlation table, can you infer whether or not there will be a sample interaction between between IMDb rating and number of catchphrases uttered? Explain.**
+
+No. Correlations do not give us information about interactions.
+
+<br />
+
+
+**3. Mimic the format and structure of this table to create a table to present the numerical information from the four models you fitted in this assignment. Make sure the table you create also has an appropriate caption. If the table is too wide, change the page orientation in your word processing program to ``Landscape'', rather than changing the size of the font. (2pts.)**
+
+```{r}
+#| echo: false
+#| results: asis
+#| eval: false
+stargazer::stargazer(lm.a, lm.b, lm.c,
+  type = "html",
+  ci = TRUE,
+  column.labels = c("Model A", "Model B", "Model C"),
+  covariate.labels = c("Shaggy/Scooby", "Fred/Daphne/Velma", "IMDb Rating", "Cathchphrase", "TV", "IMDb Rating x TV", "IMDb Rating x Catchphrase"),
+  dep.var.caption = "Outcome variable: IMDb Engagement",
+  dep.var.labels = NULL,
+  dep.var.labels.include = FALSE,
+  keep.stat = c("rsq","ser"),
+  star.cutoffs = NA,
+  header = FALSE,
+  title = "Unstandardized coefficients and 95\\% confidence intervals for a series of regression models fitted to data from $n=372$ Scooby-doo television episodes and movie to predict variation in IMDb Engagement. In all models, the reference group is movies in which the villain is caught by other/combo.",
+  omit.table.layout = "n"
+  )
+```
+
+<table style="text-align:center; width:100%;">
+  <caption>
+    Table 2<br />Unstandardized coefficients (and 95% confidence intervals) for a series of regression models fitted to data from <i>n</i>=372 Scooby-doo television episodes and movie to predict variation in IMDb Engagement. In all models, the reference group is movies in which the villain is caught by other/combo.
+  </caption>
+  <tr>
+    <td colspan="4" style="border-bottom: 1px solid black"></td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>Model A</td>
+    <td>Model B</td>
+    <td>Model C</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border-bottom: 1px solid black"></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">Caught By</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Shaggy/Scooby</td>
+    <td>0.13</td>
+    <td>0.17</td>
+    <td>0.14</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(-0.09, 0.34)</td>
+    <td>(-0.04, 0.37)</td>
+    <td>(-0.07, 0.35)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;Fred/Daphne/Velma</td>
+    <td>0.26</td>
+    <td>0.27</td>
+    <td>0.25</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(0.04, 0.48)</td>
+    <td>(0.06, 0.49)</td>
+    <td>(0.04, 0.47)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">IMDb Rating</td>
+    <td>0.59</td>
+    <td>-0.42</td>
+    <td>0.92</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(0.43, 0.75)</td>
+    <td>(-0.79, -0.04)</td>
+    <td>(0.73, 1.11)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">Cathchphrase</td>
+    <td>0.02</td>
+    <td>0.02</td>
+    <td>0.50</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(-0.00, 0.04)</td>
+    <td>(-0.00, 0.03)</td>
+    <td>(0.33, 0.67)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">Media Format</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;TV</td>
+    <td>-4.09</td>
+    <td>-11.96</td>
+    <td>-3.77</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(-4.44, -3.74)</td>
+    <td>(-14.67, -9.23)</td>
+    <td>(-4.12, -3.42)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">IMDb Rating x TV</td>
+    <td></td>
+    <td>1.19</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td>(0.78, 1.60)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">IMDb Rating x Catchphrase</td>
+    <td></td>
+    <td></td>
+    <td>-0.07</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td>(-0.09, -0.04)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">Constant</td>
+    <td>3.74</td>
+    <td>10.18</td>
+    <td>1.03</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td>(2.68, 4.81)</td>
+    <td>(7.75, 12.62)</td>
+    <td>(-0.38, 2.44)</td>
+  </tr>
+  <tr>
+    <td style="text-align:left"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border-bottom: 1px solid black"></td>
+  </tr>
+  <tr>
+    <td style="text-align:left">R<sup>2</sup></td>
+    <td>0.659</td>
+    <td>0.687</td>
+    <td>0.685</td>
+  </tr>
+  <tr>
+    <td style="text-align:left">RMSE</td>
+    <td>0.80</td>
+    <td>0.77</td>
+    <td>0.77</td>
+  </tr>
+  <tr>
+    <td colspan="4" style="border-bottom: 1px solid black"></td>
+  </tr>
+  <tr>
+    <td colspan="4" style="text-align: left;">The "Caught By" (reference group is "other/combo") and "Media Format" (reference group is "movie") variables are dummy coded.</td>
+  </tr>
+</table>
+
+
+<br />
+
+**4. Write the fitted regression equation for Model B.**
+
+$$
+\begin{split}
+\hat{\mathrm{IMDb~Engagement}_i} = &10.18 + 0.17(\mathrm{Shaggy/Scooby}_i) + 0.27(\mathrm{Fred/Daphne/Velma}_i) - 0.42(\mathrm{IMDb~Rating}_i) \\
+&+ 0.02(\mathrm{Catchphrase}_i) - 11.95(\mathrm{TV}_i) + 1.19(\mathrm{IMDb~Rating}_i)(\mathrm{TV}_i)
+\end{split}
+$$
+
+<br />
+
+**5. Based on the inferential results from fitting this model, is there an interaction effect between media format and IMDb rating? Explain.**
+
+Yes, there an interaction effect between media format and IMDb rating since the *p*-value associated with the interaction term is quite small ($p<.001$). Furthermore, the confidence interval does not include zero.
+
+<br />
+
+
+**6. Interpret the coefficient associated with the interaction effect between media format and IMDb rating.**
+
+The effect of IMDb rating on  IMDb engagement for TV episodes is 1.19 points higher than it is for movies, on average, controlling for differences in who caught the villain, and number of catchphrases uttered.
+
+<br />
+
+**7. Re-write the fitted regression equation, by writing two fitted equations: one for TV episodes and one for movies. Be sure each equation is identified with the appropriate subgroup.**
+
+$$
+\begin{split}
+\mathbf{Movies:~~}\hat{\mathrm{IMDb~Engagement}_i} = &10.18 + 0.17(\mathrm{Shaggy/Scooby}_i) + 0.27(\mathrm{Fred/Daphne/Velma}_i) - 0.42(\mathrm{IMDb~Rating}_i) \\
+&+ 0.02(\mathrm{Catchphrase}_i)  \\[2ex]
+\mathbf{TV:~~}\hat{\mathrm{IMDb~Engagement}_i} = &-1.77 + 0.17(\mathrm{Shaggy/Scooby}_i) + 0.27(\mathrm{Fred/Daphne/Velma}_i) + 0.77(\mathrm{IMDb~Rating}_i) \\
+&+ 0.02(\mathrm{Catchphrase}_i)
+\end{split}
+$$
+
+<br />
+
+**8. Create and include a plot of the fitted model showing the pertinent results from Model B. Be sure to appropriately differentiate between lines that you include in the plot (e.g., do not differentiate by color unless you plan to print in color). If you partial out any variables, be sure to note this in the caption.**
+
+*Students could give many plots here. IMDb rating should be put on the x-axis they should show different lines for TV episodes and movies. However, they can pick and choose the other predictors they partial out or show. Here is one example:*
+
+```{r}
+#| label: fig-question-08
+#| fig-cap: "Average IMDb engagement for Scooby-doo movies (red, solid line) and TV episodes (blue, dashed line) as a function of IMDb rating. This is displayed for all three levels of who caught the villain. Number of catchphrases uttered was controlled by setting it to its mean value of 4.87."
+#| fig-width: 12
+#| fig-height: 4
+#| out-width: "90%"
+# Shaggy/Scooby
+p1 = ggplot(data = scoobydoo, aes(x = imdb_rating, y = engagement)) +
+  geom_point(alpha = 0) +
+  theme_bw() +
+  geom_abline(intercept = 10.45, slope = -0.42, color = "darkred", linetype = "solid") +  #movies
+  geom_abline(intercept = -1.50, slope = 0.77, color = "darkblue", linetype = "dashed") + #tv
+  labs(
+    x = "IMDb rating",
+    y = "Predicted average IMDb engagement",
+    title = "Shaggy/Scooby")
+
+p2 = ggplot(data = scoobydoo, aes(x = imdb_rating, y = engagement)) +
+  geom_point(alpha = 0) +
+  theme_bw() +
+  geom_abline(intercept = 10.55, slope = -0.42, color = "darkred", linetype = "solid") +  #movies
+  geom_abline(intercept = -1.40, slope = 0.77, color = "darkblue", linetype = "dashed") + #tv
+  labs(
+    x = "IMDb rating",
+    y = "Predicted average IMDb engagement",
+    title = "Fred/Daphne/Velma")
+
+p3 = ggplot(data = scoobydoo, aes(x = imdb_rating, y = engagement)) +
+  geom_point(alpha = 0) +
+  theme_bw() +
+  geom_abline(intercept = 10.18, slope = -0.42, color = "darkred", linetype = "solid") +  #movies
+  geom_abline(intercept = -1.67, slope = 0.77, color = "darkblue", linetype = "dashed") + #tv
+  labs(
+    x = "IMDb rating",
+    y = "Predicted average IMDb engagement",
+    title = "Other/Combo")
+
+# Layout plots
+p1 | p2 | p3
+```
+
+
+<br />
+
+
+**9. Write the fitted regression equation for Model C.**
+
+$$
+\begin{split}
+\hat{\mathrm{IMDb~Engagement}_i} = &1.03 + 0.14(\mathrm{Shaggy/Scooby}_i) + 0.25(\mathrm{Fred/Daphne/Velma}_i) + 0.92(\mathrm{IMDb~Rating}_i) \\
+&+ 0.50(\mathrm{Catchphrase}_i) - 3.77(\mathrm{TV}_i) - .07(\mathrm{IMDb~Rating}_i)(\mathrm{Catchphrase}_i)
+\end{split}
+$$
+
+<br />
+
+**10. Based on the inferential results from fitting this model, is there an interaction effect between number of catchphrases uttered and IMDb rating? Explain.**
+
+Yes, there an interaction effect between number of catchphrases uttered and IMDb rating since the *p*-value associated with the interaction term is quite small ($p<.001$). Furthermore, the confidence interval does not include zero.
+
+<br />
+
+**11. Create and include a plot of the fitted model showing the pertinent results from Model C. Be sure to appropriately differentiate between lines that you include in the plot (e.g., do not differentiate by color unless you plan to print in color). If you partial out any variables, be sure to note this in the caption. **
+
+*Students could give many plots here, depending on which variable they put on the x-axis (IMDb rating or Number of catchphrases uttered) and how they choose values for the other predictors. Here is one example:*
+
+```{r echo=FALSE, message=FALSE, fig.cap='', fig.pos='H', fig.height=6, fig.width=6, out.width='3in', fig.align='center'}
+#| label: fig-question-11
+#| fig-cap: "Average IMDb engagement for Scooby-doo movies (reddish purple) and TV episodes (blue) as a function of IMDb rating. This is displayed for episodes in which no catchphrases were uttered (dotted line), 10 catchphrases were uttered (dashed line), and 20 catchphrases were uttered (solid line)."
+ggplot(data = scoobydoo, aes(x = imdb_rating, y = engagement)) +
+  geom_point(alpha = 0) +
+  theme_bw() +
+  geom_abline(intercept = -2.599, slope = 0.918, color = "#0072B2", linetype = "dotted") +  #TV; 0 catchphrases
+  geom_abline(intercept = 2.361, slope = 0.254,  color = "#0072B2", linetype = "dashed") +  #TV; 10 catchphrases
+  geom_abline(intercept = 7.321, slope = -0.41,  color = "#0072B2", linetype = "solid") +   #TV; 20 catchphrases
+  geom_abline(intercept = 1.171, slope = 0.918, color = "#CC79A7", linetype = "dotted") +  #Movies; 0 catchphrases
+  geom_abline(intercept = 6.131, slope = 0.254,  color = "#CC79A7", linetype = "dashed") +  #Movies; 10 catchphrases
+  geom_abline(intercept = 11.091, slope = -0.41,  color = "#CC79A7", linetype = "solid") +   #Movies; 20 catchphrases
+  labs(
+    x = "IMDb rating",
+    y = "Predicted average IMDb engagement"
+    )
+```
+
+
+<br />
+
+**12.  Use the plot you created in Question 11 to help interpret the interaction effect between number of catchphrases uttered and IMDb rating.**
+
+The effect of IMDb rating on IMDb engagement, controlling for who caught the villain and media format, depends on number of catchphrases uttered. Episodes/movies with a number of catchphrases uttered tend to have a lower effect of IMDb rating on IMDb engagement. For episodes/movies with a really high number of catchphrases uttered, the effect of IMDb rating on IMDb engagement is negative.
+
+<br />

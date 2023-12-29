@@ -1,0 +1,320 @@
+---
+title: "Assignment 07"
+subtitle: "POLYCHOTOMOUS CATEGORICAL PREDICTORS"
+author: "Answer Key"
+date: "`r Sys.Date()`"
+description: "This assignment is worth 15 points. Each question is worth 1 point unless otherwise noted."
+format:
+  html:
+    theme: yeti
+    mainfont: 'Raleway'
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    toc: true
+editor: source
+---
+
+
+```{=html}
+<style type="text/css">
+caption, .table-caption {
+  text-align: left;
+}
+</style>
+```
+
+```{r}
+#| label: setup
+#| message: false
+source("../assets/notes-setup.R")
+
+# Load libraries
+library(tidyverse)
+library(broom)
+library(corrr)
+library(educate)
+library(patchwork)
+
+# Import data
+scooby = read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/scoobydoo.csv")
+
+# Create dummy variables
+scooby = scooby |>
+  mutate(
+    shaggy_scooby = ifelse(caught_by == "Shaggy/Scooby", 1, 0),
+    fred_daphne_velma = ifelse(caught_by == "Fred/Daphne/Velma", 1, 0),
+    other = ifelse(caught_by == "Other", 1, 0),
+    combo = ifelse(caught_by == "Combo", 1, 0),
+    tv = if_else(format == "TV", 1, 0)
+)
+
+# Unadjusted Group Differences Model: ANOVA
+lm.1 = lm(engagement ~ fred_daphne_velma + other + combo, data = scooby)
+# tidy(lm.1)
+# glance(lm.1)
+
+# Adjusted Group Differences Model: ANCOVA
+lm.2 = lm(engagement ~ fred_daphne_velma + other + combo + imdb_rating + catchphrase + tv, data = scooby)
+# tidy(lm.2)
+# glance(lm.2)
+
+# Augment model
+# out.1 = augment(lm.1)
+# out.2 = augment(lm.2)
+```
+
+This assignment is worth 15 points. 
+
+# Description
+
+
+**1. Create a table of pairwise correlations between engagement, each of the four dummy variables you created to represent `caught_by`, IMDb rating, number of catchphrases uttered, and the media format dummy variable.**
+
+```{r}
+#| label: tbl-question-01
+#| tbl-cap: "Intercorrelations between eight measures collected from Scooby-Doo TV episodes and movies."
+tab_01 = scooby |>
+  select(engagement, shaggy_scooby, fred_daphne_velma, other, combo, imdb_rating, catchphrase, tv) |>
+  correlate() |>
+  shave(upper = TRUE) |>
+  fashion(decimals = 2, na_print = "—") |>
+  data.frame()
+
+tab_01[1, 3:9] = ""
+tab_01[2, 4:9] = ""
+tab_01[3, 5:9] = ""
+tab_01[4, 6:9] = ""
+tab_01[5, 7:9] = ""
+tab_01[6, 8:9] = ""
+tab_01[7,   9] = ""
+tab_01[8,   9] = ""
+
+tab_01 |>
+  mutate(
+    term = c("1. IMDb Engagement", "2. Shaggy/Scooby", "3. Fred/Daphne/Velma", "4. Other", "5. Combo",
+                "6. IMDb Rating", "7. Catchphrase", "8. TV")
+  ) |>
+  gt() |>
+  cols_label(
+    term = "Measure",
+    engagement = "1",
+    shaggy_scooby = "2",
+    fred_daphne_velma = "3",
+    other = "4",
+    combo = "5", 
+    imdb_rating = "6", 
+    catchphrase = "7", 
+    tv = "8"
+  ) |>
+  cols_align(
+    columns = c(term),
+    align = "left"
+  ) |>
+  cols_align(
+    columns = c(engagement, shaggy_scooby, fred_daphne_velma, other, combo, imdb_rating, catchphrase, tv),
+    align = "center"
+  ) |>
+  tab_options(
+    table.width = pct(100),
+    table.align = "left"
+  )
+```
+
+<br />
+
+**2. Interpret (i) the correlation between the Shaggy/Scooby dummy variable and engagement, and (ii) the correlation between the Shaggy/Scooby dummy variable and the media format dummy variable.**
+
+- The correlation between Shaggy/Scooby and IMDb engagement is $-0.07$. This indicates that episodes/movies in which Shaggy and Scooby-Doo catch the villain have, on average, lower levels of IMDb engagement than other episodes/movies. (Although this is small.)
+- The correlation between Shaggy/Scooby and TV is 0.04. This indicates that when Shaggy and Scooby-Doo catch the villain, on average, it is more likely to be in a TV episode.
+
+<br />
+
+# Unadjusted Group Differences Model: ANOVA
+
+**3. Write the fitted regression equation.**
+
+$$
+\hat{\mathrm{IMDb~Engagement}_i} = 4.60 + 0.25(\mathrm{Fred/Daphne/Velma}_i) - 0.32(\mathrm{Other}_i) + 0.98(\mathrm{Combo}_i)
+$$
+
+<br />
+
+**4. Which conditions of `caught_by`, if any, differ from Shaggy/Scooby in the average engagement on IMDb produced (more than we expect because of sampling variation)? Explain.**
+
+When a combination of Mystery Inc. characters catch the villain, the average IMDb engagement differs from that when Shaggy and Scooby-Doo catch the villain, more than we expect because of sampling variation ($p = 0.0004$), after controlling for the other predictors in the model.
+
+<br />
+
+**5. Report and interpret the $R^2$ value for this model.**
+
+Differences in who catches the villain explain 5.29% of the variation in IMDb engagement.
+
+<br />
+
+**6. Which comparisons of the `caught_by` condition reflected in the omnibus null hypothesis are not represented in this fitted model?**
+
+There are three comparisons not represented in this fitted model. They include:
+
+  - Fred/Daphne/Velma vs. Other
+  - Fred/Daphne/Velma vs. Combination of Mystery Inc. characters
+  - Other vs. Combination of Mystery Inc. characters
+
+<br />
+
+
+# Adjusted Group Differences Model: ANCOVA
+
+<!-- Again, fit the regression model that uses the dummy predictors for state to predict variation in average in-state tuition, but this time control for differences in (1) sector (public vs. private), (2) ACT scores, and (3) percentage of students on Pell grants. Again, use Minnesota as the reference group. -->
+
+**7. Write the fitted regression equation.**
+
+$$
+\begin{split}
+\hat{\mathrm{IMDb~Engagement}_i} = &3.80 + 0.13(\mathrm{Fred/Daphne/Velma}_i) - 0.28(\mathrm{Other}_i) + 0.19(\mathrm{Combo}_i) \\
+&+0.60(\mathrm{IMDb~Rating}_i) + 0.02(\mathrm{Catchphrase}_i) - 4.05(\mathrm{TV}_i)
+\end{split}
+$$
+
+
+<br />
+
+**8. Which conditions of `caught_by`, if any, differ from Shaggy/Scooby in the average IMDb engagment (more than we expect because of sampling variation) after controlling for differences in these other predictors? Explain**
+
+When a people other than Mystery Inc. characters catch the villain, the average IMDb engagement differs from that when Shaggy and Scooby-Doo catch the villain, more than we expect because of sampling variation ($p = 0.028$), after controlling for the other predictors in the model.
+
+<br />
+
+**9. Report and interpret the $R^2$ value for this model.**
+
+Differences between which Mystery Inc. members caught the villain, IMDb rating, number of catchphrases uttered, and media format explain 66.5% of the variation in IMDb engagement.
+
+<br />
+
+
+# Assumptions
+
+**10. Create the density plot of the marginal distribution of the standardized residuals from the ANCOVA model. Add the confidence envelope for the normal distribution. Explain whether or not this plot suggests problems about meeting the normality assumption.**
+
+```{r}
+#| label: fig-question-10
+#| fig-cap: "Density plot of the standardized residuals. A confidence envelope assuming the distribution is normally distributed is also included."
+out_2 = augment(lm.2)
+
+ggplot(data = out_2, aes(x = .std.resid)) +
+  educate::stat_density_confidence() +
+  stat_density(geom = "line") +
+  theme_bw() +
+  xlab("Standardized residuals") +
+  ylab("Probability density")
+```
+
+Based on the plot, the normality assumption looks tenable. The density curve for the distribution of standardized residuals falls within the confidence envelope of where we would expect if they were normally distributed.
+
+<br />
+
+**11. Create the scatterplot of the standardized residuals versus the fitted values from the ANCOVA model. Include any smoothers and confidence envelopes that will allow you to evaluate the linearity assumption. In the plot identify observation with extreme residuals ($\leq-3$ or $\geq3$) by indicating  the row number of that observation in the plot.**
+
+```{r echo=FALSE, fig.width=6, fig.height=6, out.width='3in', message = FALSE, warning = FALSE}
+#| label: fig-question-11
+#| fig-cap: "Scatterplot of the standardized residuals versus the fitted values. The line $y=0$ and the confidence envelope showing the expected uncertainty from that line are also displayed on the plot, along with a loess smoother. Observations with a standardized residual more than three standard errors from 0 are also identified by their row number in the data."
+# Augment model and add row numbers
+out_2 = out_2 |>
+  mutate(ID = 1:nrow(out_2))
+
+# Identify extreme and non-extreme values
+extreme = out_2 |> 
+  filter(.std.resid > 3 | .std.resid < -3)
+
+nonextreme = out_2 |> 
+  filter(.std.resid <= 3 & .std.resid >= -3)
+
+# Create scattrplot
+ggplot(data = nonextreme, aes(x = .fitted, y = .std.resid)) +
+  geom_point(size = 3) +
+  geom_smooth(method = "lm", se = TRUE) +
+  geom_smooth(method = "loess", se = FALSE) +
+  geom_hline(yintercept = c(-3, 3), linetype = "dashed") +
+  geom_text(data = extreme, aes(label = ID), color = "red", size = 6) +
+  theme_bw() +
+  xlab("Fitted values") +
+  ylab("Standardized residuals")
+```
+
+<br />
+
+**12. Explain whether or not this plot suggests problems about meeting the linearity and homogeneity of variance assumptions.**
+
+The linearity assumption seems somewhat satisfied as loess smoother mostly falls within the confidence envelope of the $Y=0$ line. There are a couple places on the plot where the mean residual differs from zero more than we would expect because of sampling variation. The homoscedasticity assumption seems untenable. Including the extreme observations, the variation in the standardized residuals at low fitted values is lower than the variation in the standardized residuals for higher fitted values.
+
+<br />
+
+
+# Pairwise Differences
+
+**13. Create a table (suitable for publication) that presents each of the possible pairwise contrasts (hypothesis) of interest, the unadjusted _p_-values, and the Benjamini--Hochberg adjusted _p_-values for the controlled differences. (Note: To obtain all of these, you may need to fit additional models.)**
+
+Contrast                                | *p*-Value | Adjusted *p*-Value
+--------------------------------------- | --------- | ------------------
+Shaggy/Scooby-Doo vs. Fred/Daphne/Velma | 0.180     | 0.270
+Shaggy/Scooby-Doo vs. Other             | 0.028     | 0.055
+Shaggy/Scooby-Doo vs. Combination       | 0.257     | 0.309
+Fred/Daphne/Velma vs. Other             | 0.001     | 0.008
+Fred/Daphne/Velma vs. Combination       | 0.723     | 0.722
+Other vs. Combination                   | 0.013     | 0.040
+
+<br />
+
+**14. Use the Benjamini--Hochberg adjusted _p_-values from the controlled model to help answer the research question: Are there differences in the engagement level of reviewers on IMDb for Scooby-Doo episodes/movies based on which members of Mystery Inc caught the villain? In answering this question, also indicate how IMDb engagement differs for the conditions of `caught_by`. **
+
+Based on the Benjamini--Hochberg adjusted *p*-values, there are  differences in the average IMDb engagement between Scooby-Doo episodes/movies in which Fred/Daphne/Velma catch the villain and those in which non-Mystery Inc. members catch the villain ($p=.008$), after controlling for the other predictors in the model. There are also differences in the average IMDb engagement between Scooby-Doo episodes/movies in which non-Mystery Inc. members catch the villain and a combination of Mystery Inc. members catch the villain ($p=.040$), after controlling for the other predictors in the model.
+
+<br />
+
+**15. Create a heatmap of the Bonferroni *p*-values for the controlled model that you reported in the table in Question 13. You can see an example of a [heatmap for correlations here](https://developer.ibm.com/predictiveanalytics/wp-content/uploads/sites/48/2011/12/heatmap_corr1.png). We want to create a heatmap that shows the *p*-value for each mean comparison instead of the correlation between variables. So for example, the heatmap we want to create should be a 5x5 grid (the rows and columns would represent states) and the intersecting cells would include the *p*-value for the comparison (rather than the correlation coefficient). Color will be used to indicate the magnitude of the *p*-values. You may want to include different levels of color depending on the degree of significance ($< .05$, $< .01$, etc). Feel free to use any software tool you want to create this heatmap.**
+
+```{r echo=FALSE, fig.width=10, fig.height=6, out.width="5in", fig.cap="", fig.pos='H'}
+#| label: fig-question-15
+#| fig-cap: "Heatmap showing the p-values and significance level of the Benjamini-Hochberg adjusted $p$-values for comparisons of IMDb engagement between each condition of $\\mathtt{caught\\_by}$. The average IMDb engagement for each condition is shown along the main diagonal."
+data.frame(
+  mystery_inc_1 = c(rep("Shaggy/Scooby", 4), rep("Fred/Daphne/Velma", 4), rep("Other", 4), rep("Combination", 4)),
+  mystery_inc_2 = rep(c("Shaggy/Scooby", "Fred/Daphne/Velma", "Other", "Combination"), 4),
+  p = c(
+  "-----", "0.270", "0.055", "0.309",
+  "0.270", "-----", "0.008", "0.723",
+  "0.055", "0.008", "-----", "0.040",
+  "0.309", "0.723", "0.040", "-----"),
+  sig2 = c(NA, "No", "Verge", "No",
+           "No", NA, "Yes", "No",
+           "Verge", "Yes", NA, "Yes",
+           "No", "No", "Yes", NA)
+) |>
+  mutate(
+    mystery_inc_1 = factor(mystery_inc_1, levels = c("Shaggy/Scooby", "Fred/Daphne/Velma", "Other", "Combination")),
+    mystery_inc_2 = factor(mystery_inc_2, levels = c("Shaggy/Scooby", "Fred/Daphne/Velma", "Other", "Combination"))
+  ) %>%
+  filter(complete.cases(.)) %>%
+  ggplot(data = ., aes(x = mystery_inc_1, y = mystery_inc_2, fill = sig2)) +
+    geom_tile(color = "black") +
+    theme_bw() +
+    xlab("") +
+    ylab("") +
+    scale_fill_manual(
+      name = "",
+      labels = c("n.s.", "p < .10", "p < .05"),
+      values = c("#bbbbbb", "#F0DA47", "#F14000")
+      ) +
+  annotate(geom = "text", x = 1, y = 1, label = "4.60") +
+  annotate(geom = "text", x = 2, y = 2, label = "4.84") +
+  annotate(geom = "text", x = 3, y = 3, label = "4.27") +
+  annotate(geom = "text", x = 4, y = 4, label = "5.58") +
+  geom_text(aes(label = p)) +
+  theme(
+    text = element_text(size = 12)
+  )
+
+#scooby |> group_by(caught_by) |> summarize(M = mean(engagement))
+```
+
+<br />

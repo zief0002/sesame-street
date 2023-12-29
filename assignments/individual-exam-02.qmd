@@ -1,0 +1,84 @@
+---
+title: "Individual Exam 02"
+subtitle: "SUMMER VACATION"
+description: This exam is worth 14 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 3264, 2024*
+format:
+  html:
+   css: "assets/styles.css"
+date: today
+---
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/sesame-street-all.png")
+```
+
+
+## Instructions
+
+Submit a PDF document to the TA of your responses to the following numbered questions. For additional information see the [FAQs on the Course Requirements &amp; Grading page of the website](../grading.html#faqs).
+
+<br />
+
+
+## Introduction
+
+The United States Department of Tourism is wondering what effect, if any, COVID-19 has had on tourism in the United States. A survey conducted by Value Penguin showed in 2022, 46% of families went on a summer vacation. In another survey conducted by Gallup Poll showed prior to COVID-19 (2017) 62% of families went on summer vacations. Is there evidence of a decrease in the percentage of families taking summer vacations since COVID-19?
+
+The goal of this assessment is to answer the following research question:
+
+> **Research Question:** Has the percentage of families taking summer vacations decreased from pre-pandemic rates more than could have been expected by chance?
+
+To help answer this research question we will use data published from the samples taken from Value Penguin and Gallup:
+
+- **Base Rate:** 28 out of 45 families reported taking a summer vacation in 2017.
+- **Observed Data:** 36 out of 76 families reported taking a summer vacation in 2022 
+
+<br />
+
+## Model
+
+To answer the research question, you will set up a TinkerPlots&trade; sampler that models the expected variation in the percentage of families taking vacation in 2022 by using 2017's data as a base rate. 
+
+1. Set up a TinkerPlots&trade; sampler that corresponds to the model that is described above. Copy-and-paste (or sketch) the sampler window into your word-processed document. **(2pts.)** 
+
+2. Write the statistical hypothesis that describes the model in your TinkerPlots&trade; sampler.  
+
+<br />
+
+
+## Simulate from the Model
+
+Use TinkerPlots&trade; to generate 500 trials of the percentage of American families that took vacations. 
+
+3. Copy-and-paste a picture of the distribution of simulated results.
+
+4. Use formal statistical language to describe the *shape* of the distribution of simulated results. 
+
+5. Report the *expected percentage* of vacations taken under the hypothesized model. Explain how this relates to the statistical hypothesis you wrote in Question #2. **(2pts.)**
+
+6. Compute and report the standard deviation and use it to determine a range of likely values. You must show your work to earn full credit. **(2pts.)**
+
+<br />
+
+
+## Evaluate the Observed Results
+
+7. Add a reference line at the observed value to your plot of 500 trials. Also add a divider to the plot to show the range of likely values. Copy-and-paste  your plot with the reference line and divider into your word-processed document. **(2pts.)**
+
+8. Based on the plot you created for Question #7, is the observed result from the 2022 post-pandemic vacations compatible under the hypothesized model? Explain. **(2pts.)**
+
+<br />
+
+
+## Answer the Research Question
+
+9. Write a short note to the United States Department of Tourism that answers the research question. In your response, use the statistical evidence from your simulation to explain how you came to the conclusion you did. **(2pts.)**
+
+
+
+
+
+

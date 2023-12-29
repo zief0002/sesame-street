@@ -1,0 +1,93 @@
+---
+title: "Individual Exam 05"
+subtitle: "PHUBBING"
+description: This exam is worth 18 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 3264, 2024*
+format:
+  html:
+   css: "assets/styles.css"
+date: today
+---
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/sesame-street-all.png")
+```
+
+
+## Instructions
+
+Submit a PDF document to the TA of your responses to the following numbered questions. For additional information see the [FAQs on the Course Requirements &amp; Grading page of the website](../grading.html#faqs).
+
+<br />
+
+
+## Introduction
+
+Phubbing is a term coined as part of a linguistic experiment by *Macquarie Dictionary* to describe the habit of snubbing someone in favor of a mobile phone^[<https://en.wikipedia.org/wiki/Phubbing>]. For example, if you are with your friends, and pick up your phone and pay attention to a text message you received, you are phubbing your friends. 
+
+In October 2015, James A. Roberts conducted a study on phubbing. The study recruited 450 U.S. adults and asked them about their phubbing practices.You will use data collected by Professor Roberts to answer the following research question:
+
+> **Research Question:** What percentage of all adults have phubbed in the past 30 days?
+
+<br />
+
+
+## Explore the Observed Data
+
+One of the reported findings was that 220 of the 450 sampled adults have phubbed in the past 30 days.
+
+1.	What percentage of adults sampled have phubbed in the past 30 days? 
+
+<br />
+
+
+## Model the Sampling Variation
+
+2. Set up a model in TinkerPlots&trade; to bootstrap the sampling variation. Copy-and-paste a picture of the TinkerPlots&trade; sampler window into your word-processed document. 
+
+<br />
+
+
+## Simulate
+
+
+3. Carry out 500 trials of the bootstrap simulation, collecting the *percentage* of adults who reported they had phubbed in the previous 30 days. Plot the 500 bootstrapped percentages. Copy-and-paste the plot of the bootstrap distribution into your word-processed document. 
+
+4.	Compute and report the standard deviation of the bootstrap distribution. 
+
+10.	Describe the shape of the distribution of the 500 simulated results. Also compute and report the standard deviation of this distribution.  
+
+11. By eyeballing the distribution of simulated results, estimate the mean (do not compute anything). Explain, by referring to the sample percentage you computed in Question 1, why your estimate for the mean is expected.
+
+<br />
+
+
+## Compatibility Interval
+
+6. Compute and report the margin of error. Show your work for full credit.
+
+7. Compute and report the endpoints of the compatibility interval. Show your work for full credit. 
+
+<br />
+
+
+## Answer the Research Question
+
+8. Answer the research question posed at the beginning of the assignment. Use evidence from the bootstrap analysis to support your answer. **(2pts.)**
+
+9. Comment on the level of external validity of the study. Explain your rationale.
+
+<br />
+
+
+## Reasoning about Compatibility Intervals
+
+10.	Albert Hoffman's best friend, Randy Shieffler, who studies interpersonal relationships at the  University of Minnesota (UMN), conducted a survey of 100 UMN students and found that the sample percentage of UMN students that phub was identical to the sample percentage you computed in Question #1. If Randy were to carry out a bootstrap simulation and produce a compatibility interval based on the UMN data, how would his interval compare to the interval you computed in Question #7? Explain. **(2pts.)**
+
+11.	It turns out that the survey study at the UMN sampled students from a single student residence hall. Explain why sampling students from a single residence hall would have an impact on the *external validity* of the study. **(2pts.)**
+
+12.	Does sampling students from a single student residence hall have an impact on the *amount of uncertainty* (range of the compatibility interval) computed in the bootstrap interval? Explain. 
+
+

@@ -1,0 +1,130 @@
+---
+title: "LEARNING TO USE TINKERPLOTS"
+format:
+  html:
+   css: "../assets/sticky-notes.css"
+date: today
+---
+
+
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-00.jpg")
+```
+
+## Directions
+
+The information in the TinkerPlots&trade; help movie you watched will help you learn how to use many of the features of TinkerPlots&trade; that we will be using in the course. Use what you learn to complete this activity. Answer all of the numbered questions in a word-processing document.
+
+<br />
+
+
+## Part I: Marvel Cinematic Universe: Runtime
+
+Use TinkerPlots&trade; to open the *mcu.tp3*  file (within TinkerPlots&trade; select `File > Open...`). These data include information about Marvel Cinematic Universe Titles (MCU). 
+
+<br />
+
+
+### Create a Dot plot 
+
+- Create a dot plot of the movie runtime (in minutes) by dragging the `runtime` attribute to the plot's *x*-axis. 
+- *Fully separate* the cases. There shouldn't be any bin lines in the plot. Remember bin lines are the vertical lines separating the data into bins corresponding to ranges of numbers.
+- Vertically stack the cases in the plot so they are organized. If your points are floating like the ones in the plot below then it is not vertically stacked.
+
+
+```{r}
+#| label: fig-01-dotplot
+#| fig-cap: "The plot on the left is vertically stacked, but not fully separated. The plot on the right is fully separated, but not vertically stacked."
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/assign-00-dotplot.png")
+```
+
+1. Copy and paste your final (fully separated and vertically stacked) plot into a word-processed document.
+
+<br />
+
+
+### Add to Your Plot
+
+Next we will add the average of the  to your plot. 
+
+- Highlight the plot by clicking on it, and select the `Averages (Mean)` button in the upper toolbar (the triangle). This should add a triangle to your plot underneath the mean value. 
+- With the plot still highlighted, choose the `Averages Options` in the upper toolbar (the upside-down triangle next to `Averages`) and select `Show Numeric Value(s)`. This should display the numeric value of the mean in the plot. 
+
+
+2. Copy and paste this plot (with the mean and the numeric value of the mean displayed) into your word-processed document.
+
+<br />
+
+
+### Identifying cases
+
+3.	In the plot, click on a case that is near the mean runtime. Identify the MCU title you clicked on and its runtime. Add this to your document.
+
+<br />
+
+
+:::fyi
+The runtime variable was recorded as a number. This is called *quantitative data*. When we record variables as a number, our dotplots of that variable will not have any bin lines dividing the data. However, we might collect data that is not a number, but instead is a category. This is called *categorical data*. For example, season is an example of a categorical variable (recorded as summer/not summer). When we create a dot plot of categorical data, it will have a bin for each category, even when fully separated. 
+:::
+
+<br />
+
+
+4. There are different storylines, called "phases", in the Marvel Cinematic Universe. Create a dot plot of the phase values by dragging the `phase` attribute to the plot's *x*-axis. Separate the values so that the cases are separated into the four phases (there will still be a vertical line separating them). Also vertically stack them so they are organized. Display the counts (`Counts N`) and percentages (`Counts %`) for each phase on the existing dot plot. Copy and paste this plot into your word-processed document.
+
+<br />
+
+
+:::stop
+Call over the instructor or TA to check your work and make sure you are on the right track.
+:::
+
+<br />
+
+
+## Part 2: Marvel Cinematic Universe: Runtime by Format
+
+Create a new dot plot of the `runtime` attribute (place this attribute on the *x*-axis). Fully separate the values (no bin lines) and vertically stack them so they are organized. 
+
+- Add the `format` attribute to the *y*-axis of the plot. This will separate the runtimes for movies and tv shows. 
+- Add a divider to the existing dot plot by highlighting the plot and clicking the `Divider` button in the toolbar. This will divide the plot into three distinct parts: a shaded middle part and two unshaded ends.
+- Once the divider has been added to the plot, display percentages on the plot. Percentages should be displayed for all three parts of the divided plot.
+
+5. Move the endpoints of the divider so that the shaded part covers the area where most of the data points fall for each format. Copy and paste this plot, with the divider and percentages, into your word-processed document.
+
+<br />
+
+6. Use the endpoints of the divider to complete this statement: Most MCU movies are between ___ and ___  minutes long. 
+
+<br />
+
+7. Based on the plot, comment on potential differences in runtimes between tv shows and movies. How do they compare?
+
+<br />
+
+8. Identify the movie that has the longest runtime.
+
+<br />
+
+9. Add the mean of the runtimes (triangle) and the numerical value of the mean to the plot. Find the runtime for Ms. Marvel, and add a vertical reference line at that value. Change the position of the vertical reference line by double clicking on the red square at the top of the vertical reference line, and then type in the value where you would like the line to be located. Copy and paste this plot (with the displayed means and the vertical reference line) into your word-processed document.
+
+<br />
+
+10.	Based on the plot, how does the runtime for Ms. Marvel compare with the other TV shows? Explain using evidence from your plot.
+
+<br />
+
+:::stop
+Call over the instructor or TA to check your work for #9 and #10. This is your exit ticket for the day. Also share the word-processed document with all the groups' members.
+:::
+
+<br />
+
+

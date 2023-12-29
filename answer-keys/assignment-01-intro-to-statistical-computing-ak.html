@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Answer Key">
+<meta name="dcterms.date" content="2023-08-07">
+<meta name="description" content="This assignment is worth 11 points. Each question is worth 1 point unless otherwise noted.">
+
+<title>Assignment 01</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/clipboard/clipboard.min.js"></script>
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/quarto.js"></script>
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/popper.min.js"></script>
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/anchor.min.js"></script>
+<link href="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="assignment-01-intro-to-statistical-computing-ak_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="assignment-01-intro-to-statistical-computing-ak_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="assignment-01-intro-to-statistical-computing-ak_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+<link href="assignment-01-intro-to-statistical-computing-ak_files/libs/pagedtable/css/pagedtable.css" rel="stylesheet">
+<script src="assignment-01-intro-to-statistical-computing-ak_files/libs/pagedtable/js/pagedtable.js"></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#part-i-minnesota-broadband-access" id="toc-part-i-minnesota-broadband-access" class="nav-link active" data-scroll-target="#part-i-minnesota-broadband-access">Part I: Minnesota Broadband Access</a></li>
+  <li><a href="#part-ii-state-level-broadband-access" id="toc-part-ii-state-level-broadband-access" class="nav-link" data-scroll-target="#part-ii-state-level-broadband-access">Part II: State-Level Broadband Access</a></li>
+  <li><a href="#part-iii-state-level-broadband-access-versus-poverty" id="toc-part-iii-state-level-broadband-access-versus-poverty" class="nav-link" data-scroll-target="#part-iii-state-level-broadband-access-versus-poverty">Part III: State-Level Broadband Access versus Poverty</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Assignment 01</h1>
+<p class="subtitle lead">INTRODUCTION TO STATISTICAL COMPUTING</p>
+</div>
+
+<div>
+  <div class="description">
+    This assignment is worth 11 points. Each question is worth 1 point unless otherwise noted.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Answer Key </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 7, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+
+<style type="text/css">
+caption, .table-caption {
+  text-align: left;
+}
+</style>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">"../assets/notes-setup.R"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Load libraries</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Import data</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>broadband <span class="ot">=</span> <span class="fu">read_csv</span>(<span class="at">file =</span> <span class="st">"https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/broadband.csv"</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter MN counties</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>mn <span class="ot">=</span> broadband <span class="sc">|&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(state <span class="sc">==</span> <span class="st">"MN"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="part-i-minnesota-broadband-access" class="level2">
+<h2 class="anchored" data-anchor-id="part-i-minnesota-broadband-access">Part I: Minnesota Broadband Access</h2>
+<p><strong>1. Use the <code>geom_density()</code> function from the <code>{ggplot2}</code> package to create a density plot of the distribution of the <code>microsoft_useage</code> variable for all 87 counties in Minnesota. You can see many examples of how to do this <a href="https://ggplot2.tidyverse.org/reference/geom_density.html">here</a>. Include this plot in a word-processed document. Resize the plot so it does not take up any more space than necessary. Be sure the plot has appropriate labels and has a caption.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mn, <span class="fu">aes</span>(<span class="at">x =</span> microsoft_useage)) <span class="sc">+</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>() <span class="sc">+</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Estimated proportion using internet at broadband speeds"</span>) <span class="sc">+</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Probability density"</span>) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-question-01" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assignment-01-intro-to-statistical-computing-ak_files/figure-html/fig-question-01-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: Density plot of the marginal distribution of the percent of people in Minnesota counties that use the internet at broadband speeds estimated by Microsoft.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>2. Use the <code>geom_density()</code> function from the <code>{ggplot2}</code> package to create a density plot of the distribution of the <code>microsoft_useage</code> variable for the counties in Minnesota, but this time use <code>color=</code> or <code>fill=</code> to color by whether the county is a metropolitan or non-metropolitan county. (Hint: You should get two density plots.). Include this plot in a word-processed document. Resize the plot so it does not take up any more space than necessary. Be sure the plot has appropriate labels and has a caption.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mn, <span class="fu">aes</span>(<span class="at">x =</span> microsoft_useage, <span class="at">fill =</span> metro)) <span class="sc">+</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_density</span>(<span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Estimated proportion using internet at broadband speeds"</span>) <span class="sc">+</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Probability density"</span>) <span class="sc">+</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">""</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0072b2"</span>, <span class="st">"#f0e441"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-question-02" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assignment-01-intro-to-statistical-computing-ak_files/figure-html/fig-question-02-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: Density plot of the distribution of the percent of people in Minnesota counties that use the internet at broadband speeds estimated by Microsoft, conditioned on whether the county is a metro (blue) or non-metro (yellow) county.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>3. Compute the mean and the standard deviation of the <code>microsoft_useage</code> variable for metro and non-metro counties. Report these values.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mn <span class="sc">|&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(metro) <span class="sc">|&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">M =</span> <span class="fu">mean</span>(microsoft_useage),</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD =</span> <span class="fu">sd</span>(microsoft_useage)</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["metro"],"name":[1],"type":["chr"],"align":["left"]},{"label":["M"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["SD"],"name":[3],"type":["dbl"],"align":["right"]}],"data":[{"1":"Metro","2":"0.4218519","3":"0.1393953"},{"1":"Nonmetro","2":"0.2865000","3":"0.1292852"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><strong>4. By referring to the values, and the plots, what can you say about broadband access in Minnesota? Is there a broadband access gap?</strong></p>
+<p>The mean proportion of people in Minnesota counties that use the internet at broadband speeds (estimated by Microsoft) is higher for metro counties than non-metro counties by 0.135. This difference is also seen in the density plots, in which the distribution of metro counties is shifted to the right of the distribution of non-metro counties. This suggests there is a “broadband gap” between metro and non-metro counties in Minnesota.</p>
+<p>There is variation in the proportion of people in Minnesota counties that use the internet at broadband speeds in both metro and non-metro counties, and this variation (as measured by the standard deviation) is roughly the same for both types of counties. Some non-metro counties have large proportions of people using the internet at broadband speeds and some metro counties have low proportions of people using the internet at broadband speed. The density plot confirms that the two distributions have a lot of overlap. This complicates the story about the “broadband gap”; while metro counties have a higher proportion of people using the internet at broadband speeds than non-metro counties on average, there is a lot of variation across counties regardless of whether they are metro or non-metro.</p>
+<p><br></p>
+</section>
+<section id="part-ii-state-level-broadband-access" class="level2">
+<h2 class="anchored" data-anchor-id="part-ii-state-level-broadband-access">Part II: State-Level Broadband Access</h2>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create state-level summaries</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>state_broadband <span class="ot">=</span> broadband <span class="sc">|&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(state) <span class="sc">|&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">M_microsoft =</span> <span class="fu">mean</span>(microsoft_useage, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">M_fcc =</span> <span class="fu">mean</span>(fcc_availability, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD_microsoft =</span> <span class="fu">sd</span>(microsoft_useage, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD_fcc =</span> <span class="fu">sd</span>(fcc_availability, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">fcc_micro =</span> M_fcc <span class="sc">-</span> M_microsoft</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(state <span class="sc">!=</span> <span class="st">"DC"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p><strong>5. Based on the Microsoft and FCC estimates, does it seem that the FCC estimates (which are provided by the ISPs) are “overestimating” America’s broadband access? Explain.</strong></p>
+<p>Yes. The FCC estimates are higher than the Microsoft estimates in every single state! Moreover, this overestimate is quite large at an average of 0.461.</p>
+<p><br></p>
+<p><strong>6. Using the Microsoft estimates, which states have the best and worst broadband access based on the means? Which states are the most and least homogenous (across counties) in terms of their broadband access?</strong></p>
+<p>In terms of the means, New Jersey has the highest average broadband usage (<span class="math inline">\(M=0.67\)</span>) and Mississippi has the lowest average broadband usage (<span class="math inline">\(M=0.12\)</span>). Virginia is the most heterogeneous state in broadband usage (<span class="math inline">\(SD=0.26\)</span>) while Rhode Island is the most homogenous (<span class="math inline">\(SD = 0.04\)</span>). (Technically Washington DC is the most homogenous as they are composed of a single county.)</p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Highest and lowest mean</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>state_broadband <span class="sc">|&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(M_microsoft)) <span class="sc">|&gt;</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(M_microsoft) <span class="sc">|&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">row_number</span>() <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">50</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["M_microsoft"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.6747619"},{"1":"0.1176829"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Highest and lowest sd</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>state_broadband <span class="sc">|&gt;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(SD_microsoft)) <span class="sc">|&gt;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(SD_microsoft) <span class="sc">|&gt;</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="fu">row_number</span>() <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">50</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["SD_microsoft"],"name":[1],"type":["dbl"],"align":["right"]}],"data":[{"1":"0.25766383"},{"1":"0.04062019"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>7. Create a table that includes the Microsoft and FCC estimates of broadband access you computed for the states in bordering Minnesota: Minnesota (MN), Iowa (IA), South Dakota (SD), North Dakota (ND), and Wisconsin (WI). Report these values in a word-processed table alphabetically by state. <em>To format this table:</em> Examine the structure and formatting of Table 2 at <a href="https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html" class="uri">https://zief0002.github.io/musings/creating-tables-to-present-statistical-results.html</a>. Notice that variables are presented in rows and summary statistics are presented in columns. Mimic the format and structure of this table to create a table to present the numerical summary information asked for in this question. Finally, give your table a name (e.g., Table 1) and an appropriate caption.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>state_broadband <span class="sc">|&gt;</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(state <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"MN"</span>, <span class="st">"IA"</span>, <span class="st">"SD"</span>, <span class="st">"ND"</span>, <span class="st">"WI"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(state, M_microsoft, SD_microsoft, M_fcc, SD_fcc) <span class="sc">|&gt;</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">state =</span> <span class="st">"State"</span>,</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">M_microsoft =</span> <span class="fu">md</span>(<span class="st">"*M*"</span>),</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD_microsoft =</span> <span class="fu">md</span>(<span class="st">"*SD*"</span>),</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">M_fcc =</span> <span class="fu">md</span>(<span class="st">"*M*"</span>),</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">SD_fcc =</span> <span class="fu">md</span>(<span class="st">"*SD*"</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_align</span>(</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(state),</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">align =</span> <span class="st">"left"</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_align</span>(</span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(M_microsoft, SD_microsoft, M_fcc, SD_fcc),</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">align =</span> <span class="st">"center"</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">"Microsoft"</span>,</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(M_microsoft, SD_microsoft)</span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="st">"FCC"</span>,</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">columns =</span> <span class="fu">c</span>(M_fcc, SD_fcc)</span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="tbl-question-07" class="anchored">
+
+<div id="erkimikzyq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#erkimikzyq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#erkimikzyq thead, #erkimikzyq tbody, #erkimikzyq tfoot, #erkimikzyq tr, #erkimikzyq td, #erkimikzyq th {
+  border-style: none;
+}
+
+#erkimikzyq p {
+  margin: 0;
+  padding: 0;
+}
+
+#erkimikzyq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#erkimikzyq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#erkimikzyq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#erkimikzyq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#erkimikzyq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#erkimikzyq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#erkimikzyq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#erkimikzyq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#erkimikzyq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#erkimikzyq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#erkimikzyq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#erkimikzyq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#erkimikzyq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#erkimikzyq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#erkimikzyq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#erkimikzyq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#erkimikzyq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#erkimikzyq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#erkimikzyq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#erkimikzyq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#erkimikzyq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#erkimikzyq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#erkimikzyq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#erkimikzyq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#erkimikzyq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#erkimikzyq .gt_left {
+  text-align: left;
+}
+
+#erkimikzyq .gt_center {
+  text-align: center;
+}
+
+#erkimikzyq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#erkimikzyq .gt_font_normal {
+  font-weight: normal;
+}
+
+#erkimikzyq .gt_font_bold {
+  font-weight: bold;
+}
+
+#erkimikzyq .gt_font_italic {
+  font-style: italic;
+}
+
+#erkimikzyq .gt_super {
+  font-size: 65%;
+}
+
+#erkimikzyq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#erkimikzyq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#erkimikzyq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#erkimikzyq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#erkimikzyq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#erkimikzyq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#erkimikzyq .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false"><caption>Table&nbsp;1:  <p>Means (<em>M</em>) and standard deviations (<em>SD</em>) of the
+Microsoft and FCC estimates of proportions of people in each county
+using broadband speed internet.</p> </caption>
+  <thead>
+    
+    <tr class="gt_col_headings gt_spanner_row">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="2" colspan="1" scope="col" id="State">State</th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" scope="colgroup" id="Microsoft">
+        <span class="gt_column_spanner">Microsoft</span>
+      </th>
+      <th class="gt_center gt_columns_top_border gt_column_spanner_outer" rowspan="1" colspan="2" scope="colgroup" id="FCC">
+        <span class="gt_column_spanner">FCC</span>
+      </th>
+    </tr>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<em>M</em>"><em>M</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<em>SD</em>"><em>SD</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<em>M</em>"><em>M</em></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<em>SD</em>"><em>SD</em></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="state" class="gt_row gt_left">IA</td>
+<td headers="M_microsoft" class="gt_row gt_center">0.2603030</td>
+<td headers="SD_microsoft" class="gt_row gt_center">0.1004018</td>
+<td headers="M_fcc" class="gt_row gt_center">0.8366667</td>
+<td headers="SD_fcc" class="gt_row gt_center">0.1265072</td></tr>
+    <tr><td headers="state" class="gt_row gt_left">MN</td>
+<td headers="M_microsoft" class="gt_row gt_center">0.3285057</td>
+<td headers="SD_microsoft" class="gt_row gt_center">0.1459733</td>
+<td headers="M_fcc" class="gt_row gt_center">0.8944828</td>
+<td headers="SD_fcc" class="gt_row gt_center">0.1411231</td></tr>
+    <tr><td headers="state" class="gt_row gt_left">ND</td>
+<td headers="M_microsoft" class="gt_row gt_center">0.4154717</td>
+<td headers="SD_microsoft" class="gt_row gt_center">0.1559902</td>
+<td headers="M_fcc" class="gt_row gt_center">0.9003774</td>
+<td headers="SD_fcc" class="gt_row gt_center">0.1705642</td></tr>
+    <tr><td headers="state" class="gt_row gt_left">SD</td>
+<td headers="M_microsoft" class="gt_row gt_center">0.3220000</td>
+<td headers="SD_microsoft" class="gt_row gt_center">0.1716301</td>
+<td headers="M_fcc" class="gt_row gt_center">0.8471212</td>
+<td headers="SD_fcc" class="gt_row gt_center">0.1486013</td></tr>
+    <tr><td headers="state" class="gt_row gt_left">WI</td>
+<td headers="M_microsoft" class="gt_row gt_center">0.3330556</td>
+<td headers="SD_microsoft" class="gt_row gt_center">0.1520808</td>
+<td headers="M_fcc" class="gt_row gt_center">0.7879167</td>
+<td headers="SD_fcc" class="gt_row gt_center">0.1849167</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+</div>
+<p><br></p>
+</section>
+<section id="part-iii-state-level-broadband-access-versus-poverty" class="level2">
+<h2 class="anchored" data-anchor-id="part-iii-state-level-broadband-access-versus-poverty">Part III: State-Level Broadband Access versus Poverty</h2>
+<p><strong>8. Use <code>ggplot()</code> to create a scatterplot of the relationship between the proportion of users with access to broadband and the proportion of people living in poverty using the state-level data. (Put the proportion living in poverty on the <em>x</em>-axis.) Change the axis labels so that both the <em>x</em>- and <em>y</em>-axis have labels that suitably describe the variables being plotted. (For help on this, read the <em>Axes</em> page of the <a href="http://www.cookbook-r.com/Graphs/">Cookbook for R website</a>.) Include this plot in a word-processed document. Resize the plot so it does not take up any more space than necessary. Finally, give your figure a name (e.g., Figure 1) and an appropriate caption.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> state_broadband_2, <span class="fu">aes</span>(<span class="at">x =</span> M_poverty, <span class="at">y =</span> M_microsoft)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Proportion living in poverty"</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Estimated proportion using internet at broadband speeds"</span>) <span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-question-08" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assignment-01-intro-to-statistical-computing-ak_files/figure-html/fig-question-08-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: Scatterplot of the proportion of average users in each state with access to broadband and the proportion of people living in poverty.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>9. Based on these data, describe the relationship between poverty and broadband access.</strong></p>
+<p>There is a negative relationship in these data. States with higher proportions of people living in poverty have a lower proportion of people using broadband speed internet.</p>
+<p><br></p>
+<p><strong>10. Identify Minnesota on your plot. (You do not have to use R to do this; you can use an image editor, or do it by hand.) You can either create a new plot or just include Minnesota on the plot you include for Question 8.</strong></p>
+<div class="cell" data-layout-align="center">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># All states except MN</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>state_broadband_no_mn <span class="ot">=</span> state_broadband_2 <span class="sc">|&gt;</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(state <span class="sc">!=</span> <span class="st">"MN"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># MN</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>mn_2 <span class="ot">=</span> state_broadband_2 <span class="sc">|&gt;</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(state <span class="sc">==</span> <span class="st">"MN"</span>)</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> state_broadband_no_mn, <span class="fu">aes</span>(<span class="at">x =</span> M_poverty, <span class="at">y =</span> M_microsoft)) <span class="sc">+</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">pch =</span> <span class="dv">21</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"#f0e441"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> mn_2, <span class="at">pch =</span> <span class="dv">21</span>, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="st">"#0072b2"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xlab</span>(<span class="st">"Proportion living in poverty"</span>) <span class="sc">+</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylab</span>(<span class="st">"Estimated proportion using internet at broadband speeds"</span>) <span class="sc">+</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  ggrepel<span class="sc">::</span><span class="fu">geom_label_repel</span>(<span class="at">data =</span> mn_2, <span class="fu">aes</span>(<span class="at">label =</span> state))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div id="fig-question-10" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="assignment-01-intro-to-statistical-computing-ak_files/figure-html/fig-question-10-1.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<figcaption class="figure-caption">Figure&nbsp;4: Scatterplot of the proportion of average users in each state with access to broadband and the proportion of people living in poverty. Minnesota is marked in blue.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><br></p>
+<p><strong>11. Based on its location in the plot, how does Minnesota compare to the other states in terms of broadband access? What about in terms of poverty? Explain.</strong></p>
+<p>Compared to other states, Minnesota has a lower proportion of people living in poverty (it is on the left-side of the plot; below the overall mean). It also has a slightly lower proportion of people using broadband speed internet than the average across all states, but it is quite similar to the mean.</p>
+<p><br></p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

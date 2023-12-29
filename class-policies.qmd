@@ -1,0 +1,53 @@
+---
+title: "Class Policies"
+---
+
+
+:::absence
+### Attendance Policy and Making up Missed/Late Work
+In a collaborative learning environment, *attendance is critical*. Missing class does not only affect you. It also affects your classmates. Because of the adverse impact missing class may have on your classmates, the instructor reserves the right to re-assign groups on the day of the quiz, or have you work independently. Please be on time. Showing up late to class is not only disruptive, it is disrespectful to your classmates. When you show up late, your group needs to spend valuable time catching you up on what you missed. If you show up late for a group quiz, you may be required to take the quiz by yourself.
+
+If you miss class:
+
+- Email the instructor as soon as you know you will be missing class.
+- Email your group members so they know you will also be absent.
+- Complete the class activity that you missed on your own. (If you want credit for the day's exit ticket, submit your completed activity to the instructor via email prior to the next class. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor.)
+- Students are expected to obtain notes from a classmate of class material missed.
+- Please note that I will not recording class sessions at the request of individual students, nor will I Zoom students in to the class. Although, if you can arrange it with your group, they can Zoom you in.
+  + If you are zooming in a classmate, please let the instructor know.
+- If you are absent on the day a quiz or test is due, you must provide documentation explaining your absence for the instructor to determine whether you will be allowed to submit that test later or take a make-up quiz. This will be at the instructor’s discretion and will be evaluated on a case-by-case basis  (see [University Policy](https://policy.umn.edu/education/makeupwork)). If you miss a group quiz and do not communicate with the instructor, you will receive a 0 on that quiz.
+:::
+
+<br />
+
+
+:::ai
+### ChatGPT and Other AI Policy
+
+Artificial intelligence (AI) language models, such as ChatGPT, may not be used for answering any of the questions on the individual exams, group quizzes, or exit tickets. If you are in doubt as to whether you are using AI language models appropriately in this course, I encourage you to discuss your situation with me or the TA.
+
+If you are caught using AI to answer questions on any of the exams or quizzes, you will be given a 0 on that exam/quiz and a Scholastic Dishonesty Report Form will be filled out and reported to the [Office of Community Standards](https://communitystandards.umn.edu/). Depending on the severity of the offense, the instructor also reserves the right to give you an "F" in the course.
+:::
+
+<br />
+
+
+:::technology
+### Technology Policy
+
+The course uses technology on a regular basis during both instruction and assessments (e.g., homework assignments, exams, etc.). **Student difficulty with obtaining or using TinkerPlots will not be acceptable as an excuse for late work.** Due to the variation in computer types and systems, the instructor or TA may not be able to assist in trouble shooting all problems you may have.
+:::
+
+<br />
+
+
+:::recording
+### CEHD Policy on Recording Classes
+
+All class sessions may be recorded by the instructor using the procedures in the CEHD Policy on Recording Classes, with or without prior notice. Students should assume that a class session is being recorded unless otherwise notified. No person (student or otherwise) may record a class without express written permission from the instructor or an authorized administrator implementing a disability accommodation. All permitted recordings are governed by this policy’s limits on distribution and redistribution of recordings.
+
+<!-- <p style="font-size:70%;">gg_goldy created by Rita Sandidge, CSPP</p> -->
+:::
+
+<br />
+

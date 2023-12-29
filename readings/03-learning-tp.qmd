@@ -1,0 +1,17 @@
+---
+title: "📖 Learning to Use TinkerPlots&trade;"
+format:
+  html:
+    css: ["../assets/sticky-notes.css"]
+date: today
+---
+
+
+Watch the *TinkerPlots&trade; Basics* video. This video can be accessed by selecting `Movies` on the left-side of the [TinkerPlots&trade; website](http://www.tinkerplots.com).
+
+<br />
+
+The information in the movie will help you learn how to use many of the features of TinkerPlots&trade; that we will be using in the course. You will also use what you learn to complete the Day 3 in-class activity.
+
+
+

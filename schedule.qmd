@@ -1,0 +1,416 @@
+---
+title: "Calendar"
+---
+
+
+The calendar below lists the tentative dates of the readings, group quizzes, and course activities. Exam due dates and quiz dates are also provided. All individual exams are due by 9:45am. These dates are subject to change at the instructor's discretion.
+
+As part of the course, there may be articles, papers, etc. that you will need to read during the semester. Most of the articles themselves are accessible through the [University of Minnesota library website](http://www.lib.umn.edu). In order to access the full text of some of the articles, you will need to log in using your University x500 username and password. More detailed information, including references or links to specific readings, are linked under the day's "Reading".
+
+<br /><br />
+
+
+<br />
+
+
+<table class="table">
+
+<thead>
+<tr>
+<th style="width:5%;text-align:center"></th>
+<th style="width:10%;text-align:center"">Day</th>
+<th style="width:10%;">Date</th>
+<th style="width:35%;text-align:center">Reading</th>
+<th style="width:50%;">Class Activity/Assessment</th>
+</tr>
+</thead>
+
+
+<tbody>
+
+<!-- <span style="margin-left:5px; color:#5a067d;font-size:12px;">*[Notes and Script file updated 09-24-2019]*</span></td> -->
+
+<!-- READING <a class="my-link" href="readings/00-welcome-to-8264.html"><span class="fa fa-book"></span></a> -->
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">1</td>
+<td style="vertical-align:middle;">Jan. 16</td>
+<td style="vertical-align:middle;">
+  [Introduction](https://zief0002.github.io/statistical-thinking/introduction.html)
+</td>
+<td>Welcome to EPsy 3264</td>
+</tr>
+
+
+<!-- Unit 01: MODELING AND SIMULATION -->
+
+<tr>
+<td colspan="5"><b>Unit 01: Modeling and Simulation</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;" rowspan=2>&nbsp;</td>
+<td align="center" style="vertical-align:middle;" rowspan=2>2</td>
+<td style="vertical-align:middle;" rowspan=2>Jan. 18</td>
+<td style="vertical-align:middle;" rowspan=2>
+  [Modeling &amp; Simulation](https://zief0002.github.io/statistical-thinking/modeling-simulation.html)
+</td>
+<td style="background-color: #f9e209">**Exit Ticket: Download TinkerPlots**</td>
+</tr>
+
+<tr>
+<td style="vertical-align:middle;">Spotify Playlists</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">3</td>
+<td style="vertical-align:middle;">Jan. 23</td>
+<td style="vertical-align:middle;">
+  [Watch TinkerPlots&trade; Basics video](readings/03-learning-tp.html)
+</td>
+<td>
+  [Learning to Use TinkerPlots&trade;](assignments/00-learning-to-use-tinkerplots.html)
+</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">4</td>
+<td style="vertical-align:middle;">Jan. 25</td>
+<td style="vertical-align:middle;">
+  [Generating Data from Models](https://zief0002.github.io/statistical-thinking/generating-data-from-models.html)
+</td>
+<td style="vertical-align:middle;">Generating Random Data: Pet Factory</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">5</td>
+<td style="vertical-align:middle;">Jan. 30</td>
+<td style="vertical-align:middle;">
+  [Monte Carlo Simulation](https://zief0002.github.io/statistical-thinking/monte-carlo-simulation.html)
+</td>
+<td style="vertical-align:middle;">Introduction to Monte Carlo Simulation</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">6</td>
+<td style="vertical-align:middle;">Feb. 01</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Automating the Simulation Process</td>
+</tr>
+
+<tr style="background-color: #f9e209;">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">7</td>
+<td style="vertical-align:middle;">Feb. 06</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">**Group Quiz 1**</td>
+</tr>
+
+
+<!-- Unit 02: MODELING SAMPLING VARIATION -->
+
+<tr>
+<td colspan="5"><b>Unit 02: Modeling Sampling Variation</b></td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;" rowspan=2>&nbsp;</td>
+<td align="center" style="vertical-align:middle;" rowspan=2>8</td>
+<td style="vertical-align:middle;" rowspan=2>Feb. 08</td>
+<td style="vertical-align:middle;" rowspan=2></td>
+<td style="vertical-align:middle; background-color: #f9e209;">
+  [**Individual Exam 1**](assignments/individual-exam-01.html) (due by 9:45am)
+</td>
+</tr>
+
+<tr>
+<td style="vertical-align:middle;">Monday Breakups</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">9</td>
+<td style="vertical-align:middle;">Feb. 13</td>
+<td style="vertical-align:middle;">
+  [Describing Distributions](https://zief0002.github.io/statistical-thinking/describing-distributions.html)
+</td>
+<td style="vertical-align:middle;">Features of Distributions</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">10</td>
+<td style="vertical-align:middle;">Feb. 15</td>
+<td style="vertical-align:middle;">
+  [Modeling Sampling Variation](https://zief0002.github.io/statistical-thinking/modeling-sampling-variation.html)
+</td>
+<td style="vertical-align:middle;">Helper or Hinderer</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">11</td>
+<td style="vertical-align:middle;">Feb. 20</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Comparing Handspans</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">12</td>
+<td style="vertical-align:middle;">Feb. 22</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Lead Exposure in Children</td>
+</tr>
+
+
+<tr style="background-color: #f9e209">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">13</td>
+<td style="vertical-align:middle;">Feb. 27</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">**Group Quiz 2**</td>
+</tr>
+
+
+<!-- Unit 03: EXPERIMENTAL VARIATION AND THE RANDOMIZATION TEST -->
+
+<tr>
+<td colspan="5"><b>Unit 03: Experimental Variation and the Randomization Test</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;" rowspan=2>&nbsp;</td>
+<td align="center" style="vertical-align:middle;" rowspan=2>14</td>
+<td style="vertical-align:middle;" rowspan=2>Feb. 29</td>
+<td style="vertical-align:middle;" rowspan=2></td>
+<td style="background-color: #f9e209">
+  **Individual Exam 2** (due by 9:45am)
+  <!-- [**Individual Exam 2**](assignments/individual-exam-02.html) (due by 9:45am) -->
+</td>
+</tr>
+
+<tr>
+<td style="vertical-align:middle;">Memorization</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Mar. 05.</td>
+<td align="center" style="vertical-align:middle;" colspan=2>NO CLASS---Spring Break 🎊 🛌 🎉 </td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Mar. 07.</td>
+<td align="center" style="vertical-align:middle;" colspan=2>NO CLASS---Spring Break 🎊 🛌 🎉 </td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">15</td>
+<td style="vertical-align:middle;">Mar. 12</td>
+<td style="vertical-align:middle;">
+  [Experimental Variation and the Randomization Test](https://zief0002.github.io/statistical-thinking/experimental-variation-and-the-randomization-test.html)
+</td>
+<td style="vertical-align:middle;">Memorization with TinkerPlots</td>
+</tr>
+
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">16</td>
+<td style="vertical-align:middle;">Mar. 14</td>
+<td style="vertical-align:middle;">
+  [Internal Validity Evidence and Random Assignment](https://zief0002.github.io/statistical-thinking/internal-validity-evidence-and-random-assignment.html)
+</td>
+<td style="vertical-align:middle;">Sleep Deprivation</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">17</td>
+<td style="vertical-align:middle;">Mar. 19</td>
+<td style="vertical-align:middle;">
+  [Quantifying Results: p-Value](https://zief0002.github.io/statistical-thinking/quantifying-results-p-value.html)
+</td>
+<td style="vertical-align:middle;">Contagious Yawns</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">18</td>
+<td style="vertical-align:middle;">Mar. 21</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Speed Skating</td>
+</tr>
+
+
+<tr style="background-color: #f9e209">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">19</td>
+<td style="vertical-align:middle;">Mar. 26</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">**Group Quiz 3**</td>
+</tr>
+
+
+<!-- Unit 04: SAMPLING VARIATION AND THE BOOTSTRAP TEST -->
+
+<tr>
+<td colspan="5"><b>Unit 04: Experimental Variation and the Randomization Test</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;" rowspan=2>&nbsp;</td>
+<td align="center" style="vertical-align:middle;" rowspan=2>20</td>
+<td style="vertical-align:middle;" rowspan=2>Mar. 28</td>
+<td style="vertical-align:middle;" rowspan=2>
+  [Sampling Variation and the Bootstrap Test](https://zief0002.github.io/statistical-thinking/sampling-variation-and-the-bootstrap-test.html)
+</td>
+<td style="background-color: #f9e209">
+  **Individual Exam 3** (due by 9:45am)
+ <!-- [**Individual Exam 3**](assignments/individual-exam-03.html) (due by 9:45am) -->
+</td>
+</tr>
+
+
+<tr>
+<td>Gettysburg Address</td>
+</tr>
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">21</td>
+<td style="vertical-align:middle;">Apr. 02</td>
+<td style="vertical-align:middle;">
+  [Observational Studies and the Bootstrap Test](https://zief0002.github.io/statistical-thinking/observational-studies-and-the-bootstrap-test.html)<br />
+   [External Validity Evidence and Random Sampling](https://zief0002.github.io/statistical-thinking/external-validity-evidence-and-random-sampling.html)
+</td>
+<td style="vertical-align:middle;">Murderous Nurse</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">22</td>
+<td style="vertical-align:middle;">Apr. 04</td>
+<td style="vertical-align:middle;">
+  [Validity Evidence and Inferences](https://zief0002.github.io/statistical-thinking/validity-evidence-and-inferences.html)
+</td>
+<td style="vertical-align:middle;">Movie Sequels</td>
+</tr>
+
+
+
+<tr style="background-color: #f9e209">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">23</td>
+<td style="vertical-align:middle;">Apr. 09</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">**Group Quiz 4**</td>
+</tr>
+
+
+<!-- Unit 05: ESTIMATING UNCERTAINTY -->
+
+<tr>
+<td colspan="5"><b>Unit 05: Estimating Uncertainty</b></td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;" rowspan=2>&nbsp;</td>
+<td align="center" style="vertical-align:middle;" rowspan=2>24</td>
+<td style="vertical-align:middle;" rowspan=2>Apr. 11</td>
+<td style="vertical-align:middle;" rowspan=2></td>
+<td style="background-color: #f9e209">
+  **Individual Exam 4** (due by 9:45am)
+  <!-- [**Individual Exam 4**](assignments/individual-exam-04.html) (due by 9:45am) -->
+</td>
+</tr>
+
+
+<tr>
+<td>Kissing the 'Right' Way</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">25</td>
+<td style="vertical-align:middle;">Apr. 16</td>
+<td style="vertical-align:middle;">
+  [Estimating Uncertainty](https://zief0002.github.io/statistical-thinking/estimating-uncertainty.html)
+</td>
+<td style="vertical-align:middle;">Cuddling Preferences</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">26</td>
+<td style="vertical-align:middle;">Apr. 18</td>
+<td style="vertical-align:middle;">
+  [Uncertainty and Bias](https://zief0002.github.io/statistical-thinking/uncertainty-and-bias.html)
+</td>
+<td style="vertical-align:middle;">Minnesota College Debt</td>
+</tr>
+
+
+<tr>
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">27</td>
+<td style="vertical-align:middle;">Apr. 23</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">Comparing Cuddling Preferences</td>
+</tr>
+
+
+<tr style="background-color: #f9e209">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;">28</td>
+<td style="vertical-align:middle;">Apr. 25</td>
+<td style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;">**Group Quiz 5**</td>
+</tr>
+
+
+<tr style="background-color: #f9e209">
+<td align="center" style="vertical-align:middle;">&nbsp;</td>
+<td align="center" style="vertical-align:middle;"></td>
+<td style="vertical-align:middle;" colspan=3>
+  **Individual Exam 5** (due by 12:00pm on Apr. 30)
+  <!-- [**Individual Exam 5**](assignments/individual-exam-05.html) (due by 12:00pm on Apr. 30) -->
+</td>
+</tr>
+
+
+</tbody>
+</table>    
+
+

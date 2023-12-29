@@ -1,0 +1,133 @@
+---
+title: "Course Requirements and Grading"
+---
+
+
+## Course Requirements
+
+There are three components that make up your grade: individual exams, group quizzes, and daily exit tickets. You need to complete all of the individual exams and group quizzes to receive a grade in the course. *Any student who does not complete all the individual exams and group quizzes without making prior arrangements with the instructor will receive a grade of F/N.*
+
+<br />
+
+
+### Individual Exams
+
+There are 5 individual exams, which you will complete outside of class. These are due by 9:45am on their due date (see schedule). Each exam will make up 10% of your grade. They include problems that will help evaluate your understanding of the course material, including use of the TinkerPlots software. Although you will complete the exams outside of class, they are individual in nature. In other words, **you need to complete them without help or discussion with any other people**. 
+
+If we have any reason to suspect that a student gave assistance or received assistance from another student or person outside the class, all students involved (including the student(s) who gave assistance) will receive a score of zero on that exam and will be reported to the [Office of Community Standards](https://communitystandards.umn.edu/). Depending on the severity of the offense, the instructor also reserves the right to give all students involved an "F" in the course.
+
+
+<!-- Students submitting a test more than 24 hours after the due date/time will receive a score of 0.   -->
+
+<br />
+
+
+### Group Quizzes
+
+There are 5 group quizzes, which you will complete in class. Each quiz will make up 6% of your grade. They consist of several short answer questions designed to test your ability to apply the knowledge you gained by reading the assigned material, working on assignments, and participating in class activities and discussions. You will also be expected to use TinkerPlots on the group quizzes. It is expected that you will work cooperatively with your group members to decide on the answers to the questions posed in the group quiz. **Only one quiz per group will be graded, and each student in the group will receive the same grade.** 
+
+If you arrive late for a quiz, or have missed previous class periods, you may be required to take the quiz by yourself. The instructor also reserves the right to re-assign groups on the day of the quiz.
+
+<br />
+
+
+### Exit Tickets
+
+Exit tickets will be given in each class session. The exit tickets will make up 20% of your grade. The "ticket" consists of a single question designed to assess your knowledge about, or have you reflect on the day's class content. These questions are to be completed individually. The exit tickets are not marked right/wrong, but are based on whether or not you complete the ticket.
+
+If you miss class for a University approved reason (see *Policy for Missing Class and Making up Missed/Late Work*), you can make-up the exit ticket for that day by submitting the completed class activity for the day you missed. This will need to be submitted by the next class period unless you have previously made arrangements with the instructor. If you cannot complete the activity prior to the next class, you need to email the instructor prior to that class to receive an extension. Whether you will receive an extension is at the discretion of the instructor.
+
+<br />
+
+
+### Class Participation
+
+Engaging in active class participation is an important part of taking ownership of your learning. Active participation is more than just showing up for class. It also includes being engaged during the class, asking questions (if you have a question, it is likely that others do as well), providing additional insight and material, responding to other students and the instructor, and always being open and inquisitive. Although we do not grade your participation, it is expected you will engage with your group and other classmates.
+
+<br />
+
+
+### Extra Credit Policy
+
+There is no extra credit in this course.
+
+<br />
+
+
+## Evaluation of Student Performance
+
+Course grades will be based entirely on performance of the individual exams, group quizzes, and exit tickets. The points from each of these will be weighted based on the percentages outlined in the *Course Requirements* section, and pooled to compute an overall percentage in the class. This will be converted to a final course grade using:
+
+Cutoff    | Grade | Definition for Undergraduate Credit |
+--------- | ----- | ------------------------------ |
+93%--100% | A     | Represents achievement that significantly exceeds expectations in the course. | 
+90%--92%  | A--   |  | 
+87%--89%  | B+    |  | 
+83%--86%  | B     | Represents achievement that is above the minimum expectations in the course. |
+80%--82%  | B--   | |
+77%--79%  | C+    | |
+73%--76%  | C     | Represents achievement that meets the minimum expectations in the course. |
+70%--72%  | C--   | |
+63%--69%  | D     | Represents achievement that partially meets the minimum expectations in the course. Credit is earned but it may not fulfill major or program requirements. |
+0%--62%   | F     | Represents failure in the course and no credit is earned. |
+
+If you are taking the course S/N, the minimum criterion to receive an S is 70% (the equivalent of a C-- letter grade). The S grade does not carry grade points and is not part of the GPA calculation, but the credits will count toward the student's degree program if allowed by the college, campus, or program.
+
+*Any student who does not complete all the individual exams and group quizzes without making prior arrangements with the instructor will receive a grade of F/N.*
+
+<br />
+
+
+### Incomplete
+
+Instructors may assign the registration symbol "I" for Incomplete if, at the time the incomplete is requested: (1) the student has successfully completed a substantial portion of the work of the course; and (2) due to extraordinary circumstances (*as determined by the instructor*), the student was prevented from completing the work of the course on time. The assignment of an "I" requires a written agreement with the student specifying the time and manner in which the student will complete the course requirements. For more information see [Grading and Transcripts](https://policy.umn.edu/education/gradingtranscripts).
+
+<br />
+
+
+### Accessing Course Grades
+
+Shortly after the course, you may access your grades online at [myU](http://myu.umn.edu). Assignments will be handed back in class or during office hours. Uncollected assignments will be retained for six weeks after the course and then discarded.
+
+<br />
+
+## FAQs
+
+**How do I submit the individual exams?**
+
+Create a PDF of your responses and submit the PDF via email to both the instructor and TA. Before you submit the assignment check that:
+
+- [ ] Your name is on the exam.
+- [ ] You have answered every part of every question.
+- [ ] All figures are re-sized to not take up more page space than is necessary to read them.
+
+
+
+**Do I need to turn in the TinkerPlots file?**
+
+No...unless the directions specifically ask you to submit the TinkerPlots file; the TinkerPlots file is for your reference. However, the TA or myself may ask you to submit your TinkerPlots file after you submit the exam to help us interpret mistakes you made on the exam so that we can provide more thorough feedback.
+
+
+**Will you provide answer keys to the individual exams or group quizzes?**
+
+No. You will get back several comments on these assessments that address what you did wrong. The educational research is pretty clear that feedback is more helpful to student learning than providing correct answers. If you have further questions or need additional clarification, you are welcome to come to office hours or make an appointment with the instructor or TA.
+
+
+**Will you go over the answers in class?**
+
+No. I will address broad concepts if several students/groups made the same mistake, but otherwise, since each student/group makes unique mistakes going over the assessments more in depth is not a good use of our limited class time. The feedback should be helpful in understanding any mistakes you made, but if it isn't, you are welcome to come to office hours or make an appointment with the instructor or TA.
+
+
+**Will you look at our individual exams prior to us submitting it?**
+
+The instructor or TA will not "pre-grade" your individual exams. Nor will we tell you if an answer is correct or not. We can, howver, answer clarifying questions (e.g., 'I know Question 8 is asking about […], but I’m not sure what this question is looking for. Is there another way to restate this question?'). If you completed the assignment without any trouble, then be confident in your work and simply submit the assignment! 😄 If you are unsure about something specific, then ask about that specific thing rather than a general 'did I do this right'! 
+
+
+**Will we be able to re-do the individual exams or group quizzes?**
+
+No. The individual exams mimic the content you learn in class via the activities. You should perform well on these so long as you come to class and participate. Since you have the opportunity to work in groups on the group quizzes, you should be able offset any of the issues that come up that would necessitate a re-submission.
+
+
+
+
+

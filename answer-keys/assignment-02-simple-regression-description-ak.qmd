@@ -1,0 +1,202 @@
+---
+title: "Assignment 02"
+subtitle: "SIMPLE LINEAR REGRESSION: DESCRIPTION"
+author: "Answer Key"
+date: "`r Sys.Date()`"
+description: "This assignment is worth 10 points. Each question is worth 1 point unless otherwise noted. "
+format:
+  html:
+    theme: yeti
+    mainfont: 'Raleway'
+    code-copy: true
+    code-fold: true
+    highlight-style: zenburn
+    df-print: paged
+    toc: true
+editor: source
+---
+
+
+```{=html}
+<style type="text/css">
+caption, .table-caption {
+  text-align: left;
+}
+</style>
+```
+
+```{r}
+#| label: setup
+#| message: false
+source("../assets/notes-setup.R")
+
+# Load libraries
+library(tidyverse)
+
+# Import data
+educ = read_csv(file = "https://raw.githubusercontent.com/zief0002/rustic-penguin/main/data/state-education.csv")
+
+# Create salary_thousand
+educ = educ |> 
+  mutate(salary_thousand = salary_2020_21 / 1000)
+```
+
+
+
+**1. Create a plot of the distribution of total SAT scores. Make sure your plot has a caption.**
+
+```{r}
+#| label: fig-question-01
+#| fig-cap: "Density plot of the average state SAT scores."
+ggplot(data = educ, aes(x = sat_total)) +
+  stat_density(geom = "line") +
+  xlab("Average SAT score") +
+  ylab("Probability density") +
+  theme_bw()
+```
+
+<br />
+
+**2. Examine the structure and formatting of Table 1 at <http://zief0002.github.io/epsy-8251/misc/creating-tables/creating-tables.html>. Mimic the format and structure of this table to create a table to present the numerical summary information for the distributions of SAT total scores and salaries. Provide the same measures for these variables as is given in Table 1 in the article. Re-create the formatting of Table 1 as closely as you can. Finally, make sure the table you create also has an appropriate caption.**
+
+```{r}
+#| label: tbl-question-02
+#| tbl-cap: "Means (*M*) and standard deviations (*SD*) for the state-level average SAT scores and average teacher salaries."
+summary_sat = educ |>
+  summarize(
+    M = mean(sat_total, na.rm = TRUE),
+    SD = sd(sat_total, na.rm = TRUE)
+    )
+summary_salary = educ |>
+  summarize(
+    M = mean(salary_thousand, na.rm = TRUE),
+    SD = sd(salary_thousand, na.rm = TRUE)
+    )
+
+summary_sat |>
+  rbind(summary_salary) |>
+  mutate(
+    Measure = c("Average SAT score", "Average teacher salary")
+  ) |>
+  select(Measure, M, SD) |>
+  gt() |>
+  cols_label(
+    M = md("*M*"),
+    SD = md("*SD*")
+  ) |>
+  cols_align(
+    columns = c(Measure),
+    align = "left"
+  ) |>
+  cols_align(
+    columns = c(M, SD),
+    align = "center"
+  ) |> 
+  tab_options(
+    table.width = pct(60)
+    )
+```
+
+<br />
+
+**3. Create a scatterplot of the distribution of SAT total scores (*Y*) *conditioned on* teacher salaries (*X*). Make sure your plot has a caption.**
+
+```{r}
+#| label: fig-question-03
+#| fig-cap: "Scatterplot displaying the relationship between the state-level average teacher salary and average SAT score."
+ggplot(data = educ, aes(x = salary_thousand, y = sat_total)) +
+  geom_point(size = 3) +
+  theme_bw() +
+  xlab("Average teacher salary (in thousands)") +
+  ylab("Average SAT score")
+```
+
+
+<br />
+
+**4. Describe the relationship between SAT total scores and teacher salaries. Be sure to comment on the structural form, direction and strength of the relationship. Also comment on any potential observations that deviate from following this relationship (unusual observations or clusters of observations).**
+
+There seems to be a moderate linear, negative relationship between average teacher salaries and average SAT scores. There do not seem to be any unusual observations (states) that deviate greatly from this relationship.
+
+<br />
+
+**5. Regress total SAT scores on teacher salaries. Write the *fitted equation* using Equation Editor (or some other program that correctly types mathematical expressions).**
+
+```{r}
+#| eval: false
+lm(sat_total ~ 1 + salary_thousand, data = educ)
+```
+
+
+$$
+\hat{\mathrm{SAT}_i} = 1262.8 - 2.63(\mathrm{Salary}_i)
+$$
+
+<br />
+
+**6. Interpret the value of the intercept from the regression equation using the context of the data.**
+
+The average SAT score for all states in which the average teacher salary is zero dollars is predicted to be 1262.8.
+
+<br />
+
+**7. Interpret the value of the slope from the regression equation using the context of the data.**
+
+Each \$1,000 difference in average teacher salary is associated with a $-2.63$-point difference in average SAT score.
+
+<br />
+
+**8. Compute, report, and interpret the value for $R^2$ based on values from the ANOVA decomposition. Show your work for full credit.**
+
+$$
+R^2 = \frac{40553}{40553 + 357675} = 0.102
+$$
+
+10.2% of the variation in SAT scores is explained by differences in teacher salaries.
+
+<br />
+
+
+```{r}
+educ = educ |>
+  mutate(
+    center_salary_thousand = salary_thousand - mean(salary_thousand)
+    )
+```
+
+**9. Compute and report the predicted mean total SAT score for Minnesota students based on the average teacher salary in the state using the fitted regression equation. Show your work for full credit.**
+
+
+```{r}
+#| eval: false
+educ |> 
+  filter(postal == "MN")
+```
+
+$$
+\begin{split}
+\hat{\mathrm{SAT}_\mathrm{MN}} &= 1262.8 - 2.63(59.069) \\[2ex]
+&= 1107.45
+\end{split}
+$$
+
+The predicted average SAT score for Minnesota students is 1107.
+
+<br />
+
+**10. Compute and report the residual for Minnesota. Show your work for full credit.**
+
+$$
+\begin{split}
+e_{\mathrm{MN}} &= 1257 - 1107 \\[2ex]
+&= 150
+\end{split}
+$$
+
+<br />
+
+**11. Explain what the sign and magnitude of the residual value you computed in Question 10 tells you about how Minnesota's mean SAT score compares to the mean SAT score for states having the same average teacher salary as Minnesota.**
+
+Minnesota's residual of $+150$ indicates that Minnesota's average SAT score of 1257 is 150 points ABOVE the predicted mean SAT score for states having the an average teacher salary of \$59,069.
+
+<br />
