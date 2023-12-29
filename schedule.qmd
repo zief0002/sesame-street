@@ -281,7 +281,7 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <!-- Unit 04: SAMPLING VARIATION AND THE BOOTSTRAP TEST -->
 
 <tr>
-<td colspan="5"><b>Unit 04: Experimental Variation and the Randomization Test</b></td>
+<td colspan="5"><b>Unit 04: Sampling Variation and the Bootstrap Test</b></td>
 </tr>
 
 
