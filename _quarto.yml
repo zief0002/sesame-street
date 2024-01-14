@@ -19,13 +19,14 @@ website:
     left:
       - text: "Home"
         file: index.qmd
+      - text: "Course Requirements & Grading"
+        file: grading.qmd
       - text: "Schedule"
         file: schedule.qmd
       - text: "Instructor & TA"
         file: about.qmd
       # - sidebar:assignments
-      - text: "Course Requirements & Grading"
-        file: grading.qmd
+      
       - text: "Class Policies"
         file: class-policies.qmd
       - text: "Mission Statements"
