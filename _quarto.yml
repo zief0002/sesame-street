@@ -26,7 +26,6 @@ website:
       - text: "Instructor & TA"
         file: about.qmd
       # - sidebar:assignments
-      
       - text: "Class Policies"
         file: class-policies.qmd
       - text: "Mission Statements"
