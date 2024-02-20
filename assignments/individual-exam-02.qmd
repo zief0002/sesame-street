@@ -33,7 +33,7 @@ The goal of this assessment is to answer the following research question:
 
 To help answer this research question we will use data published from the samples taken from Value Penguin and Gallup:
 
-- **Base Rate:** 28 out of 45 families reported taking a summer vacation in 2017.
+- **Base Rate:** 62% of families reported taking a summer vacation in 2017.
 - **Observed Data:** 36 out of 76 families reported taking a summer vacation in 2022 
 
 <br />
