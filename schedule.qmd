@@ -201,8 +201,8 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <td style="vertical-align:middle;" rowspan=2>Feb. 29</td>
 <td style="vertical-align:middle;" rowspan=2></td>
 <td style="background-color: #f9e209">
-  <!-- **Individual Exam 2** (due by 9:45am) -->
-  [**Individual Exam 2**](assignments/individual-exam-02.html) (due by 9:45am)
+  **Individual Exam 2** [Closed]
+  <!-- [**Individual Exam 2**](assignments/individual-exam-02.html) (due by 9:45am) -->
 </td>
 </tr>
 
@@ -294,8 +294,8 @@ As part of the course, there may be articles, papers, etc. that you will need to
   [Sampling Variation and the Bootstrap Test](https://zief0002.github.io/statistical-thinking/sampling-variation-and-the-bootstrap-test.html)
 </td>
 <td style="background-color: #f9e209">
-  **Individual Exam 3** (due by 9:45am)
- <!-- [**Individual Exam 3**](assignments/individual-exam-03.html) (due by 9:45am) -->
+  <!-- **Individual Exam 3** (due by 9:45am) -->
+ [**Individual Exam 3**](assignments/individual-exam-03.html) (due by 9:45am)
 </td>
 </tr>
 

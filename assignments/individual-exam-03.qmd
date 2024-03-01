@@ -1,0 +1,94 @@
+---
+title: "Individual Exam 03"
+subtitle: "EAR ACUPUNCTURE TREATMENT"
+description: This exam is worth 13 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 3264, 2024*
+format:
+  html:
+   css: "assets/styles.css"
+date: today
+---
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/sesame-street-all.png")
+```
+
+
+## Instructions
+
+Submit a PDF document to the TA of your responses to the following numbered questions. For additional information see the [FAQs on the Course Requirements &amp; Grading page of the website](../grading.html#faqs).
+
+<br />
+
+
+## Introduction
+
+"Ear acupuncture can be a useful means for controlling migraine pain. It has been shown that a technique called the Needle Contact Test (NCT) can identify the most efficacious ear acupoints for reducing current migraine pain through just a few seconds of needle contact."^[Allais, G., et al. (2011). Ear acupuncture in the treatment of migraine attacks: a randomized trial on the efficacy of appropriate versus inappropriate acupoints. *Neurological Sci., 32*(1), 173--175.]  To investigate this possibility, researchers recruited 89 female participants who suffer from recurring migraine headaches without aura.
+
+These 89 participants were randomly assigned to one of two groups. Both groups received acupuncture treatment, but one group's treatment was focused near the ear, and the other group received treatment near the sciatic nerve, which is not known to be therapeutic for migraines. Pain levels were monitored at varying intervals after needle insertion.
+
+
+> **Research Question:** Does acupuncture treatment decrease pain induced by migraines?
+
+To help answer this research question we will use the following observed data:
+
+- **Observed Data:** The researchers found that 10 of 43 study participants in the acupuncture treatment group showed a decrease in pain level, compared to two of 46 participants in the control group. 
+
+<br />
+
+
+## Explore the Observed Data
+
+1. Organize the observed data/results (i.e., frequencies) into a $2\times2$ contingency table.
+
+2. Identify the treatment variable used in the study. Also report whether it is quantitative or categorical.
+
+3. Identify the response variable used in the study. Also report whether it is quantitative or categorical.
+
+4. Compute each of the following and show your work: (a) out of all participants in the ear treatment group, what percentage had a decrease in pain level, (b) out of all participants in the sciatic nerve treatment group, what percentage had a decrease in pain level, and (c) the difference between these two percentages (ear treatment minus sciatic nerve treatment).
+
+5. Do the results from the observed data suggest that there is a positive effect of ear acupuncture on patients suffering from migraines? Explain.
+
+<br />
+
+
+## Model the Experimental Variation
+
+Using dummy coding, set up a TinkerPlots&trade; sampler to model the experimental variation that would be expected if there were no effect of ear acupuncture on treating migraines. 
+
+6. Copy-and-paste a picture of your sampler window into your word-processed document.
+
+<br />
+
+
+## Simulate
+
+Carry out 500 trials of a randomization test using TinkerPlots&trade; to investigate whether the observed difference is more than would be expected by chance. 
+
+7. Use TinkerPlots&trade; to create a plot of the distribution of simulated differences. Add a Reference Line to your plot at the value of the observed difference. Copy-and-paste this plot into your word processed document.  
+
+<br />
+
+
+## Evaluate the Observed Results
+
+8. Compute and report the *p*-value based on the observed difference. Show your work for full credit by writing out the equation. Also copy-and-paste a plot from TinkerPlots&trade; that shows where you're getting the values to plug into the equation. 
+
+9. Interpret the *p*-value you computed by completing the sentence: "The *p*-value of ___ is the probability..."
+
+<br />
+
+
+## Answer the Research Question
+
+10.	Based on the *p*-value you computed, how compatible is the observed difference with the results produced by the model specified in the null hypothesis? What does this suggest about the answer to the research question? Explain. **(2pts.)**
+
+11.	How would you rate the level of internal validity based on the study design? Explain.
+
+12.	Based on the level of internal validity, are you willing to conclude that ear acupuncture decreases pain levels induced by migraines? 
+
+<br />
+
+
