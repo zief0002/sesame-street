@@ -388,7 +388,7 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <td align="center" style="vertical-align:middle;">27</td>
 <td style="vertical-align:middle;">Apr. 23</td>
 <td style="vertical-align:middle;"></td>
-<td style="vertical-align:middle;">Comparing Cuddling Preferences</td>
+<td style="vertical-align:middle;">[Comparing Cuddling Preferences](readings/comparing-cuddling-preferences.pdf)</td>
 </tr>
 
 
