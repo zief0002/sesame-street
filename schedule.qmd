@@ -350,8 +350,8 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <td style="vertical-align:middle;" rowspan=2>Apr. 11</td>
 <td style="vertical-align:middle;" rowspan=2></td>
 <td style="background-color: #f9e209">
-  **Individual Exam 4** (due by 9:45am)
-  <!-- [**Individual Exam 4**](assignments/individual-exam-04.html) (due by 9:45am) -->
+  <!-- **Individual Exam 4** (due by 9:45am) -->
+  [**Individual Exam 4**](assignments/individual-exam-04.html) (due by 9:45am)
 </td>
 </tr>
 

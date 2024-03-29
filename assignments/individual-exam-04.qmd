@@ -1,0 +1,93 @@
+---
+title: "Individual Exam 04"
+subtitle: "COMPARING ONLINE GROCERY PRICES"
+description: This exam is worth 16 points. Each question is worth 1 point unless otherwise noted. <br /><br /> *Copyright EPSY 3264, 2024*
+format:
+  html:
+   css: "assets/styles.css"
+date: today
+---
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "60%"
+knitr::include_graphics("../img/sesame-street-all.png")
+```
+
+
+## Instructions
+
+Submit a PDF document to the TA of your responses to the following numbered questions. For additional information see the [FAQs on the Course Requirements &amp; Grading page of the website](../grading.html#faqs).
+
+<br />
+
+
+## Introduction
+
+In August 2021, data analysts examined the prices of 20 food items at Trader Joe's and Lunds &amp; Byerlys to examine which grocery store was more affordable for students. The grocery list was the same for both stores, and the current price (including sale prices) were used. In this assignment, you will use the data provided to answer the following research question:
+
+
+> **Research Question:** Is there a difference in average affordability between Lunds &amp; Byerlys and Trader Joe's?
+
+To help answer this research question we will use the data in *grocery-prices.tp3*. 
+
+<br />
+
+
+## Explore the Observed Data
+
+1. Create a single plot of the observed data to compare the prices between Lunds &amp; Byerlys and Trader Joe's. Also include the numerical mean values for each store on the plot. Copy-and-paste the plot of the observed data, with the averages included, into your word-processed document.
+
+2. Use the stores' mean values to compute the difference in means for the two groups. Subtract the Trader Joe's average from the Lunds &amp; Byerlys average. Report the observed difference in means.
+
+3. Use the observed result (the difference in means) to suggest an answer to the research question. Provide an explanation.
+
+4. Why do you need to conduct a simulation in order to determine whether Lunds &amp; Byerlys or Trader Joe's is more affordable for students? Explain why you cannot answer the research question using just the observed result. **(2pts.)**
+
+
+<br />
+
+
+## Model the Sampling Variation
+
+5. Write a *null hypothesis* for the bootstrap test.
+
+6. Set up a TinkerPlots&trade; sampler to generate different bootstrap samples of the data under the model specified in the null hypothesis. (Hint: You did something similar to this in the *Murderous Nurse* activity.) Copy-and-paste a picture of the TinkerPlots&trade; sampler window into your word-processed document. 
+
+7. What repeat value did you use for your sampler? Explain why you chose this value.
+
+8. In the sampling device, did you sample the prices *with* or *without* replacement? Explain your choice.
+
+9.	In the sampling device, did you sample the group labels (Lunds & Byerlys, Trader Joe's) *with* or *without* replacement? Explain your choice.
+
+<br />
+
+
+## Simulate
+
+Use TinkerPlots&trade; to carry out 500 trials of the bootstrap simulation. Create a plot of the 500 bootstrapped differences in means. 
+
+10.	Describe the shape of the distribution of the 500 simulated results. Also compute and report the standard deviation of this distribution.  
+
+11. By eyeballing the distribution of simulated results, estimate the mean (do not compute anything). Explain, by referring to the null hypothesis, why your estimate for the mean is expected.
+
+<br />
+
+
+## Evaluate the Observed Results
+
+12. Add a reference line to the plot of the distribution of the 500 simulated results at the value of the difference in the observed data. Copy-and-paste the plot (with the reference line) into your word-processed document.
+
+13.	Use the plot from Question #12, to compute the *p*-value. Show your work for full credit.
+
+<br />
+
+
+## Answer the Research Question
+
+14. Based on the *p*-value you computed, how compatible is the observed difference in means with the results produced by the model specified in the null hypothesis? What does this suggest about the answer to the research question? Explain. **(2pts.)**
+
+<br />
+
+
