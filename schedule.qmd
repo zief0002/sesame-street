@@ -294,8 +294,8 @@ As part of the course, there may be articles, papers, etc. that you will need to
   [Sampling Variation and the Bootstrap Test](https://zief0002.github.io/statistical-thinking/sampling-variation-and-the-bootstrap-test.html)
 </td>
 <td style="background-color: #f9e209">
-  <!-- **Individual Exam 3** (due by 9:45am) -->
- [**Individual Exam 3**](assignments/individual-exam-03.html) (due by 9:45am)
+  **Individual Exam 3** [Closed] 
+ <!-- [**Individual Exam 3**](assignments/individual-exam-03.html) (due by 9:45am) -->
 </td>
 </tr>
 
@@ -379,7 +379,7 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <td style="vertical-align:middle;">
   [Uncertainty and Bias](https://zief0002.github.io/statistical-thinking/uncertainty-and-bias.html)
 </td>
-<td style="vertical-align:middle;">Minnesota College Debt</td>
+<td style="vertical-align:middle;">[Minnesota College Debt](readings/mn-college-debt.pdf)</td>
 </tr>
 
 
@@ -405,8 +405,8 @@ As part of the course, there may be articles, papers, etc. that you will need to
 <td align="center" style="vertical-align:middle;">&nbsp;</td>
 <td align="center" style="vertical-align:middle;"></td>
 <td style="vertical-align:middle;" colspan=3>
-  **Individual Exam 5** (due by 12:00pm on Apr. 30)
-  <!-- [**Individual Exam 5**](assignments/individual-exam-05.html) (due by 12:00pm on Apr. 30) -->
+  <!-- **Individual Exam 5** (due by 12:00pm on Apr. 30) -->
+  [**Individual Exam 5**](assignments/individual-exam-05.html) (due by 12:00pm on Apr. 30)
 </td>
 </tr>
 
