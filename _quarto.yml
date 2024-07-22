@@ -23,11 +23,11 @@ website:
         file: grading.qmd
       - text: "Schedule"
         file: schedule.qmd
-      - text: "Instructor & TA"
-        file: about.qmd
       # - sidebar:assignments
       - text: "Class Policies"
         file: class-policies.qmd
+      - text: "Instructor & TA"
+        file: about.qmd
       - text: "Mission Statements"
         file: mission-statements.qmd
       - text: "University Policies"
